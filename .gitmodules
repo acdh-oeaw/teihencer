@@ -1,0 +1,3 @@
+[submodule "apis-core"]
+	path = apis-core
+	url = https://redmine.acdh.oeaw.ac.at/apis-core.git

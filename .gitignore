@@ -1,0 +1,10 @@
+# Byte-compiled
+__pycache__/
+*.pyc
+
+#Ipython Notebook
+.ipynb_checkpoints
+
+# documentation build files
+
+/docs/_*/*
