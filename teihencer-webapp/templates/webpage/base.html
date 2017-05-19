@@ -1,73 +1,75 @@
 {% load staticfiles %}
-{% load webpage_extras %}
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
       <meta charset="utf-8">
-      <title>{% block Titel %} {% projects_metadata 'title' %}{% endblock %}</title>
+      <title>{% block Titel %} Apis-WebApp {% endblock %}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       {% block metaDescription %}
-      <meta name="description" content="{{ metadata.description }}">
+      <meta name="description" content="A Web-App">
+      <meta name="author" content="Peter Andorfer">
       {% endblock %}
-      <meta name="author" content="{{ metadata.author }}">
-      <!-- Bootstrap -->
-      <link rel="stylesheet" href="{% static 'webpage/libraries/bootstrap337/css/bootstrap.min.css' %}"/></link>
-      <!-- custom css -->
-      <link rel="stylesheet" href="{% static 'webpage/css/style.css' %}"/></link>
-      <!--Extra Fonts Link-->
-      <!-- <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet"> -->
-      <!-- custom less -->
-      <link rel="stylesheet/less" type="text/css" href="{% static 'webpage/css/style.less' %}"/></link>
+
+      <!-- Bootstrap-->
+      <link rel="stylesheet" href="{% static 'webpage/libraries/bootstrap337/css/bootstrap.min.css' %}"/>
+      <!-- Bootstrap Themes. see https://bootswatch.com/
+        <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+      -->
       <!--scroll to top CSS -->
-      <link rel="stylesheet" href="{% static 'webpage/libraries/scroll-to-top/css/ap-scroll-top.min.css'%}"></link>
-      <!-- LESS -->
-      <script type="text/javascript" src="{% static 'webpage/libraries/less/less.min.js' %}"></script>
-      <!-- jQuery -->
-      <script type="text/javascript" src="{% static 'webpage/libraries/jquery/jquery.js' %}"></script>
+      <link rel="stylesheet" href="{% static 'webpage/apis.css' %}" />
+      <link rel="stylesheet" href="{% static 'webpage/libraries/scroll-to-top/css/ap-scroll-top.min.css'%}" />
+      <!--leflet CSS -->
+      <link rel="stylesheet" href="{% static 'webpage/libraries/leaflet/leaflet.css' %}" />
+      <!-- jQuery-->
+      <script type="text/javascript" src="{% static 'webpage/libraries/jquery/jquery-3.1.1.min.js' %}"></script>
+      <!-- Bootstrap -->
+      <script type="text/javascript" src="{% static 'webpage/libraries/bootstrap337/js/bootstrap.min.js' %}"></script>
+      <!-- angular.js
+      <script type="text/javascript" src="{% static 'webpage/libraries/angularjs/angular.min.js' %}"></script>
+      -->
+      <script type="text/javascript" src="{% static 'webpage/libraries/bootstrapmultiselect/js/bootstrap-multiselect.js' %}"></script>
+      <link rel="stylesheet" href="{% static 'webpage/libraries/bootstrapmultiselect/css/bootstrap-multiselect.css' %}" type="text/css"/>
       <!--scroll to top -->
       <script src="{% static 'webpage/libraries/scroll-to-top/js/ap-scroll-top.min.js'%}"></script>
-      <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+      <!--leaflet js -->
+      <script src="{% static 'webpage/libraries/leaflet/leaflet.js' %}"></script>
+      <link rel="stylesheet" href="{% static 'webpage/libraries/bower_components/leaflet.markercluster/dist/MarkerCluster.css'%}" />
+      <link rel="stylesheet" href="{% static 'webpage/libraries/bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css'%}" />
+      <!--
+      <link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />-->
+      <script src="{% static 'webpage/libraries/bower_components/leaflet.markercluster/dist/leaflet.markercluster-src.js'%}"></script>
+      <script type="text/javascript" src="{% static 'webpage/libraries/tooltipster/dist/js/tooltipster.bundle.min.js' %}"></script>
+      <link rel="stylesheet" type="text/css" href="{% static 'webpage/libraries/tooltipster/dist/css/tooltipster.bundle.min.css' %}" />
+      <link rel="stylesheet" type="text/css" href="{% static 'webpage/libraries/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css' %}" />
+      <script type="text/javascript" src="{% static 'webpage/apis_highlighter.js' %}"></script>
+      <!-- Piwik -->
         <script type="text/javascript">
-            window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"{% url 'webpage:imprint' %}","theme":"dark-bottom"};
+          var _paq = _paq || [];
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//clarin.oeaw.ac.at/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 23]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
         </script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
-        <!-- End Cookie Consent plugin -->
-        <!-- cool-share plugin http://tutorialzine.com/2014/08/cool-share-jquery-plugin/ -->
-            <link rel="stylesheet" href="{% static 'webpage/libraries/cool-share/plugin.css' %}"/></link>
-            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-            <script src="{% static 'webpage/libraries/cool-share/plugin.js' %}"/></script>
-        <!-- Piwik -->
-            <script type="text/javascript">
-              var _paq = _paq || [];
-              // tracker methods like "setCustomDimension" should be called before "trackPageView"
-              _paq.push(['trackPageView']);
-              _paq.push(['enableLinkTracking']);
-              (function() {
-                var u="//piwik.apollo.arz.oeaw.ac.at/";
-                _paq.push(['setTrackerUrl', u+'piwik.php']);
-                _paq.push(['setSiteId', '54']);
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-              })();
-            </script>
-        <!-- End Piwik Code -->
-
+      <!-- End Piwik Code -->
       {% block scriptHeader %}
       {% endblock %}
   </head>
 
-  <body role="document">
-    <header class="page-header procustom-header">
-      <div class="container" id="procustom-affix">
-        <div class="logo-container">
-          <a href="{% url 'webpage:start' %}" class="navlink">
-              <img src="{% static '' %}"  id="pro-logo" title="project-specific-logo"/>
-          </a>
-        </div>
-    </div>
-
-    <nav class="navbar navbar-default navbar-static-top procustom-navbar" id="top-procustom-navbar" role="navigation">
+  <body>
+    <!-- Piwik -->
+    <noscript>
+      <p>
+        <img src="//clarin.oeaw.ac.at/piwik/piwik.php?idsite=11" style="border:0;" alt="" />
+      </p>
+    </noscript>
+    <!-- End Piwik Code -->
+    <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -76,177 +78,223 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+        </div>  
         </div>
-
-        <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home
-              <span class="caret"/>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                    <a href="{% url 'webpage:start' %}">Start</a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                        <a href="{% url 'webpage:start' %}">Start</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'webpage:apis-project' %}">APIS-Project</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'webpage:paas-project' %}">PAAS-Project</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'docs' index %}index.html">Documentation</a>
+                    </li>
+                  </ul>
                 </li>
-              </ul>
-            </li>
-          <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Entities
-              <span class="caret"/>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                    <a href="{% url 'entities:person_list' %}">Persons</a>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Entities
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                        <a href="{% url 'entities:person_list' %}">Persons</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'entities:place_list' %}">Places</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'entities:institution_list' %}">Institutions</a>
+                    </li>
+                      <li>
+                        <a href="{% url 'entities:event_list' %}">Events</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'entities:work_list' %}">Works</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                    <a href="{% url 'entities:place_list' %}">Places</a>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations
+                  <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                        <a href="{% url 'entities:birth_death_map' %}">Person Place map</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'entities:generic_network_viz' %}">Network</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'highlighter:agreement' %}">Inter-Annotator Agreement</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                    <a href="{% url 'entities:institution_list' %}">Institutions</a>
-                </li>
-                  <li>
-                    <a href="{% url 'entities:event_list' %}">Events</a>
-                </li>
-                <li>
-                    <a href="{% url 'entities:work_list' %}">Works</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations
-              <span class="caret"/>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                    <a href="{% url 'entities:birth_death_map' %}">Person Place map</a>
-                </li>
-                <li>
-                    <a href="{% url 'entities:generic_network_viz' %}">Network</a>
-                </li>
-
-              </ul>
-            </li>
-        </ul>
-
+            </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                {% if user.is_authenticated %}
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"/>&nbsp;{{ user.get_username }}
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ request.user.username }}<span class="caret"></span>
                   </a>
-                  <ul class="dropdown-menu procustom-dropdown-menu">
-                        <li>
-                            <a href="{% url 'webpage:user_login' %}">Log-In</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'webpage:user_logout' %}">Log-Out</a>
-                        </li>
-                      </ul>
-                {% else %}
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-log-in" aria-hidden="true"/>
-                  </a>
-                      <ul class="dropdown-menu procustom-dropdown-menu">
-                        <li>
-                            <a href="{% url 'webpage:user_login' %}">Log-In</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'webpage:user_logout' %}">Log-Out</a>
-                        </li>
-                      </ul>
-                {% endif %}
+                  <ul class="dropdown-menu">
+                    <li>
+                        <a href="{% url 'webpage:user_login' %}">Log-In</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'webpage:user_logout' %}">Log-Out</a>
+                    </li>
+                      <li>
+                        <a href="{% url 'registration_register' %}">Registration</a>
+                    </li>
+                  </ul>
               </li>
             </ul>
         </div>
-        </div>
     </nav>
-    </header>
-    <!-- <div class="alert alert-danger">
-      <strong>Be Aware!</strong> This Site/Service is at a very early state of developement. Everything can change at any time.
-    </div> -->
 
-    <section class="main-content">
-      {% block procustom-index %}
+    <div id="content" class="container">
+    <div class="alert alert-warning">
+    <strong>Warning!</strong> Work in Progress. But entered data will be preserved.
+    </div>
+      {% block content %}
       {% endblock %}
-      <div id="content" class="container">
-        {% block content %}
-        {% endblock %}
-      </div>
-    </section>
+    </div>
 
-    <div align="text-center">
-        <span class="socialShare"> <!-- The share buttons will be inserted here --> </span>
-      </div>
-
-    <footer>
-      <div class="container">
-      <div class="row text-center">
-        <div class="col-sm-4">
+    <div class="container text-center">
+      <div class="row text-center" style="padding-top: 50px">
+      <div class="col-sm-6">
+        <div style="float: left">
           <a href="https://acdh.oeaw.ac.at/acdh/" class="navlink" target="_blank">
-              <img src="{% static 'webpage/img/ACDH_kurz_Weiss.png' %}" id="acdh-logo" alt="ACDH"/>
+              <img src="{% static 'webpage/img/logo.png' %}" alt="ACDH" style="height:65px" />
           </a>
         </div>
-        <div class="col-sm-4">
-            <a href="{% projects_metadata 'github' %}" class="navlink" target="_blank">
-              <img src="{% static 'webpage/img/GitHub-Mark-Light-64px.png' %}" id="github-logo" alt="{{ metadata.github }}"/>
-            </a>
+        <div>
+          <a href="http://www.oeaw.ac.at/inz/institut-fuer-neuzeit-und-zeitgeschichtsforschung/" class="navlink" target="_blank">
+              <img src="{% static 'webpage/img/INZ-Logo.png' %}" alt="INZ" style="height:65px" />
+          </a>
         </div>
-        <div class="col-sm-4">
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="navlink" target="_blank">
-              <img src="{% static 'webpage/img/by-sa.png' %}" alt="CC-BY-SA-4.0" width="25%"/>
-            </a>
+        </div>
+        <div class="col-sm-6">
+        <div style="float: left">
+          <a href="http://www.oeaw.ac.at/isr/" class="navlink" target="_blank">
+              <img src="{% static 'webpage/img/ISR_logo.png' %}" alt="ISR" style="height:65px" />
+          </a>
+        </div>
+        <div>
+          <a href="http://www.oeaw.ac.at/acdh/en/apis" class="navlink" target="_blank">
+              <img src="{% static 'webpage/img/apis.png' %}" alt="APIS-Project" style="height:65px" />
+          </a>
+          </div>
         </div>
       </div>
     </div>
-    </footer>
-
     {% block scripts %}
-    <script type="text/javascript" src="{% static 'webpage/libraries/bootstrap337/js/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'webpage/libraries/bootstrap337/js/bootstrap-tab.js' %}"></script>
-
-    <script type="text/javascript">
-        var nav = $('#top-procustom-navbar'); // Change to nav div
-        var nav_class = 'mini-nav'; // Change to class name
-        var threshold = 100; // Change to pixels scrolled
-
-        $(window).scroll(function () {
-        var distance = $(this).scrollTop();
-            if (distance > threshold) { // If scrolled past threshold
-                nav.addClass(nav_class); // Add class to nav
-            } else { // If user scrolls back to top
-                if (nav.hasClass(nav_class)) { // And if class has been added
-                    nav.removeClass(nav_class); // Remove it
-                }
-            }
-        });
-    </script>
-
-    <!-- cool share -->
-      <script type="text/javascript">
-        $(function (){
-          var options = {
-            twitter: {
-              text: '',
-              via: ''
-            },
-            facebook : true,
-            googlePlus : true
-          };
-          $('.socialShare').shareButtons(options);
-        });
-      </script>
+    
     <!-- scroll-up-bottom -->
     <script type="text/javascript">
-        // Setup plugin with default settings
-        $(document).ready(function() {
-            $.apScrollTop({
-                'onInit': function(evt) {
-                    console.log('apScrollTop: init');
-                }
+            // Setup plugin with default settings
+            $(document).ready(function() {
+                $.apScrollTop({
+                    'onInit': function(evt) {
+                        console.log('apScrollTop: init');
+                    }
+                });
             });
-        });
     </script>
+    <script type="text/javascript">
+      function unbind_ajax_forms(){
+      $(".form.ajax_form").submit(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var formData = $(this).serialize();
+            //var button_text = $(this).find(':button').text();
+          $.ajax({
+          type: 'POST',
+          url: $(this).attr('action'),
+          data: formData,
+          //data:formData,
+            })
+          .done(function(response) {
+              window[response.call_function](response)}
+      )})}
+</script>
+        <script type="text/javascript">
+    //script that converts the multi select element of the annotation project menu
+    $(document).ready(function() {
+        $('select.selectmultiple').multiselect({
+            includeSelectAllOption: true,
+            enableFiltering: true
+        });
+        initiate_compare_tooltip();
+    })
+    </script>
+        <script type="application/javascript">
+        function initiate_compare_tooltip() {
+          //TODO: correctly detach the tooltips before reinitializing them
+        $('.compare_tooltip').tooltipster({
+    content: 'Loading...',
+            contentAsHTML: true,
+    interactive: true,
+    theme: 'tooltipster-light',
+            updateAnimation: null,
+    functionBefore: function(instance, helper) {
+        var $origin = $(helper.origin);
+        dataOptions = $origin.attr('data-tooltip');
+        if(dataOptions) {
+
+            dataOptions = JSON.parse(dataOptions);
+            console.log(dataOptions);
+        } else {
+            console.log('didnt read out')
+        }
+        if (typeof $.ApisRev == 'undefined') {
+            $.ApisRev = {}; }
+        $.ApisRev.url = '/compare/'+dataOptions['app']+'/'+dataOptions['kind']+'/'+dataOptions['pk']
+        if ($origin.data('loaded') !== true) {
+            $.get($.ApisRev.url, function(data) {
+                instance.content(data);
+                unbind_compare_forms();
+                $origin.data('loaded', true);
+            });
+        }
+    },
+    functionReady: function (instance, helper) {
+        $.ApisRev.instance = instance;
+        unbind_compare_forms();
+    }
+});};
+        </script>
+        <script type="text/javascript">
+      function unbind_compare_forms(){
+      $("#change-history").parents('form').submit(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var formData = $(this).serialize();
+          if ($.ApisRev.url == 'undefined'){
+              var url = '/'
+          } else {
+              var url = $.ApisRev.url
+          };
+          $.ajax({
+          type: 'GET',
+          url: url,
+          data: formData,
+          //data:formData,
+            })
+          .done(function(response) {
+              $.ApisRev.instance.content(response);
+              unbind_compare_forms();
+          }
+      )})}
+</script>
     {% endblock %}
-    {% block scripts2 %}
-    {% endblock scripts2 %}
   </body>
 </html>

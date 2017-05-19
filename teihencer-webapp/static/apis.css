@@ -1,0 +1,21 @@
+ul.pagination li.current {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table thead th{
+    background-repeat: no-repeat;
+    background-position: center left;
+    cursor: pointer;
+}
+.asc{
+    background-image: url(django_tables2/themes/paleblue/img/arrow-active-up.png);
+}
+.desc{
+    background-image: url(django_tables2/themes/paleblue/img/arrow-active-down.png);
+}
+
+a {
+    padding-left: 5px;
+}
+
