@@ -8,3 +8,4 @@ __pycache__/
 # documentation build files
 
 /docs/_*/*
+*.whl

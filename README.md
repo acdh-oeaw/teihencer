@@ -10,4 +10,8 @@ an [APIS](https://apis.acdh.oeaw.ac.at) based application to enhance TEI documen
 
 now your root directory should contain a directory called *apis-core*, and a *.gitmodules* file.
 
-create a webpage application (or copy it from somwhere else)
+create a webpage application (or copy it from somewhere else)
+
+after this, you need to link form apis-core/apis to your webpage application directory. This can be acchived with a symbolic link. To create such a link on windows, type
+
+mklink /d C:\Users\pandorfer\ownCloud\GIT\Redmine\teihencer\apis-core\webpage ..\teihencer-webpage
