@@ -1,0 +1,1260 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Schnitzler Tagebuch 1881</title>
+                <year>1881</year>
+                <author>
+                    <persName>
+                        <forename>Arthur</forename>
+                        <surname>Schnitzler</surname>
+                    </persName>
+                </author>
+                <editor>
+                    <persName>
+                        <forename>Hansi</forename>
+                        <surname>Unkown</surname>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>data cleaned by</resp>
+                    <persName>
+                        <forename>Peter</forename>
+                        <surname>Andorfer</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Austrian Centre for Digital Humanities, Austrian Academy of
+                    Sciences</publisher>
+                <pubPlace ref="http://d-nb.info/gnd/4066009-6">Vienna</pubPlace>
+                <date>2017</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/" notBefore="2016-08-02">
+                        <p>The Creative Commons Attribution 4.0 International (CC BY 4.0) License applies
+                            to this text.</p>
+                        <p>The license was added for the print version of this text on August 2, 2016.</p>
+                        <p>The CC BY 4.0 License also applies to this TEI XML file.</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc/>
+    </teiHeader>
+    <text>
+        <body xmlns:tei="http://www.tei-c.org/ns/1.0"><div type="diary-day">
+<p xml:space="preserve"><date when="1881-01-02">2/1</date> Sonntag Mg.&#8213;</p>
+<p xml:space="preserve" rend="indent">Einige statist. Daten &#252;ber das verlaufene Jahr. Ich besuchte die Burg 
+25, Oper 8, Stadttheater 7, Carlth. 6, <placeName type="district" xml:id="pl_00186" ref="#place_36cb84b200c47d2c7a7e8dbbe3c1a595">Wiednerth.</placeName> 3, <placeName type="district" xml:id="pl_00187" ref="#place_e9a0bb1cfe770648982dfc20ff12ab11">Matzleinsdorferth.</placeName> 
+4, Ringth. 1mal, au&#223;erdem 20 Concerte. Kneipen, Kr&#228;nzchen, Liedertafeln, 
+etc. zwanzigmal; zwei &#246;ffentliche Vorlesungen.&#8213;</p>
+<p xml:space="preserve" rend="indent">Literarisch war das Jahr ziemlich bewegt. Der <bibl type="self">Aegidius</bibl> wurde am
+1. M&#228;rz beendet. Nun schwankt&#8217; ich lang zwischen verschiedenen 
+Dramenstoffen. Gleich im M&#228;rz schrieb ich den Anfang des <bibl type="self">Prinz 
+Julian</bibl>; der 1. Akt des <bibl type="self">Unheim</bibl> &#8213; eines Drama&#8217;s, in dem ich das soc. 
+Problem zu behandeln gedachte, sowie der 1. Akt der <bibl type="self">alten Sch&#252;ler</bibl> 
+fallen in den Mai. Am 1. Juni schrieb ich den letzten Akt der Kom&#246;die 
+&#8222;<bibl type="self">Vor der Welt</bibl>&#8220;, wodurch das ganze St&#252;ck vollendet in meinem Pulte 
+lag. Ein <bibl type="self">Roman</bibl> wurde begonnen, desgleichen eine <bibl type="self">Novelle in Versen</bibl>, 
+schlie&#223;lich beinah 2 Akte des <bibl type="self">Peters</bibl> geschrieben. Der Stoff wird um 
+ein paar Jahrhunderte zur&#252;ckversetzt, der Held <persName type="fig" key="pNt_00974" ref="#"><forename>Sebaldus</forename></persName> getauft, 
+das St&#252;ck im September neu hervorgenommen und gedichtet bis zum 
+dritten Akt. Zwei Novellen, &#8222;<bibl type="self">Menschenliebe</bibl>&#8220;, &#8222;<bibl type="self">der Sohn des 
+Ber&#252;hmten</bibl>&#8220; begann ich im August. Noch ist die Skizze &#8222;<bibl type="self">Fr&#252;hlingsnacht 
+im Secirsaal</bibl>&#8220;, dann die <bibl type="self">span. Geburt</bibl> (angefangen) zu erw&#228;hnen. 
+Einige, meist satyrische <bibl type="self">Gedichte</bibl> entstanden gleichfalls. Am Ende 
+des Jahres macht&#8217; ich mich an das Lustspiel &#8222;<bibl type="self">Aus der Mode</bibl>&#8220;das ich 
+zu vollenden gedenke, sowie auch manches andre in diesem Jahr 
+begonnene.&#8213; Es war ein aphoristisches Jahr &#8213; und eine ziemlich 
+ansehnliche Anzahl von Entw&#252;rfen liegt als Frucht desselben im Pult.&#8213;</p>
+<p xml:space="preserve" rend="indent">Auch die Gef&#252;hle sind gr&#246;&#223;tentheils Fragment geblieben:</p>
+<p xml:space="preserve" rend="indent">mein Verh&#228;ltnis mit <persName key="pNt_00975" ref="#p_17368"><forename>Fany</forename></persName> stand das vorige Jahr um die Zeit 
+jedenfalls in voller Bl&#252;the. Meine nahe Freundschaft mit <persName key="pNt_00976" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> 
+geh&#246;rt sowie vor allem die Wintermonate 80 mit den s&#252;&#223;en Abenden 
+im <placeName type="park" xml:id="pl_00188" ref="#place_273c6fe7cd0300c46e98e05cc3414e33">Quaipark</placeName> &#8213; mit zu den liebsten Erinnerungen dieses Jahres. 
+&#196;userdem lernt ich heuer <persName key="pNt_00977" ref="#p_16633"><forename>Heinrich</forename> <surname>K.</surname></persName>, <persName key="pNt_00978" ref="#p_19811"><forename>Sigm.</forename> <surname>Schneider</surname></persName>, <persName key="pNt_00979" ref="#p_15199"><forename>Gust.</forename></persName> 
+<persName key="pNt_00980" ref="#p_15199"><surname>Frieberger</surname></persName> kennen.&#8213; Am intimsten verkehrt ich mit <persName key="pNt_00981" ref="#p_14386"><forename>Eug.</forename></persName> <persName key="pNt_00982" ref="#p_14386"><surname>D.</surname></persName>, der im 
+Oktober nach <placeName type="city" xml:id="pl_00189" ref="#place_d0a6343a081a7335baa965ce4fd0845c">M&#252;nchen</placeName> reiste.&#8213; Seitdem mit niemandem wirklich intim.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-01-08">8/1</date> Samstag Mg.&#8213; Ich fand heute von <persName key="pNt_00983" ref="#p_17368"><forename>Fany</forename></persName> einen Brief vor, dem 
+zugleich ein B&#252;schel blonde Haare beigeschlossen war &#8213; dato 3/1 81. 
+&#8222;Entschuldigung <milestone rend="3dots" type="symbol"/>&#8220; Geschlossen mit: &#8213; &#8222;Vergiss mich recht bald. 
+Du kannst <persName key="pNt_00984" ref="#p_16963"><forename>Ida</forename></persName> zur Gl&#252;cklichsten machen durch deine Liebe.&#8220;
+<p xml:space="preserve"><date when="1881-01-15">15/1</date> Samstag Abd.&#8213; Am 13. das erste Mal auf dem Eisplatze, am 11.</p>
+<pb n="94"/>
+<seg type="header"><fw place="top_left" type="pageNum">94</fw> <fw place="top_center"><date type="range">1881: 1 15 - 1 30</date></fw></seg>
+im Concert <persName key="pNt_00985" ref="#"><surname>Mancio</surname></persName>, wo <persName key="pNt_00986" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> sang, hinter <persName key="pNt_00987" ref="#p_17368"><forename>Fany</forename></persName> gesessen, bei einem 
+Lied &#8222;Du liebst mich nicht&#8220; weinte sie. Ich sprach zwei gleichgiltige 
+Worte mit ihr. Sie war erregt.&#8213; <persName key="pNt_00988" ref="#"><forename>Eugen</forename></persName> hat endlich mit <persName key="pNt_00989" ref="#p_16963"><forename>Ida</forename></persName> vollkommen 
+gebrochen.</p>
+<p xml:space="preserve" rend="indent">Ich habe keinen besonderen Verkehr, keinen intimen wenigstens &#8213; 
+bin aber so vollkommen durch Arbeiten und Vergn&#252;gen in Anspruch 
+genommen, da&#223; mir das ganz angenehm ist.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-01-19">19/1</date> Mittwoch Abd.&#8213; Zersplittert zerfasert &#8213; weiss factisch nicht wo 
+ein wo aus und schlage eine Masse Zeit todt. Dass sich mein Interesse 
+nicht zu concentriren vermag und immer herumvagirt. Ich nenne 
+mich nicht zerrissen &#8213; denn das ist ein zu heftiger Ausdruck f&#252;r das 
+was in mir vorgeht; &#8213; ich kann nur sagen, da&#223; mich eine nagende 
+Unruhe peinigt &#8213; die verschiedenste Ideen und Entw&#252;rfe, Arbeiten 
+und Vergn&#252;gung zu ihrem Spielball machen und ich im Grunde 
+genommen nichts thue. Die alte Klage: dass ich eine F&#252;lle von 
+Eindr&#252;cken aufnehme, alles zu verarbeiten gedr&#228;ngt werde, mit 
+nichts zu Ende komme &#8213; jeden Augenblick etwas neues anfange, und 
+mich doch nichts vollkommen, souverain sozusagen ausf&#252;llt.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; &#8222;Noch der letzte Athemzug der Liebe ist &#8213; Eifersucht.&#8220;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-01-20">20/1</date> Donnerstag &#8213; Was haben wir Menschen eigentlich vom Leben &#8213;? 
+Heute eine Geliebte, morgen keine, gestern ein frisches salonf&#228;higes 
+Gesicht, heute eine Nase von fabelhafter R&#246;the, gestern ein paar 
+lustige Stunden, heute das trostlose Bewu&#223;tsein, dass im allgemeinen 
+das Facit doch Langeweile &#8213; Oedigkeit &#8213;</p>
+<p xml:space="preserve" rend="indent">Eben l&#246;scht das Licht aus.</p>
+<p xml:space="preserve" rend="indent">Ein passender Schluss.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-01-21">21/1</date> Freitag Nm.&#8213; Ich habe jetzt eigentlich auch eine geistig 
+geschwollene Nase, mit der ich mich unter den Patriziern der Kunst 
+nicht d&#252;rfte sehn lassen.&#8213;</p>
+<p xml:space="preserve" rend="indent">Stoffe hab&#8217; ich so viel! mir fehlt nur die Ruhe zu gestalten &#8213; die 
+innere Ausgeglichenheit etwas k&#252;nstlerisches zu schaffen, die Medizin 
+wird zudringlich.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-01-27">27/1</date> Die Gesellschaft, mit der ich verkehre, fl&#246;&#223;t mir oft 
+Katzenjammer ein.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-01-30">30/1</date> Sonntag Abd.&#8213; War bei <persName key="pNt_00990" ref="#"><surname>M.s</surname></persName>. Mein Herz thaut auf, wenn ich mit 
+<persName key="pNt_00991" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> rede &#8213; und doch bin ich heute nicht so recht befriedigt heim.&#8213; 
+<persName key="pNt_00992" ref="#p_17368"><forename>Fany</forename></persName> scheint nicht sehr erbaut zu sein, dass ich ihren Brief so 
+ohneweiters gelten liess und durchaus keine Anstalten machte, unser 
+Verh&#228;ltnis zu restituiren. Auch ist sie auf <persName key="pNt_00993" ref="#p_16963"><forename>Ida</forename></persName> eifers&#252;chtig.</p>
+<p xml:space="preserve" rend="indent">&#8213; Ich komme nicht dazu, was von mir zu halten. Ich bin in der 
+<pb n="95"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: 1 30 - II 1</date></fw> <fw place="top_right" type="pageNum">95</fw></seg>
+letzten Zeit schrecklich kleinm&#252;tig. Aus den B&#228;llen rannt&#8217; ich 
+gelangweilt fort, mich &#228;rgernd &#252;ber das gespreizte Wesen, zweifelte, 
+verzweifelte &#8213; Wurde in jeder Nacht pessimistischer &#8213; am Tag 
+nat&#252;rlicher.</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_00994" ref="#p_19811"><forename>Sigm.</forename></persName> und <persName key="pNt_00995" ref="#p_16633"><forename>Heinrich</forename></persName> werden t&#228;glich eitler &#8213; arbeiten f&#252;r ein 
+Witzblatt &#8222;<bibl type="newspaper">Wr. Karikaturen</bibl>&#8220;. Ich verkehre sehr wenig mit ihnen.&#8213;</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_00996" ref="#p_18766"><forename>Jacques</forename></persName> wird ab und zu als grundguter Mensch mit in den Kauf 
+genommen; ist &#252;brigens auch eingebildeter als notwendig.&#8213;</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_00997" ref="#p_20643"><surname>Tausenau</surname></persName> ist in der letzten Zeit etwas gedankenreicher und ein 
+ziemlich am&#252;santer Mensch geworden &#8213; aber er wetteifert in &#252;bler 
+Laune bald mit mir.&#8213;</p>
+<p xml:space="preserve" rend="indent"><bibl type="self">Aus der Mode</bibl> geb ich, sobald es beendet, dem <persName key="pNt_00998" ref="#p_20204"><surname>Sonnenthal</surname></persName>; wenn 
+aus meinen Ideen was wird, leb&#8217; ich auf, denn es wird mir nachgerade 
+unertr&#228;glich nichts zu sein.&#8213;</p>
+<p xml:space="preserve" rend="indent">In die Welt! oder in neue Verh&#228;ltnisse oder in die Arme eines 
+g&#246;ttlichen Weibes, das mich verr&#252;ckt macht.</p>
+<p xml:space="preserve" rend="center">Feber</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-01">1/2</date> Dinstag.&#8213; Die Gesellschaft, die sich im C. C. Abends gew&#246;hnlich 
+zusammenfindet besteht aus &#8213; <persName key="pNt_00999" ref="#"><forename>Pepi</forename> <surname>M.</surname></persName>, dem Allerweltsmenschen mit 
+praktischem Verstande aber ohne Geist und Phantasie, <persName key="pNt_01000" ref="#p_18766"><forename>Jacques</forename></persName>, dem 
+guten Jungen, dessen &#252;brige F&#228;higkeiten hinter seinem Appetit und 
+seiner ziemlich theilnehmenden Seele zur&#252;ckstehen; aus <persName key="pNt_01001" ref="#p_16478"><surname>Jacobson</surname></persName>, 
+einem akad. Maler oder auch nicht, was dasselbe ist, <persName key="pNt_01002" ref="#p_20643"><forename>Richard</forename> <surname>T.</surname></persName>, dem 
+gewandten Gesellschafter mit landl&#228;ufiger Begabung und einem 
+Schmiss, <persName key="pNt_01003" ref="#"><surname>Z.</surname></persName>, einem verst&#228;ndigen Mediziner im 8. Semester., <persName key="pNt_01004" ref="#p_17613"><forename>Hermann</forename> 
+<surname>L.</surname></persName>, im 2., dem Techniker <persName key="pNt_01005" ref="#p_13407"><forename>Marcell</forename> <surname>B.</surname></persName> voll Affectation und 
+Unliebensw&#252;rdigkeit; ab und zu auch <persName key="pNt_01006" ref="#p_19117"><forename>Rudolf</forename> <surname>R.</surname></persName>, dem in 
+Entwicklungsstadium begriffenen Gesch&#228;ftsmann, dem guten Kerl <persName key="pNt_01007" ref="#p_21144"><forename>Emil</forename> 
+<surname>W.</surname></persName>, T&#228;nzer, Commis, Hopfenstange und <persName type="fig" key="pNt_01008" ref="#"><forename>Don Juan</forename></persName> in bedenklichen Kreisen, 
+wo auch die Weiber <persName type="fig" key="pNt_01009" ref="#"><forename>Don Juans</forename></persName> sind &#8213;, <persName key="pNt_01010" ref="#p_18645"><surname>Pallester</surname></persName>, einem Juristen, <persName key="pNt_01011" ref="#"><surname>Geiger</surname></persName>, 
+<persName key="pNt_01012" ref="#"><surname>Kaufmann</surname></persName>, der sich f&#252;r sehr vielseitig h&#228;lt und wirklich ein 
+gescheidter Kopf zu sein scheint; &#8213; <persName key="pNt_01013" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName>, Bruder der Schauspielerin 
+<persName key="pNt_01014" ref="#"><surname>L.</surname></persName>, ein Mensch von Manieren und gutem Herzen. Ein Verkehr!</p>
+<p xml:space="preserve" rend="indent">Bleibt &#252;brig <persName key="pNt_01015" ref="#p_16633"><forename>Heinrich</forename></persName> und <persName key="pNt_01016" ref="#p_19811"><forename>Sigmund</forename></persName>, die mir als eitle Menschen, 
+Aufschneider und Egoisten keine tiefern Sympathien einzufl&#246;&#223;en 
+verstehen &#8213; bleibt &#252;brig nichts.</p>
+<p xml:space="preserve" rend="indent">Nur eine Person kenn ich &#252;berhaupt jetzt, mit der inniger zu verkehren 
+ich mich sehne &#8213; <persName key="pNt_01017" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName> &#8213;</p>
+<p xml:space="preserve" rend="indent">Und was beginnen? Immer wieder r&#252;ckkehren in die oben 
+geschilderte Gesellschaft &#8213; in diesen Koth von N&#252;chternheit und Unausstehlichkeit 
+<pb n="96"/>
+<seg type="header"><fw place="top_left" type="pageNum">96</fw> <fw place="top_center"><date type="range">96 1881: II 1 - lI 6</date></fw></seg>
+&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Aber sehn&#8217; ich mich eigentlich nach anderm Verkehr, wo ein Theil 
+den andern v&#246;llig versteht, jeder sich ganz und gar den Ideen des 
+andern aufschlie&#223;t &#8213; ? Das Factum steht nun fest, dass ich im 
+allgemeinen einen sehr flachen Umgang habe, mich &#252;berhaupt verbummle 
+und jeder durchzuckenden aufjubelnden Freude seit lange baar bin. 
+Allt&#228;glichkeit kr&#228;nkelt mich an &#8213; und mein Sinn ist 
+geschaffen f&#252;r andre Gen&#252;sse als ich genie&#223;e. Auch meine Sinne &#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-03">3/2</date> Donnerstag fr&#252;h.&#8213; Ein Wort <persName key="pNt_01018" ref="#p_21375"><forename>Josef</forename> <surname>W.</surname></persName> wird mir h&#228;ufig erinnerlich. 
+Ich promenirte mit ihm und wir sprachen dies und das; er erz&#228;hlte 
+von den verschiedensten Dingen, die er th&#228;te, ohne sie thun zu d&#252;rfen 
+&#8213; von Vergn&#252;gungen, Leidenschaften (wenn <persName key="pNt_01019" ref="#p_21375"><forename>Josef</forename> <surname>W.</surname></persName> wirklich einer 
+Leidenschaft f&#228;hig ist) u. s. w. und schloss mit den Worten<milestone rend="3dots" type="symbol"/> &#8222;Und 
+doch bin ich kein Genie, sondern nur ein Talent.&#8220; Und es ist 
+wahrhaftig so, als g&#228;b es einen gewissen Zirkel von Stimmungen und 
+Mi&#223;stimmungen, von Vergn&#252;gungen und Ausgelassenheiten, innerhalb 
+welcher ein gew&#246;hnlicher Mensch sich l&#228;cherlich ausnimmt, so etwa wie 
+ein l&#228;ppischer Bauer im Salon einer vornehmen Gesellschaft. 
+Man sagt sich selbst: darf ich denn, ja kann ich &#252;berhaupt dies 
+Brimborium und Gedudel sonderbarer Art in meiner Seele sp&#252;ren, das doch, 
+wie mir irgendwas in mir sagt in seiner wahren G&#228;nze geschaffen ist 
+f&#252;r Geister h&#246;herer Art. Ist das in mir, fr&#228;gt man sich, nicht ein 
+j&#228;mmerlicher Abklatsch eines Weltschmerzes, der im Herzern des 
+Genius Gestaltungsf&#228;higkeit, Abkl&#228;rung gewinnt &#8213; ein fratzenhaftes 
+Zerrbild des bewegten Wolkenhimmels in einem [g&#228;nzlich] zitternden 
+Teich?<milestone rend="3dots" type="symbol"/>?</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-06">6/2</date> Sonntag fr&#252;h.&#8213; Gestern Costumefest. <persName key="pNt_01020" ref="#p_17368"><forename>Fanny</forename></persName> war als <persName type="fig" key="pNt_01021" ref="#"><forename>Gretchen</forename></persName> da, 
+<persName key="pNt_01022" ref="#"><surname>L.</surname></persName> als Stierfechter. Ich sprach keine Sylbe mit <persName key="pNt_01023" ref="#p_17368"><forename>Fany</forename></persName>. Aber mit <persName key="pNt_01024" ref="#p_18320"><forename>Fanny</forename> 
+<surname>M.</surname></persName> (Orientalin), die so that und sprach, als w&#228;re jene Geschichte nicht 
+so vollkommen aus, wie sie es factisch ist.&#8213;</p>
+<p xml:space="preserve" rend="indent">Ich (Rococo) war h&#246;chst unzufrieden mit mir selbst in den Momenten, 
+da ich mit <persName key="pNt_01025" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName> sprach &#8213; weiss nicht recht warum.</p>
+<p xml:space="preserve" rend="indent">&#8213; Endlich lernt&#8217; ich einmal wieder ein am&#252;santes, vielleicht ein 
+bischen geistreiches, sehr h&#252;bsches M&#228;dchen n&#228;her kennen; eine 
+junge S&#228;ngerin, Frl. <persName key="pNt_01026" ref="#p_15521"><forename>Louise</forename> <surname>Goldm.</surname></persName> (T&#252;rkin). Es waren 
+wunderh&#252;bsche Frauen dort.&#8213; Von Bekannten: <persName key="pNt_01027" ref="#"><forename>Jenny</forename> <surname>Schleicher</surname></persName> (Orientalin), 
+<persName key="pNt_01028" ref="#p_17688"><forename>Jenny</forename> <surname>Lorm</surname></persName> (Postillon d&#8217;amour), <persName key="pNt_01029" ref="#p_21504"><forename>Alex.</forename> <surname>Z.</surname></persName> (bedenklicher Ritter), 
+<persName key="pNt_01030" ref="#p_17712"><surname>Lublin</surname></persName> (<persName type="fig" key="pNt_01031" ref="#"><forename>Figaro</forename></persName>), <persName key="pNt_01032" ref="#p_21044"><surname>Wahle</surname></persName> (Phantasietartar), <persName key="pNt_01033" ref="#"><forename>Pepi</forename> <surname>M.</surname></persName> (M&#246;nch). Mein 
+Katzenjammer begann schon dort. Auch Wechsel war dort als Reporter 
+(Pilger).</p>
+<pb n="97"/>
+                <seg type="header">
+                    <fw place="top_center">
+                        <date type="range">1881: II 13 - II 22</date>
+                    </fw> <fw place="top_right" type="pageNum">97</fw>
+                </seg>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-13">13/2</date> Sonntag Mg.&#8213; Gestern Studentenball &#8213; Dr. <persName key="pNt_01034" ref="#p_18238"><forename>A.</forename> <surname>Monti</surname></persName>, Dr. <persName key="pNt_01035" ref="#p_15704"><forename>J.</forename> 
+<surname>Gr&#252;nfeld</surname></persName>, <persName key="pNt_01036" ref="#p_19788"><forename>Sabine</forename> <surname>Schn.</surname></persName>, <persName key="pNt_01037" ref="#p_17688"><forename>Jenny</forename> <surname>Lorm</surname></persName>, <persName key="pNt_01038" ref="#p_13329"><roleName>Frl.</roleName> <name type="unclear">B.</name></persName> &#8213; Sehr am&#252;sant.</p>
+<p xml:space="preserve" rend="indent">&#8213; Dem <persName key="pNt_01039" ref="#p_15199"><surname>Frieberger</surname></persName> und <persName key="pNt_01040" ref="#p_19685"><forename>Friedrich</forename> <surname>Schik</surname></persName> zwei Akte <bibl type="self">Aus der Mode</bibl> 
+vorgelesen.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-16">16/2</date> Mittwoch Abd.&#8213; Gestern Abend beim Commers Familie <persName key="pNt_01041" ref="#"><surname>E.</surname></persName> &#8213; <persName key="pNt_01042" ref="#p_14707"><forename>Laura</forename></persName>.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-18">18/2</date> Freitag Mg.&#8213; Gestern Technikerkr&#228;nzchen. Habe mich noch nie 
+auf einem Balle so famos am&#252;sirt.&#8213; <persName key="pNt_01043" ref="#"><roleName>Frl.</roleName> <forename>Kr.</forename></persName> (<persName key="pNt_01044" ref="#p_17104"><forename>Bertholds</forename></persName> Schwester), 
+<persName key="pNt_01045" ref="#p_17383"><roleName>Frl.</roleName> <surname>Led.</surname></persName>, <persName key="pNt_01046" ref="#p_19583"><forename>Rachel</forename></persName>.&#8213; Dann ein M&#228;dchen, <persName key="pNt_01047" ref="#p_16580"><forename>Marie</forename> <surname>J.</surname></persName> &#8213; eine Art Dorfsch&#246;ne 
+mit der ich mich sehr wohl unterhielt, so zwar, dass wir ein gut Theil 
+des Balles im Wintergarten im t&#234;te &#224; t&#234;te verbrachten, ich 
+am Samstag mit ihr ein Rendezvous habe &#8213; sie beim Tanze auf den 
+weissen Nacken k&#252;sste. Aus freiem Antriebe sagte sie mir Briefe aus 
+<placeName type="city" xml:id="pl_00190" ref="#place_b69137a4d7f1bc5b9fa27e655151af34">P.</placeName>, ihrem st&#228;ndigen Aufenthalte, zu. Es war eine durch und durch 
+sinnliche, dabei auch in Worten lustig spr&#252;hende, also echte und 
+rechte Ballnacht. Ich tanzte unausgesetzt beinah &#8213; die Viertelstunden 
+ausgenommen, die ich an Mariens Seite im Wintergarten verbrachte &#8213; in 
+naher Ber&#252;hrung ihres jugendlichen holden schwellenden Leibes.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-20">20/2</date> Sonntag fr&#252;h.&#8213; Gestern Nachm. Rendezvous mit <persName key="pNt_01048" ref="#p_16580"><forename>Marie</forename></persName> bei der Br&#252;cke.&#8213; 
+Abend bei <persName key="pNt_01049" ref="#p_17176"><surname>Kuh&#8217;s</surname></persName>. Lasen ein <persName type="att" key="pNt_01050" ref="#p_14011"><forename>Emil</forename> <surname>Br.sches</surname></persName> St&#252;ck mit vertheilten Rollen. 
+Ich die Hauptrolle. Ist ganz nett. <persName key="pNt_01051" ref="#p_20580"><forename>Susanne</forename></persName> Baronesse <persName key="pNt_01052" ref="#p_15803"><forename>Tutty</forename> <surname>H.</surname></persName>, <persName key="pNt_01053" ref="#p_20973"><forename>Virginie</forename></persName>, 
+<persName key="pNt_01054" ref="#p_18629"><forename>Katharine</forename> <surname>P.</surname></persName></p>
+<p xml:space="preserve" rend="indent">&#8213; Bin f&#252;rs Studium wieder ganz verloren.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-22">22/2</date> Dinstag Abd.&#8213; Am 20. bei <persName key="pNt_01055" ref="#"><surname>Br.s</surname></persName>. Es wurde gegessen, getrunken, 
+gelesen, getanzt. Ich am&#252;sirte mich recht gut.&#8213; <persName key="pNt_01056" ref="#p_15803"><forename>Tutty</forename></persName> kokett, 
+unmenschlich kokett, <persName key="pNt_01057" ref="#p_17368"><forename>Fannys</forename></persName> Augen &#8213; ein M&#228;dchen von 
+oberfl&#228;chlichem Wesen mit ein paar Loth Esprit und ein Pfund Verstand.&#8213; 
+H&#252;bsch ist sie; ohne Seele. <persName key="pNt_01058" ref="#p_15292"><roleName>Frl.</roleName> <surname>F&#252;rst-Schw.</surname></persName> &#8213; klug, h&#252;bsch, tiefe 
+Stimme, hoher Wuchs.&#8213;</p>
+<p xml:space="preserve" rend="indent">Zwei M&#228;dchen <persName key="pNt_01059" ref="#p_16924"><forename>Kn.</forename></persName>, ein M&#228;delchen <persName key="pNt_01060" ref="#p_21154"><roleName>Frl.</roleName> <surname>Weil</surname></persName>; zwei anmutige 
+Erscheinungen unter den Namen <persName key="pNt_01061" ref="#p_14016"><forename>Marie</forename></persName> und <persName key="pNt_01062" ref="#p_19868"><forename>Hermine</forename> <surname>Sch.</surname></persName> &#8213;</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01063" ref="#p_18629"><forename>Katharine</forename> <surname>P.</surname></persName>, verst&#228;ndig, liebensw&#252;rdig &#8213; viel Neigung zur Chlorose, 
+viel Sinnlichkeit, wenig Gem&#252;th. Ihr Gesellschaftsfr&#228;ulein 
+<persName key="pNt_01064" ref="#p_20614"><forename>Auguste</forename> <surname>T.</surname></persName> besitzt beide Eigenschaften, auch andre vortheilhafte.&#8213; 
+Nach dem B&#228;llchen macht ich im C. <persName key="pNt_01065" ref="#"><surname>Schnitzar</surname></persName> die Bekanntschaft 
+<persName key="pNt_01066" ref="#p_13660"><forename>Maximilian</forename> <surname>Berns</surname></persName>. Ein junger Mann, als Schriftsteller sehr 
+vortheilhaft bekannt; erfahren, gem&#252;th- und geistvoll &#8213; selbstbewu&#223;t und 
+mit Recht, dabei liebensw&#252;rdig. Wir zwei gingen noch ins C. <persName key="pNt_01067" ref="#"><surname>Kremser</surname></persName> 
+und plauderten. Er ist wenig zur&#252;ckhaltend und erz&#228;hlt sehr viel.&#8213;</p>
+<pb n="98"/>
+                <seg type="header">
+                    <fw place="top_left" type="pageNum">98</fw> <fw place="top_center">
+                        <date type="range">1881: II 22 - III 5</date>
+                    </fw>
+                </seg>
+                <p xml:space="preserve" rend="indent">Gestern war ich Abend mit <persName key="pNt_01068" ref="#p_15199"><forename>Gustav</forename> <surname>Fr.</surname></persName> und <persName key="pNt_01069" ref="#p_19685"><forename>Friedrich</forename> <surname>Sch.</surname></persName> beisammen und 
+las ihnen vor, was bis jetzt am <bibl type="self">Sebaldus</bibl> geschrieben wurde; 
+heute Nachmittag las ich dem <persName key="pNt_01070" ref="#p_16364"><forename>Richard</forename> <surname>Horn</surname></persName> den ersten Akt der <bibl type="self">alten 
+Sch&#252;ler</bibl> vor. Alle brachten mir Interesse entgegen; mein Talent wu&#223;te 
+sich wohl, nicht aber die Art und Weise, wie ich es verwendete; sehr 
+viele gelungene Ideen, nicht aber das ganze Beifall und Anerkennung 
+zu erringen. <persName key="pNt_01071" ref="#p_15199"><forename>Gustav</forename> <surname>Fr.</surname></persName> fand mich am originellsten bef&#228;higt f&#252;r 
+Stimmung, Gem&#252;th, Sinnlichkeit. Den 1. Akt nannte er ein Gemisch 
+aus <persName key="pNt_01072" ref="#p_18334"><surname>Musset</surname></persName>, <persName key="pNt_01073" ref="#p_16009"><surname>Hebbel</surname></persName>, <persName type="att" key="pNt_01074" ref="#p_20078"><surname>Shakespeareschen</surname></persName> Lustspielen, manchem andern 
+und mir.&#8213;</p>
+<p xml:space="preserve" rend="indent">Eben komm&#8217; ich von <persName key="pNt_01075" ref="#"><surname>E.s</surname></persName>, die ich das erste Mal besuchte.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-24">24/2</date> Donnerstag Abd.&#8213; Seit einiger Zeit am&#252;sir ich mich wieder in 
+Gesellschaft, auf B&#228;llen sehr gut, und tanze leidenschaftlicher als je.&#8213; 
+Gestern bei <persName key="pNt_01076" ref="#p_16866"><surname>Kl.s</surname></persName> &#8213; <persName key="pNt_01077" ref="#p_13334"><forename>Hermine</forename></persName>.&#8213; <persName key="pNt_01078" ref="#p_19453"><forename>Julius</forename> <surname>R.</surname></persName> C. <persName key="pNt_01079" ref="#"><surname>Hobiger</surname></persName>.</p>
+<p xml:space="preserve" rend="indent">&#8213; Fr&#252;hmesse. Zu Hause um 6. Noch in den <bibl type="newspaper">fliegenden</bibl> gebl&#228;ttert. Bald 
+drauf ein junges Frauenzimmer secirt.</p>
+<p xml:space="preserve" rend="indent">Confus.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-02-26">26/2</date> Samstag Abd.&#8213; <persName key="pNt_01080" ref="#"><forename>Karline</forename> <surname>Schw<milestone rend="3dots" type="symbol"/>er</surname></persName> vom gestrigen Univ. Kr&#228;nzchen. 
+<persName key="pNt_01081" ref="#p_13334"><forename>Hermine</forename> <surname>B.</surname></persName> Es war sehr nett.- <persName key="pNt_01082" ref="#p_13660"><surname>Bern</surname></persName> und seine Schwester. <persName key="pNt_01083" ref="#p_17875"><roleName>Frl.</roleName> <surname>Margulies</surname></persName>.</p>
+<p xml:space="preserve" rend="center">M&#228;rz</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-02">2/3</date> Aschermittwoch. Vorg&#228;nge wegen <persName key="pNt_01084" ref="#p_17532"><surname>Lienbacher</surname></persName>. Studentendemonstrationen. 
+Verhaftungen Freilassungen.&#8213; Polit. Bewegungen.&#8213;</p>
+<p xml:space="preserve" rend="indent">Heute Nacht wieder einmal herumgelumpt.&#8213; Mit <persName key="pNt_01085" ref="#p_18766"><forename>Jacques</forename></persName>, <persName key="pNt_01086" ref="#p_17613"><surname>Herm</surname></persName>. 
+<persName key="pNt_01087" ref="#"><surname>L.</surname></persName>, <persName key="pNt_01088" ref="#p_21144"><forename>Emil</forename> <surname>W.</surname></persName> &#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-03">3/3</date> Donnerstag.&#8213; Das w&#228;r nun alles recht gut und sch&#246;n &#8213; wenn es 
+recht gut und sch&#246;n w&#228;r &#8213; Aber weiss der Kuckuck &#8213; ich komme mir 
+jeden Tag d&#252;mmer vor, ich muss n&#228;chstens ausziehn mich zu suchen.&#8213;</p>
+<p xml:space="preserve" rend="indent">Das Facit bleibt eine horrende Confusion, die mich deprimirt und 
+geistig zur&#252;ckwirft, und mein guter Freund <persName type="fig" key="pNt_01089" ref="#"><forename>Richard</forename> <surname>Hell</surname></persName> verdolmetscht 
+meine tiefinnersten Gedanken, wenn er ausruft: &#8222;Wahrhaftig, die 
+K&#252;nstlerschaft ist kein neidenswerthes Geschenk der Natur. Uns ist es 
+versagt, immer wir selbst zu sein, und dennoch sind wir nur dadurch, 
+dass wir K&#252;nstler sind.&#8213; &#8213;</p>
+<p xml:space="preserve" rend="indent">Wir sind Menschen von Gnaden des Augenblicks.&#8213;&#8220;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-05">5/3</date> Samstag fr&#252;h.&#8213; Ich ziehe &#8222;<bibl type="self">Aus der Mode</bibl>&#8220; in einen Akt zusammen 
+und denk immer lebhafter an die Auff&#252;hrung dieses St&#252;ckes.&#8213;</p>
+<p xml:space="preserve" rend="indent">Ich verkehre jetzt viel mit <persName key="pNt_01090" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> und mit dem Mediziner <persName key="pNt_01091" ref="#p_17613"><forename>Hermann</forename> <surname>L.</surname></persName> &#8213; 
+Letzterer ist ein sehr begabter junger Mensch. Der erstere 
+<pb n="99"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: III 5 - III 22</date></fw> <fw place="top_right" type="pageNum">99</fw></seg>
+ersetzt durch nat&#252;rliche Liebensw&#252;rdigkeit mangelnde besondere Talente.</p>
+<p xml:space="preserve" rend="indent">Gestern begleitete ich <persName key="pNt_01092" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> ein St&#252;ck; &#8222;sie h&#228;tte nicht gedacht, 
+dass man so leicht verschmerzen k&#246;nne&#8220;.</p>
+<p xml:space="preserve" rend="indent">Das Lesen belletr. Werke hab ich mir ganz abgew&#246;hnt und kann mich 
+schwer dazu entschlie&#223;en, an die Lecture einer gr&#246;&#223;ern Novelle 
+oder eines Romans zu gehen.&#8213;</p>
+<p xml:space="preserve" rend="indent">Auch das Studium wurde in der letzten Zeit sehr l&#228;ssig betrieben, 
+energisch dagegen Gast- und Kaffeehausbesuch.</p>
+<p xml:space="preserve" rend="indent">&#8213; Unangenehme Stunden verursacht mir noch das Bewu&#223;tsein 
+nichts zu sein &#8213; <persName key="pNt_01093" ref="#p_13660"><forename>Max</forename> <surname>Bern</surname></persName> sprach ich gestern wieder; er macht mir 
+wohl den Eindruck eines sehr begabten, aber nicht eines bedeutenden 
+Menschen.&#8213;</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01094" ref="#p_18766"><forename>Jacques</forename></persName> wird mir wieder sehr fad. Ueberhaupt die meisten. Auch 
+das Wetter. <seg rend="italicised">Ich</seg> besonders.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-11">11/3</date> Freitag Abd.&#8213; Sonntag war ich bei <persName key="pNt_01095" ref="#"><surname>E.s</surname></persName>. <persName key="pNt_01096" ref="#p_14707"><forename>Laura</forename></persName> ist nicht ganz 
+uninteressant.&#8213;</p>
+<p xml:space="preserve" rend="indent">Selten Inspiration. Aber ich erhoffe mir noch sehr frohe poetische 
+Zeiten.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-14">14/3</date> Montag fr&#252;h.&#8213; <persName key="pNt_01097" ref="#p_13145"><roleName>Kaiser</roleName> <forename>Alexander II.</forename></persName> ist ermordet worden.&#8213; 
+Politisch bewegte Zeit.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-18">18/3</date> Freitag Mg.&#8213; Gestern hatt&#8217; ich mit <persName key="pNt_01098" ref="#p_16580"><forename>Marie</forename></persName> ein Rendezvous zu 
+Mittag im <placeName type="park" xml:id="pl_00191" ref="#place_08222c6cb47514f7f5957bb681b5469d">R.park</placeName>. K&#252;sse und anderweitiges verliebtes Zeug. Sie ist 
+wirklich <seg rend="italicised">sehr</seg> h&#252;bsch.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-20">20/3</date> Sonntag Nm.&#8213; Auf der gestrigen Soiree bei Kammers&#228;nger 
+<persName key="pNt_01099" ref="#p_21083"><surname>Walter</surname></persName> befand sich auch <persName key="pNt_01100" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName> &#8213;</p>
+<p xml:space="preserve" rend="indent">&#8222;Sie huldigen zu vielem auf einmal&#8220; sagte sie mir &#8213; &#8222;der Wissenschaft, 
+den K&#252;nsten, dem Wein und den sch&#246;nen Frauen &#8213; und haben doch von 
+nichts einen wahren Genuss &#8213; Es muss ein Engel erscheinen, der Sie 
+befreit &#8213;&#8220;</p>
+<p xml:space="preserve" rend="indent">&#8222;Muss dieser Engel ein weibliches Wesen sein?&#8220;</p>
+<p xml:space="preserve" rend="indent">&#8222;Gewiss&#8220; erwiderte sie mit dem Ausdruck naivster Ueberzeugung.</p>
+<p xml:space="preserve" rend="indent">&#8213; <persName key="pNt_01101" ref="#p_17368"><forename>Fany</forename></persName> soll sehr blass sein.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Ich unterhielt mich sehr wohl bei <persName key="pNt_01102" ref="#"><surname>W.s</surname></persName>. Es waren unter anderm 
+dort: <persName key="pNt_01103" ref="#p_16305"><roleName>F&#252;rst</roleName> <surname>Hohenlohe</surname></persName>, <persName key="pNt_01104" ref="#p_16286"><roleName>Minister</roleName> <surname>Hofmann</surname></persName>, <persName key="pNt_01105" ref="#p_16495"><roleName>Direktor</roleName> <surname>Jahn</surname></persName>, <persName key="pNt_01106" ref="#"><forename>Hans</forename></persName> 
+<persName key="pNt_01107" ref="#p_19240"><surname>Richter</surname></persName>, <persName key="pNt_01108" ref="#p_13914"><surname>Brahms</surname></persName>, <persName key="pNt_01109" ref="#p_15530"><surname>Goldmark</surname></persName>, <persName key="pNt_01110" ref="#p_14488"><surname>Door</surname></persName>, <persName key="pNt_01111" ref="#p_17241"><surname>Labatt</surname></persName> und Frau, die <persName key="pNt_01112" ref="#p_14636"><surname>Ehnn</surname></persName>, <persName key="pNt_01113" ref="#p_17857"><roleName>Mme.</roleName> 
+<surname>Marchesi</surname></persName>, <persName key="pNt_01114" ref="#p_16653"><forename>Max</forename> <surname>Kalbeck</surname></persName>, <persName key="pNt_01115" ref="#p_18659"><forename>Rosa</forename> <surname>Papier</surname></persName>, <persName key="pNt_01116" ref="#p_19330"><surname>Rokitansky</surname></persName>, <persName key="pNt_01117" ref="#p_19460"><surname>R&#252;ckauf</surname></persName>, <persName key="pNt_01118" ref="#"><roleName>Fr.</roleName> 
+<surname>Gomperz-Bettelheim</surname></persName> etc.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-22">22/3</date> Dinstag Abd.&#8213; Sonntag war ich bei <persName key="pNt_01119" ref="#p_21591"><surname>Z.s</surname></persName> den ganzen Nachmittag.&#8213; 
+Die Tochter <persName key="pNt_01120" ref="#p_17688"><forename>Jenny</forename> <surname>Lorm</surname></persName>, die bekannte Schauspielerin &#8213; ein kecker 
+<pb n="100"/>
+<seg type="header"><fw place="top_left" type="pageNum">100</fw> <fw place="top_center"><date type="range">1881: III 22 - III 25</date></fw></seg>
+Schnabel von einigem &#233;sprit und viel Verstand; die Schriftstellerin 
+<persName key="pNt_01121" ref="#"><forename>Emy</forename></persName> <persName key="pNt_01122" ref="#p_17926"><surname>Marriot</surname></persName>, ein bla&#223;es junges M&#228;dchen von freien Manieren, m&#252;den 
+Augen, nerv&#246;ser zuckender Sprache &#8213; ein Gem&#252;t wie mit grau 
+schimmernden T&#252;chern verh&#228;ngt. Die <persName key="pNt_01123" ref="#p_15052"><surname>Fl&#246;ssel</surname></persName> vom Carltheater, mehrere 
+Nebenpersonen.</p>
+<p xml:space="preserve" rend="indent">Im Anfang wars nett &#8213; im Zimmer der <persName key="pNt_01124" ref="#p_17688"><surname>Lorm</surname></persName> &#8213; M&#228;nnlein und Weiblein 
+rauchten Cigarettes in dem d&#228;mmerigen Raum &#8213; es war Stimmung da &#8213;</p>
+<p xml:space="preserve" rend="indent">W&#228;hrend des Zusammenseins im Salon herrschte im ganzen wenig Animo.&#8213;</p>
+<p xml:space="preserve" rend="indent">Gestern Abend war ich bei <persName key="pNt_01125" ref="#"><surname>E.s</surname></persName>. <persName key="pNt_01126" ref="#p_14707"><forename>Laura</forename></persName> gef&#228;llt mir recht wohl. 
+Sonderbare Familie. Die Mutter von &#252;berm&#228;&#223;iger Sinnlichkeit, den 
+Freunden ihres Sohnes nicht abhold &#8213; der Vater ein alter Esel mit 
+Schlafm&#252;tze und langer Pfeife; <persName key="pNt_01127" ref="#p_14704"><forename>Hermann</forename></persName> der &#228;lteste Sohn mit 
+knarrender Stimme, h&#228;&#223;lich, umgeben von geologischen B&#252;chern, 
+Jagdger&#228;then und studentischem Waffenzeug; ihm sehr &#228;hnlich der Bruder 
+<persName key="pNt_01128" ref="#"><forename>Fritz</forename></persName>, der just von einer Hundeausstellung kommt &#8213; die T&#246;chter &#8213; 
+<persName key="pNt_01129" ref="#p_14707"><forename>Laura</forename></persName>, dunkel von Haar und Augen, ein Bild ihrer Mutter ins Reich 
+der Jugend projizirt. Die aufsprossende junge Schwester, die schon 
+sehr viel ahnt und zuviel weiss, die h&#252;bsche kleinste, und der nette 
+j&#252;ngste Bursch.</p>
+<p xml:space="preserve" rend="indent">&#8213; Der Freund <persName key="pNt_01130" ref="#p_20643"><forename>Rich.</forename> <surname>T.</surname></persName>, beinahe jeden Abend oben &#8213; und seine Gunst auf 
+Tochter, Gouvernante und Stubenm&#228;dchen vertheilend, und von der Mutter 
+gern gesehn, die blasse lange norddeutsche Gouvernante &#8213; mit einem 
+Male ein improvisirter Tanz &#8213; ab und zu irgend ein andrer Gast, der 
+dazukommt, <persName key="pNt_01131" ref="#"><forename>Fritz</forename> <surname>K.</surname></persName> z. B., der Jugendgeliebte <persName key="pNt_01132" ref="#p_14707"><forename>Lauras</forename></persName>, der sich mit ihr 
+in Erinnerungen wiegt &#8213; und jeden Moment einen neuen Novellenstoff sich 
+entwickeln sieht, &#8213; oder <persName key="pNt_01133" ref="#p_15229"><forename>Louis</forename> <surname>Fr.</surname></persName> in feschem Kriegeranzug &#8213; oder ich 
+&#8213; beim Klavier sitzend und ab und zu ein paar Akkorde spielend &#8213; und 
+&#8222;merkw&#252;rdig&#8220; dreinschauend wie <persName key="pNt_01134" ref="#p_14707"><forename>Laura</forename></persName> findet<milestone rend="3dots" type="symbol"/>&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-25">25/3</date> Freitag Abd.&#8213; So oft ich <persName key="pNt_01135" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> verlasse, sp&#252;r&#8217; ich eine 
+eigenartige Unzufriedenheit mit mir selbst. Ich kann, darf den Motiven 
+nicht nachsp&#252;ren.&#8213; <persName key="pNt_01136" ref="#p_17368"><forename>Fany</forename></persName>, so erz&#228;hlte sie mir, hat sich entschlossen, 
+erst dann <persName key="pNt_01137" ref="#"><surname>L.</surname></persName> zu heiraten, bis ein Bild, das sie ewig verfolge, endlich 
+aus ihrem Herzen schwinde<milestone rend="3dots" type="symbol"/></p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/> Ich bin ein Mosaikbild &#8213;</p>
+<p xml:space="preserve" rend="indent">Kiesel &#8213; ?</p>
+<p xml:space="preserve" rend="indent">Auch Edelstein.</p>
+<p xml:space="preserve" rend="indent">Aber die Kiesel sind wohl geschliffen, die Edelsteine schlecht.&#8213;</p>
+<pb n="101"/>
+                <seg type="header">
+                    <fw place="top_center">
+                        <date type="range">1881: III 25 - IV 15</date>
+                    </fw> <fw place="top_right" type="pageNum">101</fw>
+                </seg>
+                <p xml:space="preserve" rend="indent"><persName key="pNt_01138" ref="#p_17368"><forename>Fany</forename></persName> muss die Schleiferin sein, fiel <persName key="pNt_01139" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> wieder ein.</p>
+<p xml:space="preserve" rend="indent">Ihr ist immer, wie wenn <persName key="pNt_01140" ref="#p_17368"><forename>Fanny</forename></persName> mir fehlte, indessen fehlt mir nur etwas 
+wie <persName key="pNt_01141" ref="#p_17368"><forename>Fany</forename></persName> und ich glaube auch das w&#252;rde mich nicht so recht curiren &#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-03-29">29/3</date> Dinstag Mg.&#8213;</p>
+<lg>
+                    <l>Weitge&#246;ffnet bringt das Fenster</l>
+<l>W&#252;rzige Fr&#252;hlingsluft ins Zimmer</l>
+<l>Bin ich doch noch J&#252;ngling und Dichter,</l>
+<l>Dass des Lenzes Erwachen mich freut</l>
+<l>Und mit R&#252;hrung mein Herz beschleicht</l>
+                </lg>
+                <p xml:space="preserve" rend="indent">&#8213; &#8213; <milestone rend="3dots" type="symbol"/> ?</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-04-06">6/4</date> &#8213; Finanziell bin ich bei meiner hochentwickelten Genu&#223;sucht &#252;bel 
+dran. Ich komme bei weitem nicht aus und versage mir ungeheuer viel. 
+Freilich &#8213; ich hab&#8217; es eigentlich sehr gut, brauche keine Lection 
+zu geben, habe alles zu Hause &#8213; u. s. w. &#8213; Also gut, ich bin sehr 
+gl&#252;cklich.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-04-07">7/4</date> Donnerstag.&#8213; Schrieb dieser Tage ein Gedicht an <persName key="pNt_01142" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> &#8213; &#8222;<bibl type="self">An 
+die Freundin der Geliebten</bibl>&#8220;.&#8213;</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01143" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> ennuyirt mich schon sehr; ich verkehre nur mehr wenig mit ihm.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-04-13">13/4</date> Mittwoch Mg.&#8213; <persName key="pNt_01144" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> hat einen Posten. <persName key="pNt_01145" ref="#p_18766"><forename>Jacques</forename></persName> fiel.&#8213; <persName key="pNt_01146" ref="#p_16963"><forename>Ida</forename></persName> im 
+<placeName type="park" xml:id="pl_00192" ref="#place_064b559a47f97cda67f232c0c6f94ccd">Volksg.</placeName> &#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-04-14">14/4</date> Donnerstag.&#8213; Im <placeName type="park" xml:id="pl_00193" ref="#place_43391b8070da191d103a657ab8ad2782">Volkg.</placeName> &#8213; Ich begleitete <persName key="pNt_01147" ref="#p_13766"><roleName>Frl.</roleName> <forename>Blanche</forename></persName> und <persName key="pNt_01148" ref="#p_16963"><forename>Ida</forename></persName> 
+heim. <persName key="pNt_01149" ref="#p_16963"><forename>Ida</forename></persName> eiferte gegen die Vers&#246;hnungsversuche <persName key="pNt_01150" ref="#p_18320"><forename>Fany</forename> <surname>M.s</surname></persName>; nannte 
+sie eine Intriguantin, citirte eine &#196;u&#223;erung <persName key="pNt_01151" ref="#p_17368"><forename>Fanys</forename></persName>, &#8222;sie sei 
+ungl&#252;cklich, wenn die Geschichte noch einmal anfinge&#8220;, behauptete, 
+<persName key="pNt_01152" ref="#p_17368"><forename>Fanny</forename></persName> liebe mich nicht mehr, ja h&#228;tte mich nie geliebt, werde <persName key="pNt_01153" ref="#"><surname>L.</surname></persName> bald 
+heiraten.&#8213; Zum Schluss kamen wir auf <persName key="pNt_01154" ref="#p_17368"><forename>Fanys</forename></persName> Abschiedsbrief zu reden. 
+Sie kennt den Inhalt. &#8222;Auch &#252;ber mich steht etwas drin&#8220; sagte 
+<persName key="pNt_01155" ref="#p_16963"><forename>Ida</forename></persName> &#8222;geben sie mir Ihr Wort &#8213;, dass Sie es nicht glauben <milestone rend="3dots" type="symbol"/> Es w&#228;r 
+einmal wahr gewesen &#8213; aber das ist schon lang her &#8213; als Sie damals in 
+<placeName type="city" xml:id="pl_00194" ref="#place_a2daf4da47b1d983d75de80c73e4aac2">V&#246;slau</placeName> waren.&#8220; &#8213; Es ist doch drollig, da&#223; mir <persName key="pNt_01156" ref="#p_16963"><forename>Ida</forename></persName>, so oft ich noch mit 
+ihr zusammenkam, gestand, sie &#8213; liebe mich nicht.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Mein <rs type="allusively" xml:id="rst_00018">Vater</rs> traf heute <persName key="pNt_01157" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> bei <persName key="pNt_01158" ref="#p_21083"><surname>Walter&#8217;s</surname></persName> und &#228;u&#223;erte sich 
+sehr vortheilhaft &#252;ber sie.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-04-15">15/4</date> Mir ist wie einem elastischen Gegenstande, der auf den zehnten 
+Theil seines Volumens zusammengepresst ist.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; &#8222;D&#228;mon Leben, wenn ich dir schon angeh&#246;re, schlie&#223;e mich doch 
+v&#246;llig in deine Arme, in grenzenlos hei&#223;em Umschlingen, dr&#252;cke mich 
+an deine pochende Brust, lasse mich mitempfinden jedes Rauschen 
+<pb n="102"/>
+<seg type="header"><fw place="top_left" type="pageNum">102</fw> <fw place="top_center"><date type="range">1881: IV 15 - V 5</date></fw></seg>
+des Bluts in deinem weitverzweigten Ge&#228;der &#8213; an deinem Herzen lass 
+mich ruhn, im Mittelpunkt des bewegten Seins, seinem 
+unaufh&#246;rlichen Getriebe zu lauschen.&#8220;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-04-18">18/4</date> Ostermontag.&#8213; Mit <persName key="pNt_01159" ref="#"><forename>Pepi</forename></persName>, <persName key="pNt_01160" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName>, <persName key="pNt_01161" ref="#p_17613"><forename>Herm.</forename> <surname>L.</surname></persName> und sp&#228;ter mit dem 
+Schauspieler <persName key="pNt_01162" ref="#p_17376"><surname>Lbg.</surname></persName> sowie einem Ehepaar, <persName key="pNt_01163" ref="#p_19614"><surname>Schaftl</surname></persName>, gestern 
+herumgewandert im <placeName type="park" xml:id="pl_00195" ref="#place_86a694cf5ce5552ca627cb96b607eccd">Prater</placeName>. Alle m&#246;glichen Kindereien mitgemacht.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-04-23">23/4</date> Samstag.&#8213; Nach <persName key="pNt_01164" ref="#p_18659"><forename>Rosa</forename> <surname>Papier&#8217;s</surname></persName> erstem Auftreten Souper in einem 
+Hotel.&#8213; Champagner.&#8213; Trotz all dem nicht sonderlich gem&#252;tlich. <persName key="pNt_01165" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> war auch mit <milestone rend="3dots" type="symbol"/> Dann macht ich mit <persName key="pNt_01166" ref="#p_17613"><forename>Hermann</forename> <surname>L.</surname></persName> einen 
+n&#228;chtlichen Rundgang durch die Stadt. Pessimismus, Resignation, 
+Exaltation <milestone rend="3dots" type="symbol"/> zu Hause schrieb ich <milestone rend="3dots" type="symbol"/> einen Brief, der nie an seine 
+Adresse kommen soll.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-04-27">27/4</date> Mittwoch.&#8213; Gestern Rendezvous mit <persName key="pNt_01167" ref="#p_16580"><forename>Marie</forename></persName>. Urfad.&#8213;</p>
+<p xml:space="preserve" rend="center">Mai</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-02">2/5</date> Montag.&#8213; Seit Anfang voriger Woche h&#246;r&#8217; ich einen Kurs &#252;ber 
+topogr. Anatomie bei <persName key="pNt_01168" ref="#p_21596"><surname>Zuckerkandl</surname></persName>; seit Mitte derselben arbeit ich im 
+phys. Labor. Diese Handlangerarbeiten, als da sind einen halben Tag 
+mit einem Knochenst&#252;ck auf einer Glastafel herumreiben etc. werden 
+bei weitem nicht durch den Genuss einen <persName type="att" key="pNt_01169" ref="#p_15998"><surname>Havers&#8217;schen</surname></persName> Kanal unter 
+dem Mikroskop zu sehen, aufgewogen.</p>
+<p xml:space="preserve" rend="indent">Mein St&#252;ck &#8222;<bibl type="self">Aus der Mode</bibl>&#8220; fiel bei <persName key="pNt_01170" ref="#p_20204"><surname>Sonnenthal</surname></persName> g&#228;nzlich ab. Am 
+selben Tag, wo ich seinen Brief an meinen <rs type="allusively" xml:id="rst_00019">Vater</rs> las, begann ich &#8222;<bibl type="self">Die 
+moderne Jugend</bibl>&#8220;.&#8213; Ein Mi&#223;erfolg soll mich nicht abschrecken.</p>
+<p xml:space="preserve" rend="indent">&#8213; Vor dem phys. Labor. ging neulich zu meiner gr&#246;&#223;ten Ueberraschung 
+<persName key="pNt_01171" ref="#p_17368"><forename>Fanny</forename></persName> vor&#252;ber &#8213; sie wurde gl&#252;hrot &#8213; und &#8213; o erste Liebe! deine 
+Existenz &#252;berdauert deinen Genuss.</p>
+<p xml:space="preserve" rend="indent">&#8213; Abend.&#8213; <persName key="pNt_01172" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> sagte mir, ich solle nur nicht <persName key="pNt_01173" ref="#p_16963"><forename>Ida</forename></persName> glauben, die sehr 
+subjektive Gr&#252;nde habe, in bekannter Weise die Sachen darzustellen.&#8213; 
+Dann sprach sie auch &#252;ber meinen Verkehr; ich sei sehr 
+leichtlebig, keiner von den Leuten verstehe mich und ich gebe mir 
+auch gar nicht die geringste M&#252;he mich verstehn zu lassen; sie taxirte 
+&#252;berhaupt meinen geistigen Wert wieder sehr hoch.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-03">3/5</date> Dinstag.&#8213; <persName key="pNt_01174" ref="#p_16963"><forename>Ida</forename></persName> dagegen theilt mir mit, <persName key="pNt_01175" ref="#p_17368"><forename>Fany</forename></persName> habe ihr gestern 
+gesagt, sie liebe <persName key="pNt_01176" ref="#"><surname>L.</surname></persName>, werde sich bald verloben &#8213; Ich kann hiezu nichts 
+mehr bemerken als: ??????</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-05">5/5</date> Donnerstag.&#8213; Gestern erw&#228;hnte <persName key="pNt_01177" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> einer Bemerkung <persName key="pNt_01178" ref="#p_17368"><forename>Fanys</forename></persName>: 
+<persName key="pNt_01179" ref="#p_16963"><forename>Ida</forename></persName> habe ihr mitgetheilt, dass ich sie verachte; mich nicht um sie 
+k&#252;mmre. Dadurch und durch &#228;hnliches gereizt lasse sich <persName key="pNt_01180" ref="#p_17368"><forename>Fany</forename></persName> 
+wahrscheinlich zu jenen &#196;u&#223;erungen hinrei&#223;en.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Meine Zeit verbring ich jetzt meist wie folgt: &#8213; Bis neun wird die 
+<pb n="103"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: V 5 - V 24</date></fw> <fw place="top_right" type="pageNum">103</fw></seg>
+Zeit vert&#228;ndelt &#8213; dann geh ich ins phys. Labor. &#8222;arbeiten&#8220;, von 11-12 
+topogr. Anatomie, hierauf bumml&#8217; ich, spiele Klavier, Billard &#8213; nach 
+Tisch wird die ganze Zeit bis in den tiefen Abend hinein verspielt, 
+verraucht, vert&#228;ndelt, verplaudert, verbummelt <milestone rend="3dots" type="symbol"/> Ich bin f&#252;r alles 
+edle, sch&#246;ne verloren &#8213; jeder tiefern Freude bar &#8213; und empfinde 
+Sehnsucht nach Genuss &#8213; nach Rausch &#8213; vielleicht nach Liebe.</p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/> Schlie&#223;lich lebt man doch nur irgend einer angenehmen Stunde 
+entgegen &#8213; oder einer lustigen.</p>
+<p xml:space="preserve" rend="indent">&#8213; Und ich merke doch, dass <persName key="pNt_01181" ref="#p_20204"><surname>Sonnenthals</surname></persName> Brief mich mehr deprimirt, als 
+ich anfangs mir gestehen wollte. Besonders da ich wohl einsehe, dass 
+ich &#8213; abgesehen von allgemeiner Fassungskraft und dem landl&#228;ufig 
+offenen Kopf &#8213; doch zur Medizin keine hervorragende Begabung habe.&#8213; 
+Und man l&#228;uft doch nicht sein Leben lang als &#8222;talentirter junger 
+Mensch&#8220; herum &#8213; man muss doch schlie&#223;lich was leisten oder wenn 
+das nicht &#8213; sich wenigstens am&#252;siren.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-09">9/5</date> Montag.&#8213; Einzug der <persName key="pNt_01182" ref="#p_20401"><roleName>Prinzessin</roleName> <surname>Stephanie</surname></persName> &#8213; <persName key="pNt_01183" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> bei uns. 
+Deprimirender Gespr&#228;chsschluss.&#8213;</p>
+<p xml:space="preserve" rend="indent">Volksfest gestern mit <persName key="pNt_01184" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> durchgemacht.&#8213; Heut waren auch 
+<persName key="pNt_01185" ref="#p_20204"><surname>Sonnenthal</surname></persName>, <persName key="pNt_01186" ref="#p_21463"><surname>Wolter</surname></persName>, <persName key="pNt_01187" ref="#p_21083"><surname>Walters</surname></persName> etc. bei uns.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-10">10/5</date> Dinstag.&#8213; <persName key="pNt_01188" ref="#p_16963"><forename>Ida</forename></persName> war gestern wie ein Bild, als wir sie Abends 
+(Illumination) trafen. <persName key="pNt_01189" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> glaubt sich in sie verliebt zu haben. Sie 
+war eigenartig sch&#246;n.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-16">16/5</date> Montag Nm.&#8213; Ich st&#246;bre unter meinen B&#252;chern und Schriften 
+und red&#8217; mir selbst ein: ich ordne nur alles, um endlich frisch und 
+beruhigt an jedwede Arbeit gehn zu k&#246;nnen &#8213; Aber der Grund meiner 
+jetzigen extensiven Nachl&#228;ssigkeit und Bummelei liegt doch tiefer &#8213; 
+Oder ists nur angeborene Faulheit <milestone rend="3dots" type="symbol"/> Keineswegs ist irgendwo ein 
+besondrer Grund zu ersehn, so weiter zu existiren.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-19">19/5</date> Donnerstag fr&#252;h.&#8213; Mein phys. und psych. Ich sehnt sich nach 
+dem S&#252;den.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-21">21/5</date> Samstag fr&#252;h.&#8213; Komisch und doch begreiflich: <persName key="pNt_01190" ref="#p_21217"><forename>Adolf</forename></persName> begriff 
+nicht meinen Umgang mit <persName key="pNt_01191" ref="#"><forename>Moriz</forename> <surname>W.</surname></persName> &#8213; eben so erging es dem <persName key="pNt_01192" ref="#p_19252"><surname>Rie</surname></persName> in 
+Betreff <persName key="pNt_01193" ref="#"><forename>Moriz</forename> <surname>W.</surname></persName>, <persName key="pNt_01194" ref="#p_14386"><forename>Eugen</forename></persName> mit <persName key="pNt_01195" ref="#p_18766"><forename>Jacques</forename></persName>, <persName key="pNt_01196" ref="#p_18766"><forename>Jacques</forename></persName> mit <persName key="pNt_01197" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName>, <persName key="pNt_01198" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> 
+mit <persName key="pNt_01199" ref="#p_18766"><forename>Jacques</forename></persName>, <persName key="pNt_01200" ref="#p_19811"><forename>Sigm.</forename></persName> und <persName key="pNt_01201" ref="#p_16633"><forename>Heinrich</forename></persName> mit <persName key="pNt_01202" ref="#p_18766"><forename>Jacques</forename></persName>, <persName key="pNt_01203" ref="#p_14386"><forename>Eugen</forename></persName> etc., <persName key="pNt_01204" ref="#"><forename>Fritz</forename> <surname>K.</surname></persName> 
+und <persName key="pNt_01205" ref="#p_21601"><forename>O.</forename> <surname>Zuckerkandl</surname></persName> in <placeName type="city" xml:id="pl_00196" ref="#place_b06c26aed02d969d0f2315ba11b5432b">B.</placeName> <persName key="pNt_01206" ref="#p_18766"><forename>Jacques</forename></persName>, <persName key="pNt_01207" ref="#"><forename>Pepi</forename></persName>, <persName key="pNt_01208" ref="#p_15199"><forename>Gustav</forename> <surname>Frieberger</surname></persName> und 
+<persName key="pNt_01209" ref="#p_15338"><surname>Ludassy</surname></persName> in Betreff aller meiner &#8222;Freunde&#8220;, &#228;hnlich der <persName key="pNt_01210" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName> &#8213;</p>
+<p xml:space="preserve" rend="indent">Sollte man glauben, dass das tadelnde Urtheil <seg rend="italicised">eines</seg> Menschen (auf 
+mich wenigstens) tiefern Eindruck auf mich macht als das lobende 
+von f&#252;nfundzwanzig.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-24">24/5</date> &#8213; Dinstag &#8213; Verkehr mit <persName key="pNt_01211" ref="#p_13352"><surname>Bachmann</surname></persName>, einem 29j. liebensw&#252;rdigen 
+<pb n="104"/>
+<seg type="header"><fw place="top_left" type="pageNum">104</fw> <fw place="top_center"><date type="range">1881: V 24 - VI 21</date></fw></seg>
+Menschen, der bereits eine Reise um die Welt gemacht hat, jetzt 
+Beamter ist und dabei ein wenig schriftstellert.&#8213;</p>
+<p xml:space="preserve" rend="indent">Abd.&#8213; Bei <persName key="pNt_01212" ref="#"><surname>M.s</surname></persName> einen angenehmen Abend verbracht.&#8213; Mit <persName key="pNt_01213" ref="#"><forename>Fany</forename> <surname>R.</surname></persName> 
+plaudert ich im besten Freundschaftstone, ja tanzte sogar mit ihr.&#8213; 
+<persName key="pNt_01214" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> erz&#228;hlte mir, sie (<persName key="pNt_01215" ref="#p_18320"><forename>F.</forename> <surname>M.</surname></persName>) habe acht Tage lang einen Brief von 
+<persName key="pNt_01216" ref="#p_17368"><forename>Fany</forename></persName> f&#252;r mich herumgetragen, &#8213; ich liess mich nicht sehn, und nun 
+habe sie zur&#252;ckgegeben &#8213; einen Brief &#8222;der mir viel Vergn&#252;gen 
+gemacht h&#228;tte &#8213;&#8220; &#8213; Verloren ist verloren setzte sie hinzu und 
+stand auf.&#8213; &#8213; Und eigentlich ists doch nur <seg rend="italicised">ein</seg> Wesen, wegen 
+dessen ich mich jetzt ab und zu wohl f&#252;hle.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-05-28">28/5</date> Samstag fr&#252;h.&#8213; Gestern sprach ich im <placeName type="park" xml:id="pl_00197" ref="#place_43391b8070da191d103a657ab8ad2782">Volkg.</placeName> <persName key="pNt_01217" ref="#p_17368"><forename>Fany</forename></persName>, sie nannte 
+sich nicht gl&#252;cklich &#8213; sei noch immer die alte (H&#228;ndedruck) k&#246;nne nur 
+<seg rend="italicised">einen</seg> lieben &#8213; ich m&#252;sse ihr schreiben &#8213; jener letzte Brief sei 
+eigentlich nicht von ihr gewesen; man habe ihr den Auftrag gegeben, so oder 
+&#228;hnlich zu schreiben. Und bei alldem war sie sehr sch&#246;n &#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Vorw&#252;rfe meines Vaters.</p>
+<p xml:space="preserve" rend="center">Juni</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-06-01">1/6</date> Unter allem Glanze des Fr&#252;hlings, Erwachen der Natur &#8213; unter all 
+dem neuen Lebenstrieb um mich herum, schie&#223;t am &#252;ppigsten 
+hervor, rankt sich vielzweigig um mich &#8213; die Langeweile &#8213; und als Frucht 
+beginnt die Melancholie zu reifen. O Schicksal &#8213; ich flehe dich an um 
+eine gro&#223;e Freude.&#8213; <persName type="att" key="pNt_01218" ref="#"><surname>Sonnenthal-Jubil&#228;um</surname></persName>. Ich war oben bei ihm.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-06-07">7/6</date> Dinstag Nm.&#8213; Gestern <placeName type="park" xml:id="pl_00198" ref="#place_86a694cf5ce5552ca627cb96b607eccd">Prater</placeName>.&#8213; <persName key="pNt_01219" ref="#p_19811"><forename>Sigmund</forename></persName>. Gekose und Gek&#252;sse 
+mit einem reizenden M&#228;dchen, das mir nicht aus dem Kopf geht.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-06-11">11/6</date> Samstag Nm.&#8213; Wieder nun wie eigentlich Wochen, Monate lang 
+den ganzen Vormittag verbummelt, den Nachm. im Kaffeehaus 
+verplaudert, verspielt, d&#228;mmrig hingebracht &#8213; in einer namenlos leeren 
+Stimmung &#8213; ein ewiger Katzenjammer, ohne dass ich je berauscht 
+gewesen w&#228;re.</p>
+<p xml:space="preserve" rend="indent">Ich sollte mich nun wenigstens aufs Studium werfen, bringe aber kein 
+leidliches Interesse mit &#8213; Aber leben m&#246;cht ich &#8213; irgendwie 
+bemerken, dass ich lebe &#8213; mit offnem Aug, offnem Sinn, offnem Herz 
+und Kopf. Aber nun d&#228;mmr&#8217; ich hin &#8213; ohne Achtung vor irgend was, 
+ohne Achtung vor mir &#8213; ja wenn ich mich zu etwas aufraffen wollte, 
+w&#252;rd es mir aus allen Ecken meines Daseins mit tausend verdrossenen 
+Stimmen zurufen: Wozu das alles &#8213; ?</p>
+<p xml:space="preserve" rend="indent">Vielleicht g&#228;lte mir das: Durch Genuss zur Arbeit &#8213; statt des 
+althergebrachten: Durch Arbeit zum Genuss!&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-06-21">21/6</date> Dinstag fr&#252;h. Heute wieder ein Mal eine Nacht h&#246;chst langweilig 
+verbracht <milestone rend="3dots" type="symbol"/> auf dem akad. Sommerfest drau&#223;en in <placeName type="district" xml:id="pl_00199" ref="#place_6fc6f10422bfe80ddcba23b4f7f080dc">Hietzing</placeName> &#8213; getanzt. 
+<pb n="105"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: VI 21 - VII 9</date></fw> <fw place="top_right" type="pageNum">105</fw></seg>
+<persName key="pNt_01220" ref="#p_16963"><forename>Ida</forename></persName>. <persName key="pNt_01221" ref="#p_15796"><roleName>Frl.</roleName> <name type="unclear">H.</name></persName> &#8213; Am Sonntag Abend unterhielt ich mich sehr 
+wohl mit <persName key="pNt_01222" ref="#"><forename>Thilda</forename></persName>, die mir von der unverg&#228;nglichen Liebe und dem 
+Kummer <persName key="pNt_01223" ref="#p_17368"><forename>Fannys</forename></persName> sprach, sowie mit <persName key="pNt_01224" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName> &#8213; &#8213; Im allgemeinen ist 
+mir mein Zustand unertr&#228;glich.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-06-24">24/6</date> Freitag fr&#252;h.&#8213; Gestern plauderte ich im <placeName type="park" xml:id="pl_00200" ref="#place_064b559a47f97cda67f232c0c6f94ccd">Volksg.</placeName> mit <persName key="pNt_01225" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName> 
+und <persName key="pNt_01226" ref="#p_13761"><forename>Fanny</forename></persName> Bl., dann h&#246;rt ich auf dem Nachhauseweg mit einem Mal 
+<milestone rend="3dots" type="symbol"/> &#8222;da ist er selbst &#8213;&#8220; und gewahrte <persName key="pNt_01227" ref="#"><forename>Thilda</forename></persName> und &#8213; <persName key="pNt_01228" ref="#p_13761"><forename>Fanny</forename></persName> &#8213; hinter 
+ihnen in einiger Entfernung <persName key="pNt_01229" ref="#"><roleName>Frau</roleName> <surname>R.</surname></persName> <persName key="pNt_01230" ref="#p_15096"><roleName>Herrn</roleName> <surname>Fr&#228;nkel</surname></persName> &amp; Frau etc. Ich 
+schloss mich an &#8213; <persName key="pNt_01231" ref="#p_13761"><forename>Fanny</forename></persName> sprach von einem Brief, den ich dieser Tage 
+von ihr bekommen werde.&#8213; Montag reisen sie nach <placeName type="city" xml:id="pl_00201" ref="#place_7aec3f10ff70ac8959ef2f530d047440">V.&#8213;</placeName> Sie sagte: Ich 
+m&#246;chte dich noch einmal sehen, sprechen, k&#252;ssen &#8213; bevor wir von 
+einander scheiden.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Zu Hause nettes Intermezzo.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-06-27">27/6</date> Montag fr&#252;h.&#8213; Den gestrigen Nachmittag mit dem stud. med. 
+<persName key="pNt_01232" ref="#p_19595"><surname>Sax</surname></persName> unter medicinisch-pessimistischen Gespr&#228;chen verbracht, die mir 
+wieder klarlegten, da&#223; es mir sehr viel wohler w&#228;re, wenn ich nicht 
+Mediciner w&#228;re, und zugleich auch, da&#223; doch nur dieses Studium 
+meiner Menschenfexerei ein wenig Gen&#252;ge leisten kann.&#8213; Aber es ist 
+wahrhaftig deprimirend, die F&#252;lle von Krankheiten zu kennen, denen 
+man all&#252;berall ausgesetzt ist <milestone rend="3dots" type="symbol"/> zu denken, da&#223; so oft gerade im 
+weichsten, wohligsten Rasen zugleich mit uns und unsern Gen&#252;ssen 
+die giftige Natter ihr Bett hegt.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-01">1/7</date> Freitag fr&#252;h.&#8213; Mit <persName key="pNt_01233" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName> einige Mal zusammengekommen &#8213; 
+gestern kam zu meiner gr&#246;&#223;ten Freude <persName key="pNt_01234" ref="#p_14386"><forename>Eugen</forename></persName> an, mit ihm, <persName key="pNt_01235" ref="#"><forename>Fritz</forename></persName>, 
+<persName key="pNt_01236" ref="#p_21591"><forename>Karl</forename></persName> <persName key="pNt_01237" ref="#p_21591"><surname>Z.</surname></persName> und <persName key="pNt_01238" ref="#p_21144"><forename>Emil</forename> <surname>W.</surname></persName> bis tief in die Nacht beisammen gewesen.&#8213; Den 
+Mittwoch mit <persName key="pNt_01239" ref="#p_13352"><surname>Bachmann</surname></persName> verbracht.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-09">9/7</date> Samstag.&#8213; Die letzten Tage bis Mitternacht herumgekneipt etc. &#8213; 
+<persName key="pNt_01240" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> einige Mal gesprochen &#8213; Th.&#8213;</p>
+<p xml:space="preserve" rend="indent">Wenn ich nun zur&#252;ckblicke auf mein zweites Universit&#228;tsjahr, das 
+soeben verendet, so bietet sich ein monotones Bild dar &#8213; Es ist absolut 
+von keinem Fortschritt zu erz&#228;hlen &#8213; ich war weder wissenschaftlich 
+th&#228;tig &#8213; noch literarisch &#8213; ja in Bezug auf die Poesie geh&#246;rt das 
+verflossene Jahr zu den &#228;rmsten meines allerdings erst 19j&#228;hrigen 
+Lebens. Mit einem Worte, &#8213; ich leistete verschwindend wenig. 
+Intimere Verh&#228;ltnisse bildeten sich mit <persName key="pNt_01241" ref="#p_17613"><forename>Hermann</forename> <surname>L.</surname></persName> und <persName key="pNt_01242" ref="#"><forename>Fritz</forename> <surname>K.</surname></persName>, zwei 
+Medicinern aus.&#8213; Ein unaufh&#246;rliches Gef&#252;hl der Unbefriedigung 
+schlich mir durch Hirn und Herz &#8213; meine Ideen wurden immer 
+pessimistischer &#8213; ich unbeschreiblich unzufrieden mit mir selber und 
+mit allem ringsum. Das Elend des Lebens konnt&#8217; ich aus tausend 
+kleinen &amp; gro&#223;en Dingen ersehen, obzwar ich selbst noch vollkommen 
+<pb n="106"/>
+<seg type="header"><fw place="top_left" type="pageNum">106</fw> <fw place="top_center"><date type="range">1881: VII 9 - VII 16</date></fw></seg>
+davon verschont geblieben war &#8213; In jeden Freudenkelch sah ich die 
+Naturgesetze und die zuf&#228;lligen Umst&#228;nde ihren Tropfen Wermut 
+gie&#223;en und war wirklich keinen Moment lang wirklich heiter, 
+sondern schwankte von ausgesprochener Mi&#223;stimmung zu &#252;berm&#252;tiger 
+Lust hin&#252;ber &#8213; wo mir aber stets von der erstern viel mehr zu theil 
+ward als von der letztern.&#8213; <persName key="pNt_01243" ref="#p_20204"><surname>Sonnenthals</surname></persName> Brief deprimirte mich auch 
+geh&#246;rig &#8213; &#8213; Das Verh&#228;ltnis mit <persName key="pNt_01244" ref="#p_17368"><forename>F.</forename></persName> verbla&#223;te nach und nach, aber nicht 
+ganz &#8213; und erst vor kurzem spielte es in helleren Farben &#8213;</p>
+<p xml:space="preserve" rend="indent">Sonst w&#228;re nicht viel vom Verkehr mit dem andern Geschlechte zu 
+erz&#228;hlen <milestone rend="3dots" type="symbol"/> Mein Nervensystem befindet sich im elenden Zustand, was 
+noch schlimmer wurde, dadurch da&#223; mein <rs type="allusively" xml:id="rst_00020">Vater</rs> dasselbe f&#252;r absolut 
+krank erkl&#228;rte &#8213; Die Luft <placeName type="city" xml:id="pl_00202" ref="#place_23a3951726f7dafaf2c5fa4dc957ddae">Wiens</placeName> und die ganze Existenz lastet 
+dr&#252;ckend auf mir &#8213; es sind wahrhaftig Momente, wo ich mir kaum zu 
+helfen wu&#223;te &#8213; Nun aber hab&#8217; ich manches vor. Erstens reis&#8217; ich 
+morgen mit <persName key="pNt_01245" ref="#"><forename>Fritz</forename></persName> ab &#8213; ins Gebirge &amp; zweitens ergeb ich mich sobald 
+ich (in 14 Tagen) zur&#252;ck bin, einem ernsten Studium f&#252;rs Rigorosum.&#8213; 
+Aber &#8213; was wird dadurch besser &#8213; ? Ich m&#252;&#223;te was erhebendes 
+erleben &#8213; den Himmlischen Dank, da&#223; ich wenigstens auf und davon 
+gehe, wenn auch nur f&#252;r kurze Zeit.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-10">10/7</date> Sonntag fr&#252;h.&#8213; Ich merke doch, wenn ich so unter meinen 
+Schriften bl&#228;ttre, da&#223; mir unter allen Dingen am meisten meine 
+Unth&#228;tigkeit in der Poesie die Existenz verleidet &#8213; Sollte ich doch 
+zum Dichter geboren sein, woran ich in der letzten Zeit zu denken 
+kaum mehr die Stimmung finden konnte &#8213; ? Wenn ich heute nur auf 
+unbegrenzte Zeit wegreisen k&#246;nnte &#8213; aber in k&#252;rze wieder zur&#252;ck 
+sein und zu einem doch nur zum geringsten Theil interessanten Rigorosum 
+studiren m&#252;ssen &#8213; &#8213;</p>
+<p xml:space="preserve" rend="center">Reise:</p>
+<p xml:space="preserve" rend="indent">Abend Abreise.&#8213; <placeName type="city" xml:id="pl_00203" ref="#place_ea6515eca27ae68c06c82e8cc2a6d318">Salzburg</placeName> </p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-11">Montag 11.</date> <placeName type="city" xml:id="pl_00204" ref="#place_ea6515eca27ae68c06c82e8cc2a6d318">Salzburg</placeName> &#8213; <placeName type="city" xml:id="pl_00205" ref="#place_10610ec60fcdfbccb325e1eec16a82ad">Berchtesgaden</placeName> (Salzbergwerk). <placeName type="lake" xml:id="pl_00206" ref="#place_7ed4496167f8edc24d094798be1c9cc8">K&#246;nigssee</placeName>. (Fu&#223;tour.)</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-12">Dinstag 12.</date> Rundfahrt; <placeName type="lake" xml:id="pl_00207" ref="#place_51b85b043b4723dd90172fa3e1144866">Obersee</placeName>, <placeName type="city" xml:id="pl_00208" ref="#place_c53290a5b61793c14730914e3a95d48b">St.Bartolom&#228;</placeName>; <placeName type="lake" xml:id="pl_00209" ref="#place_7ed4496167f8edc24d094798be1c9cc8">K&#246;nigssee</placeName> &#8213; <placeName type="city" xml:id="pl_00210" ref="#place_f7688f95685985f806fab40e78596fe8">Hallein</placeName>. 
+(Fu&#223;tour.)</p>
+<p xml:space="preserve" rend="indent"><placeName type="city" xml:id="pl_00211" ref="#place_f7688f95685985f806fab40e78596fe8">Hallein</placeName> &#8213; <placeName type="city" xml:id="pl_00212" ref="#place_da917b2d10cfdda007fe6b33af58c202">Golling</placeName> (Eisenbahn).</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-13">Mittwoch 13.</date> <placeName type="city" xml:id="pl_00213" ref="#place_da917b2d10cfdda007fe6b33af58c202">Golling</placeName> &#214;fen, Wasserfall, (Fu&#223;tour) <placeName type="city" xml:id="pl_00214" ref="#place_da917b2d10cfdda007fe6b33af58c202">Golling</placeName> &#8213; <placeName type="city" xml:id="pl_00215" ref="#place_4e4ebd22030e3e4a57e148e0b6df3bb0">St. Johann</placeName>. 
+<placeName type="mountain" xml:id="pl_00216" ref="#place_ada8084a1dd65bd7ec0f037be05afd9b">Lichtensteinklamm</placeName> &#8213; <placeName type="city" xml:id="pl_00217" ref="#place_a3c7fe0abd84cd0be2c8339f5fb2a969">Lend</placeName>. <persName key="pNt_01246" ref="#p_17116"><forename>Paul</forename> <surname>Krause</surname></persName>.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-14">Donnerstag 14.</date> <placeName type="city" xml:id="pl_00218" ref="#place_a3c7fe0abd84cd0be2c8339f5fb2a969">Lend</placeName> &#8213; <placeName type="city" xml:id="pl_00219" ref="#place_8d52cda5b0caaafb17915b780d894888">Gastein</placeName> (Wagen) <placeName type="city" xml:id="pl_00220" ref="#place_8d52cda5b0caaafb17915b780d894888">Gastein</placeName> &#8213; <placeName type="city" xml:id="pl_00221" ref="#place_0f7cf39acda1bf32c1aee91e4ce7b3c5">B&#246;ckstein</placeName>.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-15">Freitag 15.</date> <placeName type="city" xml:id="pl_00222" ref="#place_0f7cf39acda1bf32c1aee91e4ce7b3c5">B&#246;ckstein</placeName> &#8213; <placeName type="city" xml:id="pl_00223" ref="#place_160b5b00de22ae4c96a1e90460b8c441">Mallnitz</placeName> (<placeName type="mountain" xml:id="pl_00224" ref="#place_545f7ec8bc1325bdac82810a658c0639">Na&#223;feldtauern</placeName>) &#8213; <placeName type="city" xml:id="pl_00225" ref="#place_fed0640715fd3a0b37041bc44191bbf0">Obervellach</placeName> 
+(Fu&#223;tagereise).</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-16">Samstag 16.</date> <placeName type="city" xml:id="pl_00226" ref="#place_fed0640715fd3a0b37041bc44191bbf0">Obervellach</placeName> &#8213; <placeName type="city" xml:id="pl_00227" ref="#place_235bb2764e0db2935b53aa66c95dda96">Winklern</placeName> &#8213; <placeName type="city" xml:id="pl_00228" ref="#place_6924ee63c56474bfac826b3b7e0714cd">Heiligenblut</placeName> (gefahren).</p>
+<pb n="107"/>
+                <seg type="header">
+                    <fw place="top_center">
+                        <date type="range">1881: VII 17 - VIII 30</date>
+                    </fw> <fw place="top_right" type="pageNum">107</fw>
+                </seg>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-17">Sonntag 17.</date> <placeName type="city" xml:id="pl_00229" ref="#place_6924ee63c56474bfac826b3b7e0714cd">Heiligenblut</placeName>, Pasterze, Bergerth&#246;rl &#8213; <placeName type="city" xml:id="pl_00230" ref="#place_d88cb933fd1ac82146b798ab933c837c">Kals</placeName> (lOst&#252;ndige 
+Fu&#223;partie).</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-18">Montag 18.</date> <placeName type="city" xml:id="pl_00231" ref="#place_d88cb933fd1ac82146b798ab933c837c">Kals</placeName> &#8213; <placeName type="city" xml:id="pl_00232" ref="#place_2011d9fb5f08c44e869959081a52585e">Huben</placeName> (Fu&#223;partie) <placeName type="city" xml:id="pl_00233" ref="#place_2011d9fb5f08c44e869959081a52585e">Huben</placeName> &#8213; <placeName type="city" xml:id="pl_00234" ref="#place_4d20f079bfe1a95d5595e8064393ab40">Lienz</placeName> (Fahrt).</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-19">Dinstag 19.</date> <placeName type="city" xml:id="pl_00235" ref="#place_4d20f079bfe1a95d5595e8064393ab40">Lienz</placeName> &#8213; <placeName type="city" xml:id="pl_00236" ref="#place_75241beccf4ee2461aac8b48c394922f">Toblach</placeName> &#8213; <placeName type="city" xml:id="pl_00237" ref="#place_4d20f079bfe1a95d5595e8064393ab40">Lienz</placeName> &#8213; <placeName type="city" xml:id="pl_00238" ref="#place_f1efe1f6313c4676413f70db8feb79f6">Spittal</placeName> &#8213; <placeName type="city" xml:id="pl_00239" ref="#place_a34f3edea7fc20cc4881bf4f5a7ac8ac">Millstatt</placeName>. (Fahrten.)</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-20">Mittwoch 20.</date> <placeName type="lake" xml:id="pl_00240" ref="#place_dcbb398efe15159311bf100f3e394aa7">Millst&#228;ttersee</placeName>. <persName key="pNt_01247" ref="#p_21158"><surname>Weilen&#8217;s</surname></persName>, <persName key="pNt_01248" ref="#p_17098"><surname>Kraus</surname></persName>.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-21">Donnerstag 21.</date> <placeName type="lake" xml:id="pl_00241" ref="#place_dcbb398efe15159311bf100f3e394aa7">Millst&#228;ttersee</placeName>.&#8213; <placeName type="city" xml:id="pl_00242" ref="#place_0d630f309cd8eaead4c6693378f162fb">Villach</placeName>.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-07-22">Freitag 22.</date> <placeName type="city" xml:id="pl_00243" ref="#place_0d630f309cd8eaead4c6693378f162fb">Villach</placeName> &#8213; <placeName type="city" xml:id="pl_00244" ref="#place_b4e224f0caf47c0f57802484c88cb858">P&#246;rtschach</placeName>. <placeName type="lake" xml:id="pl_00245" ref="#place_ccd2a8ffe72453fd32a08412ff1ff875">W&#246;rthersee</placeName>. <persName key="pNt_01249" ref="#p_15145"><surname>Frankl&#8217;s</surname></persName>. Abend 
+Abfahrt.</p>
+<p xml:space="preserve">Samstag fr&#252;h. Ankunft <placeName type="city" xml:id="pl_00246" ref="#place_1b388e3352c32b76b8d975c4d3625070">Wien</placeName>.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-08-01">1/8</date> Montag.&#8213; Ich habe ein wenig Physiologie in der vergangnen Woche 
+studiert; scheine aber gleich wieder faul zu werden.</p>
+<p xml:space="preserve" rend="indent">&#8213; weary.&#8213;</p>
+<p xml:space="preserve" rend="indent">Gestern heitere Partie mit <persName key="pNt_01250" ref="#p_17613"><forename>Hermann</forename></persName> &amp; <persName key="pNt_01251" ref="#p_14386"><forename>Eugen</forename></persName>. Im allgemeinen nichts 
+weniger als heiter <milestone rend="3dots" type="symbol"/> Immer n&#252;chterner &#8213; alle m&#246;glichen Menschen 
+zuwider &#8213; alle Dinge &#8213; keine Freude &#8213; &#8213; nichts erhebendes &#8213; die 
+alte Geschichte &#8213; zum davon laufen &#8213; aber bis tief in die Welt &#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-08-22">22/8</date> Montag. Heute fr&#252;h kehrte ich von einem 14t&#228;gigen Aufenthalt 
+in <placeName type="city" xml:id="pl_00247" ref="#place_c2ad928214981e457405589604924059">Ischl</placeName> (en fam.) zur&#252;ck. Matt. Ein paar neue Bekanntschaften. stud. 
+jur. <persName key="pNt_01252" ref="#p_20668"><surname>Tennenbaum</surname></persName> z. B.&#8213; die pikante Wittwe <persName key="pNt_01253" ref="#p_20495"><roleName>Frau</roleName> <forename>Str.</forename></persName> &#8213;</p>
+<p xml:space="preserve" rend="indent">Verkehr mit <persName key="pNt_01254" ref="#p_17904"><forename>Julie</forename> <surname>Jellinek</surname></persName>. Ausfl&#252;ge. <placeName type="city" xml:id="pl_00248" ref="#place_6c77351074b8699987e7f04e7856b3ab">Hallstatt</placeName>, <placeName type="lake" xml:id="pl_00249" ref="#place_096fe15a391b374b49743494cd0f762d">Grundlsee</placeName> &#8213; 
+<persName key="pNt_01255" ref="#p_20204"><surname>Sonnenthal</surname></persName> &#8213; &#252;ber <placeName type="lake" xml:id="pl_00250" ref="#place_908fa2dca685e016b146ab3e75b842ad">Mond-</placeName>, <placeName type="lake" xml:id="pl_00251" ref="#place_cf3852a9caa7e6fa92cb96ed9e5643c1">Wolfgang-</placeName> &amp; <placeName type="lake" xml:id="pl_00252" ref="#place_00d8fc87f2dce5826effe3206e02b3eb">Attersee</placeName>.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Tod <persName key="pNt_01256" ref="#p_19211"><surname>Reusches</surname></persName>.&#8213; Todtsagung meines Onkels Dr. <persName key="pNt_01257" ref="#p_17899"><forename>Edm.</forename> <surname>M.</surname></persName> &#8213; Brand 
+des czech. Nationaltheaters.&#8213;</p>
+<p xml:space="preserve" rend="indent">R&#252;ckkehr in der gew&#246;hnlichen (geradezu hypochondrischen) Verstimmung 
+und Zustand geistiger, zum Theil sogar k&#246;rperl. Depression. Wie sich 
+aufdammen [!]? Da die Zeit &#8213; und Stimmung zu liter. Arbeit fehlt durch 
+Wissenschaft? Habe ja sowieso jetzt Rigorosum. Muss auch mehr im freien 
+herumvagiren, &#8213; wom&#246;glich weniger anspruchsvoll werden &#8213; &#8213; Mich auf 
+Tod &amp; Leben am&#252;siren? Verbieten mir die Verh&#228;ltnisse. Muss halt 
+weiterd&#228;mmern.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-08-30">30/8</date> Dinstag.&#8213; Lese jetzt <persName key="pNt_01258" ref="#p_13841"><surname>B&#246;rnes</surname></persName> <bibl>Briefe aus <placeName type="city" xml:id="pl_00253" ref="#place_e20d37a5d7fcc4c35be6fc18a8e71bfa">Paris</placeName></bibl>. Regen mich sehr an.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Sonst langeweile ich mich. Noch dazu auf gar keine am&#252;sante Weise.&#8213;</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01259" ref="#p_14386"><forename>Eugen</forename></persName> thut auch gar nichts. Wenn man &#252;ber seine Aussichten mit 
+ihm spricht, d. h. &#252;ber ihre Vagheit, so wird er insolent.&#8213; <persName key="pNt_01260" ref="#p_18766"><forename>Jacques</forename></persName> ist 
+sich immer gleich; fad und ziemlich einf&#228;ltig.&#8213; <persName key="pNt_01261" ref="#p_13352"><surname>Bachmann</surname></persName> lebt auch 
+so hin und ist dabei gescheidt; eines so unangenehm wie das andere.&#8213; 
+<persName key="pNt_01262" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> geht wahrscheinlich nach <placeName type="city" xml:id="pl_00254" ref="#place_b181c43993de481ea462a2bfe11f0a1b">Cairo</placeName>, ist soidisant verliebt (<persName key="pNt_01263" ref="#"><forename>Jeanne</forename>
+<pb n="108"/>
+<seg type="header"><fw place="top_left" type="pageNum">108</fw> <fw place="top_center"><date type="range">1881: VIII 30 - IX 13</date></fw></seg>
+<surname>B.</surname></persName>), nimmt englische Stunden bei <persName key="pNt_01264" ref="#p_13352"><surname>Bachm.</surname></persName>, arbeitet flei&#223;ig im Bureau, 
+isst ungeheuer viel und ist ein ganz lieber Kerl. <persName key="pNt_01265" ref="#p_19811"><forename>Sigmund</forename></persName> liess sich 
+neulich sehen; er behauptet, Matura gemacht zu haben.&#8213; <persName key="pNt_01266" ref="#p_17613"><forename>Hermann</forename></persName> 
+philistert in <placeName type="district" xml:id="pl_00255" ref="#place_f5af0e4beb99b2ded62ac5ff72643954">Dornbach</placeName>.&#8213; <persName key="pNt_01267" ref="#"><forename>Fritz</forename></persName> war gestern herin; er ist riesig 
+affectirt und geizig; 2 Gedichte von ihm sind in der <bibl type="newspaper">Hausfrauenzeitung</bibl> 
+abgedruckt; eins hab ich gelesen, das war aber miserabel. Er ist literarisch 
+th&#228;tig. Bedeutendes wird er nie hervorbringen. Er ist eine ziemlich 
+begabte Natur und ein kleinlicher Charakter.&#8213; Mein <rs type="allusively" xml:id="rst_00021">Bruder</rs> studirt 
+flei&#223;ig zur Matura. Ich zum Rigorosum gar nicht. &#220;bermorgen, am 
+ersten beginne ich mit Macht.&#8213; <persName key="pNt_01268" ref="#p_21217"><forename>Adolf</forename></persName> bleibt stumm.&#8213; Das weibliche 
+Geschlecht zuckt aus monotonen Langeweile-Wolken um mich herum 
+&#8213; wie Blitze, die nicht treffen.</p>
+<p xml:space="preserve" rend="indent">&#8213; Einf&#228;lle hab&#8217; ich schon lange keine vern&#252;nftigen gehabt.&#8213; 
+Rauche viel. Virginier.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-09-13">13/9</date> Dinstag.&#8213; <persName key="pNt_01269" ref="#p_17368"><forename>Fany</forename></persName> ist wieder in <placeName type="city" xml:id="pl_00256" ref="#place_1b388e3352c32b76b8d975c4d3625070">Wien</placeName>. Ich sprach sie im <placeName type="park" xml:id="pl_00257" ref="#place_d7f977f9a16210838a0dd6b32f6fb25d">Volksgarten</placeName>. 
+Sie wie immer. Ich carikirte vern&#252;nftig.&#8213; Sie solle <persName key="pNt_01270" ref="#"><surname>L.</surname></persName> doch 
+heiraten; gem&#228;&#223;igt wurden die Gemeinheiten ihrer Eltern erw&#228;hnt &#8213; als 
+Taktlosigkeiten hingestellt.&#8213; Ich: Man m&#246;chte doch gern die Eltern 
+der Geliebten achten k&#246;nnen, traurig, wenn es unm&#246;glich gemacht 
+wird. Sie k&#246;nne sich (so ungef&#228;hr ihre Worte) nicht entschlie&#223;en, <persName key="pNt_01271" ref="#"><surname>L.</surname></persName> 
+zum Mann zu nehmen &#8213; da sie, so oft sie mich sehe &#8213; wieder schwach 
+werde &amp; eigentlich doch nur ich und ewig ich etc. etc. Ich ganz komisch 
+edel: sie solle mich vergessen, &#8213; w&#252;rde schon gelingen, u. &#228;. Phrasen. 
+Aber im Grund genommen &#8213; wenn ich auch von Leidenschaft nichts versp&#252;re 
+&#8213; sie steht mir immer noch am n&#228;chsten von allen Menschen.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Besuchte die Herbstrennen. Verlor jedesmal.&#8213; <persName key="pNt_01272" ref="#p_16625"><surname>K&#228;ser</surname></persName> ist ein sehr lieber, 
+angenehmer Mensch.&#8213; <persName key="pNt_01273" ref="#p_19685"><surname>Schik</surname></persName> las mir gestern einige Lustspielscenen vor. 
+Das erste Lustspiel (<persName type="fig" key="pNt_01274" ref="#"><forename>Emma</forename></persName>, <persName type="fig" key="pNt_01275" ref="#"><forename>Bertha</forename></persName>, der durch die Liebe gebesserte Dandy) 
+ein Schund. Das zweite ungeordnet, verwirrt aber voll Humor (Sport). 
+Die Elemente des dritten dankbar, die 1. fertige (exponirende) Scene 
+wohl gelungen.&#8213; Wir sind &#252;brigens sehr entgegengesetzt in unsern 
+literarischen Ideen, wie auch in unsrer Arbeitsweise. Aus unserm 
+gemeinschaftlichen Schreiben wird kaum was werden, obwohl er sehr 
+darauf dringt. Er ist doch gar zu wenig Poet.&#8213; Und ich bins doch, 
+und wenn ich noch zehn Jahre lang keine Feder anr&#252;hre und noch zehnmal 
+realistischer denke als jetzt.&#8213; <persName key="pNt_01276" ref="#p_15338"><surname>Luda&#223;y</surname></persName> fand nur an einzelnen Stellen 
+von <bibl type="self">Aus der Mode</bibl> Gefallen. Ich auch &amp; zw. an denselben. Meine Ruhe in 
+diesem Bezug &#8213; meine diesbez&#252;gliche horrende Unth&#228;tigkeit d&#252;rfte 
+au&#223;erordentlich wohlth&#228;tig auf mein 
+<pb n="109"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: IX 13 - IX 21</date></fw> <fw place="top_right" type="pageNum">109</fw></seg>
+k&#252;nftiges Schaffen wirken. Zum Rigorosum studier&#8217; ich noch immer 
+nicht ordentlich. Aber wird schon kommen.&#8213; Sonderbar k&#252;hl.&#8213; Sehne 
+mich doch nach was anderm als Billardspiel und gutem Tabak.&#8213; 
+Finanziell dumm! widerw&#228;rtig!</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-09-16">16/9</date> Freitag Abend.&#8213; Es ist doch sonderbar, dieses zuckende Leben, 
+diese nerv&#246;se Existenz &#8213; dieses Hintr&#228;umen.&#8213; Da&#223; man sich zu Zeiten 
+wie erwachend an den Kopf greift, um nur an sein Dasein zu glauben. 
+Ich studire jetzt m&#228;&#223;ig &#8213; Aber es wird nicht anders &#8213; Ich m&#246;chte doch 
+irgend etwas tiefes empfinden &#8213; oder mich am&#252;siren &#8213; entweder auf 
+den Grund des Meers hinunter nach herrlichen Muscheln suchen oder 
+wenigstens auf der Oberfl&#228;che lustig herumpl&#228;tschern im rauschenden, 
+blitzenden Gew&#228;sser &#8213; Aber zu dem einen fehlt mir nun die Taucherglocke 
+Phantasie &#8213; oder der tiefe Athem der Liebe &#8213; f&#252;rs andre sind meine 
+Arme gel&#228;hmt &#8213; und so lieg&#8217; ich wie ein zaghafter Kurgast in dem 
+Badeorte: daheim auf dem Ufersande und warte geduldig, bis es einer Welle 
+gef&#228;llt, &#252;ber mich zu sprudeln und eine ersehnte Muschel in meine 
+begehrende Hand zu werfen <milestone rend="3dots" type="symbol"/> nicht weniger dem Meere als mir selber 
+z&#252;rnend &#8213;</p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/> Was wird das n&#228;chste sein <milestone rend="3dots" type="symbol"/> frag ich manchmal, wenn es mir 
+just einf&#228;llt, mich um mich zu k&#252;mmern (zu oft!) <milestone rend="3dots" type="symbol"/> das n&#228;chste <milestone rend="3dots" type="symbol"/> 
+und da kommt es mir zu Zeiten wie eine Sehnsucht an <milestone rend="3dots" type="symbol"/> nach s&#252;&#223;er 
+Frauenliebe und nach dem lieblichen Haine der Musen, &#8213; nach meinem 
+eigenen vielleicht?<milestone rend="3dots" type="symbol"/> so da&#223; es eine Sehnsucht, wie wahrhaftiges, 
+bebendes Heimweh ist, mit der ich durch dieses elende 
+Pappelalleenlabyrinth meines Lebens hin und herspaziere, im gehen 
+schlafend, und &#8213; ein unausstehlich langweiliger Kauz, der sich am 
+liebsten selber davonlaufen m&#246;chte, immer dieselben Worte vor mich 
+hermurmelnd <milestone rend="3dots" type="symbol"/> nur mit immer schmerzlicherm Tonfall <milestone rend="3dots" type="symbol"/> mit immer 
+hoffnungsloserer Stimme <milestone rend="3dots" type="symbol"/> mit immer mattern Blicken.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-09-21">21/9</date> Mittwoch Mg.&#8213; Na<milestone rend="3dots" type="symbol"/> na<milestone rend="3dots" type="symbol"/> nur nicht gar so traurig, mein 
+bester! <milestone rend="3dots" type="symbol"/></p>
+<p xml:space="preserve" rend="indent">Ja richtig: <persName key="pNt_01277" ref="#"><roleName>Dr.</roleName> <surname>Z.</surname></persName> fragte dieser Tage seinen Sohn <persName key="pNt_01278" ref="#p_21591"><forename>Karl</forename></persName>, was ich 
+studire. &#8222;Medicin&#8220; &#8213; Ach ja &#8213; sein Vater etc. Darauf <persName key="pNt_01279" ref="#p_21591"><forename>Karl</forename></persName>: er glaube, 
+ich werde nicht in <placeName type="city" xml:id="pl_00258" ref="#place_1b388e3352c32b76b8d975c4d3625070">Wien</placeName> bleiben, sondern auswandern. Darauf der 
+Doktor: Da muss er aber aufh&#246;ren, in <persName key="pNt_01280" ref="#p_17368"><forename>Fanny</forename></persName> verliebt zu sein &#8213; <persName key="pNt_01281" ref="#p_21591"><forename>Karl</forename></persName> 
+bestritt das Vorhandensein dieser Liaison. Sein Papa liess es sich 
+nicht ausreden &amp; meinte: Man sieht ja, wenn sie beisammen stehn, 
+beide seufzen &#8213; und dann hat ja <persName key="pNt_01282" ref="#p_17368"><forename>Fanny</forename></persName> dem <persName key="pNt_01283" ref="#"><surname>L.</surname></persName> direct auf seinen 
+Heiratsantrag erwidert, sie k&#246;nne ihn nicht heiraten, da sie mich 
+liebe.&#8213; So der Doktor. Offenbar ist seine Quelle kein andrer als 
+<pb n="110"/>
+<seg type="header"><fw place="top_left" type="pageNum">110</fw> <fw place="top_center"><date type="range">1881: IX 21 - IX 30</date></fw></seg>
+<persName key="pNt_01284" ref="#"><roleName>Herr</roleName> <surname>R.</surname></persName></p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-09-27">27/9</date> Dinstag Abend.&#8213; In der letzten Zeit gelesen <persName key="pNt_01285" ref="#p_17687"><surname>Lorms</surname></persName> &#8222;<bibl>Erz&#228;hlungen 
+des Heimgekehrten</bibl>&#8220;.</p>
+<p xml:space="preserve" rend="indent">&#8213; Secire.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-09-28">28/9</date> Mittwoch Abend.&#8213; Alles auseinander &#8213; Wills denn nicht anders 
+werden &#8213; ? Und ward doch theilweise! ohne sich zu bessern!&#8213;</p>
+<p xml:space="preserve" rend="indent">Bei <persName key="pNt_01286" ref="#"><surname>M.s</surname></persName>. <persName key="pNt_01287" ref="#"><forename>Fanny</forename> <surname>R.</surname></persName> Ihre Eltern. Nichts. Sie war sehr erregt. Ich gar 
+nicht. <persName key="pNt_01288" ref="#p_21044"><surname>Wahle</surname></persName>; <persName key="pNt_01289" ref="#p_17712"><surname>Lublin</surname></persName> &#8213; <persName key="pNt_01290" ref="#p_21591"><forename>Karl</forename></persName> Z.&#8213; <persName key="pNt_01291" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName>, die in <placeName type="city" xml:id="pl_00259" ref="#place_d533f22e7175d6063cb4c4286fb92c0c">Gmunden</placeName> sehr gro&#223;e 
+Erfolge sich ersang &#8213; begleitete mich zur Th&#252;r.&#8213; Sie f&#252;hlte mit, ohne 
+da&#223; ich eigentlich was f&#252;hlte. Sie sprach von &#8222;gesellschaftlichen 
+Unf&#228;llen&#8220;, &#8222;allgemeiner Unordnung&#8220; <milestone rend="3dots" type="symbol"/> &#8222;ich h&#228;tte mich nicht 
+behaglich (wie sonst) gef&#252;hlt&#8220; &#8213; solle das n&#228;chste Mal nicht 
+melancholisch sein <milestone rend="3dots" type="symbol"/> indem sie stillschweigend meinte, <persName key="pNt_01292" ref="#p_17368"><forename>F&#228;nnchens</forename></persName> 
+Dortsein, ihre Eltern, <milestone rend="3dots" type="symbol"/> Erinnerungen <milestone rend="3dots" type="symbol"/> h&#228;tten mich verstimmt. War 
+eigentlich nicht so recht der Fall<milestone rend="3dots" type="symbol"/></p>
+<p xml:space="preserve" rend="indent">&#8213; <persName key="pNt_01293" ref="#"><forename>Thilda</forename></persName> war da.&#8213; <persName key="pNt_01294" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> &#8213; findet mich ver&#228;ndert <milestone rend="3dots" type="symbol"/> zu meinem 
+Nachtheil <milestone rend="3dots" type="symbol"/> schiebt es auf <persName key="pNt_01295" ref="#p_18766"><forename>Jacques</forename></persName>, <persName key="pNt_01296" ref="#p_14386"><forename>Eugen</forename></persName>; die ihm riesig unsympathisch 
+sind. &#220;brigens verlieren diese beiden seit einiger Zeit stark in 
+meinen Augen. Auch ist mein Verkehr mit ihnen k&#252;hl.&#8213; Alles so <milestone rend="3dots" type="symbol"/> 
+<persName key="pNt_01297" ref="#p_13352"><surname>Bachmann</surname></persName> wird mir auch unter den H&#228;nden kleiner <milestone rend="3dots" type="symbol"/> er ist 
+ungebildet, ein Aufschneider &#8213; liebensw&#252;rdig trotz alledem; manche 
+angenehme Z&#252;ge &#8213; verliert aber auch stark &#8213; Noch ein Monat <milestone rend="3dots" type="symbol"/> &amp; ich 
+sehe nur mehr seine Fehler! &#8213; Dem <persName key="pNt_01298" ref="#p_21217"><forename>Adolf</forename></persName> schrieb ich vor einiger Zeit 
+auf seine langweiligen unz&#228;hlige Mal wiederholten Klagen &amp; Anklagen, 
+wegen meiner Faulheit im Briefschreiben, die er in pathetischer 
+Weise als gro&#223;es Vergehen, als &#8222;Schlechtigkeit&#8220; hinstellte, eine 
+energische Antwort, auf die hin er sich noch nicht hat vernehmen lassen. 
+Am 8. 10. soll er kommen <milestone rend="3dots" type="symbol"/> Auch mit ihm also mattes Verh&#228;ltnis. 
+<persName key="pNt_01299" ref="#"><forename>Fritz</forename> <surname>K.</surname></persName> verbreitet &#252;ber sich mit gewohnter Affectation, er sei 
+momentan menschenscheu, ungl&#252;cklich, literarisch besch&#228;ftigt, 
+gl&#252;cklich <milestone rend="3dots" type="symbol"/> u. s. w. L&#228;&#223;t sich also seiner Rolle getreu nicht im Caf&#233; sehn 
+und hat dabei das Bene, seinem Geiz nach Herzenslust fr&#246;hnen zu 
+k&#246;nnen. <persName key="pNt_01300" ref="#"><forename>Hermann</forename></persName> bliebe &#252;brig <milestone rend="3dots" type="symbol"/> aber augenblicklich besteht keine 
+engere Verbindung; so lieb wir uns auch gegenseitig sind.&#8213; &#8213; Werde 
+mich, wie es scheint, doch wieder an <persName key="pNt_01301" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> schlie&#223;en &#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; H&#252;bsche Claviertrioidee (Clavier, Violine, Violoncell).</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01302" ref="#p_20643"><forename>Richard</forename> <surname>Tausenau</surname></persName> bei Militas genommen. Hier darf die Andeutung &#8222;<persName key="pNt_01303" ref="#p_17232"><roleName>Frau</roleName> 
+<surname>L.</surname></persName>&#8220; nicht fehlen.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-09-30">30/9</date> Freitag.&#8213; Gestern wurde ich assentirt, tauglich befunden &#8213; und 
+bin in diesem Momente beurlaubter Einj&#228;hrig-Freiwilliger im Inf.-Regiment 
+<pb n="111"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: IX 30 - X 4</date></fw> <fw place="top_right" type="pageNum">111</fw></seg>
+Hoch &#8213; und Deutschmeister, Nr. 4.&#8213; 
+Nachmittag im <milestone rend="3dots" type="symbol"/>garten &#8213; mit <persName key="pNt_01304" ref="#p_16580"><forename>Marie</forename></persName> <persName key="pNt_01305" ref="#p_16580"><forename>J.</forename></persName> Genussvoll! Herrliches Gekose! 
+wunderbare K&#252;sse. Mit einer Art feurigem Raffinement meiner- und 
+hingebender S&#252;&#223;igkeit ihrerseits.&#8213; <persName key="pNt_01306" ref="#p_16580"><forename>Marie</forename></persName> <persName key="pNt_01307" ref="#p_16580"><forename>J.</forename></persName> ist ein im Dorf 
+auferzogenes M&#228;dchen; aber durch die N&#228;he der Gro&#223;stadt, den 
+h&#228;ufigen Verkehr mit ihren da lebenden Verwandten und den 
+Wohlstand im eigenen Hause hat sie so manches angenommen, was das 
+Bild einer Dorfsch&#246;nen ver&#228;ndert, ohne es aber zu tr&#252;ben. Sie hat ein 
+bischen Verstand. ein bischen Bildung und sehr viel Gem&#252;t: ein paar 
+St&#252;cke Biscuit, die in ein gro&#223;es Glas wei&#223;en Weins getaucht sind &#8213; 
+so da&#223; einem die Bildung und der Verstand im Munde schon zergeht, 
+wenn auch noch lange das Gem&#252;t auf der Zunge prickelt. 
+Sentimentalit&#228;t wechselt mit einem gewissen leichten &#220;bermut, beides aber 
+spielt in etwas abgebla&#223;ten Farben &#8213; Sie ist ein Typus, jedoch ein 
+verwischter. Ihr Herz ist nicht tief, aber klar <milestone rend="3dots" type="symbol"/> oder vielleicht so 
+klar, da&#223; man trotz der Tiefe bis auf den Grund sehen kann.&#8213; Ihre 
+geistigen Reize k&#246;nnen wenig fesseln &#8213; sie scheinen gleichsam nur als 
+letzte Striche auf dem Bilde dazusein w&#228;hrend ihr &#196;u&#223;eres <milestone rend="3dots" type="symbol"/> selbst 
+geistreichen M&#228;nnern gefallen k&#246;nnte. Eine mittelgro&#223;e, jugendlich 
+&#252;ppige Gestalt <milestone rend="3dots" type="symbol"/> aber ohne eine Spur von vornehmer Haltung, ein 
+frisches, rotes Gesicht mit einem leisen Anflug von Feinheit, stille 
+blaue Augen, &#8213; eine F&#252;lle von wundersch&#246;nem blondr&#246;thlichem Haar, 
+in Z&#246;pfen durcheinandergebunden &#8213; und vorn zierlich geschneckelt 
+&#252;ber die Stirne fallend &#8213; ein Mund, nicht sosehr zum Sprechen, als 
+zum K&#252;ssen geeignet, eine Zunge, wenig beweglich beim plaudern, 
+aber oft zwischen den Z&#228;hnen und Lippen hin und herfliegend, 
+besonders wenn sie irgend etwas neckisches sagt oder thut und mit sich 
+zufrieden ist.&#8213; Ein gew&#246;hnliches M&#228;dchen mit einem Wort, deren ich 
+aber hier doch mit ein paar Sylben gedenken mu&#223;te, da ihre 
+Erscheinung wenn auch nicht mit dem vollen, glutenden Athem der Liebe, 
+doch mit dem zarten Hauche duftender Sinnlichkeit an meiner 
+Jugend vorbeistreift.</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01308" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> &#8213; gewann gestern das Los (4159) zum Mitfahren auf 
+<persName key="pNt_01309" ref="#p_15492"><surname>Godards</surname></persName> Luftballon, durfte aber von Amts wegen, da er minorenn ist, 
+nicht mit, und verkaufte es um 60 Gulden. Heute sind die sonderbarsten 
+Sachen &#252;ber ihn in den Zeitungen zu lesen &#8213; er ist &#8222;Doktorand der 
+Philosophie&#8220;, &#8222;unternehmungslustig&#8220;, &#8222;Sohn des &#8213; 
+Oberlandesgerichtsrat <persName key="pNt_01310" ref="#p_21591"><surname>Z.</surname></persName> &#8213;&#8220; etc.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-10-04">4/10</date> Dinstag Nm.&#8213; Gestern reiste <persName key="pNt_01311" ref="#p_14386"><forename>Eugen</forename></persName> wieder nach <placeName type="city" xml:id="pl_00260" ref="#place_d0a6343a081a7335baa965ce4fd0845c">M&#252;nchen</placeName>.&#8213; 
+<persName key="pNt_01312" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> besuchten wir (er, ich, <persName key="pNt_01313" ref="#p_17613"><forename>Hermann</forename></persName>) vorher.Sp&#228;ter traf ich und 
+<pb n="112"/>
+<seg type="header"><fw place="top_left" type="pageNum">112</fw> <fw place="top_center"><date type="range">1881: X 4 - XI 12</date></fw></seg>
+sprach <persName key="pNt_01314" ref="#"><forename>Fanny</forename> <surname>R.</surname></persName>, <persName key="pNt_01315" ref="#"><roleName>Frau</roleName> <surname>R.</surname></persName>, <persName key="pNt_01316" ref="#p_19117"><forename>Rudolf</forename></persName>.&#8213; Vor kurzem nannte sich <persName key="pNt_01317" ref="#p_18320"><forename>Fanny</forename> 
+<surname>M.</surname></persName> dem <persName key="pNt_01318" ref="#p_14386"><forename>Eugen</forename></persName> gegen&#252;ber th&#246;richt: da&#223; sie geglaubt h&#228;tte, das 
+Verh&#228;ltnis zwischen mir und <persName key="pNt_01319" ref="#p_17368"><forename>Fanny</forename></persName> m&#252;sse ewig dauern!</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-10-16">16/10</date> Sonntag Abend.&#8213; Gestern kam <persName key="pNt_01320" ref="#p_14386"><forename>Eugen</forename></persName> wieder hier an. Warum? 
+&#8213; Warum ist er weggereist? &#8213; ? Vor 8 Tagen war ich bei <persName key="pNt_01321" ref="#p_18321"><surname>M.s</surname></persName>. Warum? 
+&#8213; Heute, soeben hab ich mir wieder ein paar <bibl type="self">Tageb&#252;cher</bibl> hergerichtet 
+&#8213; um sie morgen zu verbrennen &#8213; Warum? &#8213; Offenbar weil mir 
+sothane Existenz immer lappalienhafter vorkommt &#8213; Ein paar Thatsachen 
+hab ich mir aufnotirt &#8213; die ich mir just merken will &#8213; seinen Zweck 
+hat das Geschreibsel genugsam erf&#252;llt, indem es mich zur Zeit seines 
+Entstehens beruhigte &#8213; befreite &#8213; und so jung bin ich auch nicht mehr 
+&#8213; um zu glauben, da&#223; ich meinem Biographen vorarbeiten m&#252;sse<milestone rend="3dots" type="symbol"/></p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01322" ref="#"><name type="unclear">A.</name></persName><milestone rend="2dots" type="symbol"/> reizendes M&#228;dchen.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-11-06">6/11</date> Sonntag Mg.&#8213; &#220;bermorgen hab&#8217; ich Rigorosum aus Anatomie 
+(Practicum) &#8213; Kann wenig &#8213; <persName key="pNt_01323" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> in miserabler Situation. <persName key="pNt_01324" ref="#p_14386"><forename>Eugen</forename></persName> 
+&#8213; wei&#223; der Teufel was der thut, <persName key="pNt_01325" ref="#p_17613"><forename>Hermann</forename></persName> mir der liebste. Brauche 
+Laune und viel Geld &#8213; Ich bin schon verw&#246;hnt auf die Welt 
+gekommen. Langweile mich unbeschreiblich. <persName key="pNt_01326" ref="#p_18320"><forename>Fany</forename> <surname>M.</surname></persName> sprach ich ein paar 
+Mal.&#8213; Wann werd ich endlich &#8213; wenn auch nur auf Momente dieses 
+Leben lebenswerth finden. Glaube wieder f&#252;r die Wissenschaft nicht 
+geschaffen zu sein. Bin infernalisch oberfl&#228;chlich <milestone rend="3dots" type="symbol"/> aber &#8222;es ist eben 
+das Ungl&#252;ck, da&#223; der Schaum jedes Getr&#228;nkes schon nach dem 
+Getr&#228;nk selber schmeckt&#8220; <milestone rend="3dots" type="symbol"/> Jawohl &#8213; ganz oberfl&#228;chlich &#8213; wohl 
+Interesse am gro&#223;en ganzen &#8213; nicht f&#252;r die Details &#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-11-11">11/11</date> Freitag Nmg.&#8213; Bin am Dinstag 8. 11. beim Rigorosum gut 
+durchgekommen<milestone rend="3dots" type="symbol"/> Fange an zu verzweifeln. Aber in aller Stille. An 
+nichts Freude!&#8213;</p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/> Melancholie &#8213; wahre, wahrhaftige Melancholie <milestone rend="3dots" type="symbol"/> Liebe <milestone rend="3dots" type="symbol"/>? 
+W&#228;re Liebe etwas<milestone rend="3dots" type="symbol"/>?</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-11-12">12/11</date> Samstag Abend <milestone rend="3dots" type="symbol"/> Nehme <bibl type="self">dieses Blatt</bibl> her &#8213; um auf irgend eine 
+Weise &#8213; meine namenlose Langeweile <milestone rend="3dots" type="symbol"/> auszusprechen &#8213; und 
+wegzusprechen. Langeweile &#8213; ja &#8213; auf dem Punkt, wo sie beginnt, Schmerz 
+zu werden! Ich sage nicht: Weltschmerz. Die Welt schmerzt mich 
+nicht &#8213; Ich schmerze mich selber &#8213; ein ganz gew&#246;hnlicher Egoist <milestone rend="3dots" type="symbol"/> 
+ein unterhaltungss&#252;chtiger Mensch, der sich nach Zerstreuung sehnt 
+<milestone rend="3dots" type="symbol"/> ein sinnlicher Mensch &#8213; der nach s&#252;dlicher wilder Liebe lechzt &#8213; 
+vielleicht auch ein Mensch.&#8213; von Anlagen, von Geist &#8213; der nach dem 
+Kreise der Begabten sucht, in dem er sich wohl f&#252;hlen k&#246;nnte &#8213; gewiss 
+<milestone rend="3dots" type="symbol"/> ein unruhiger nerv&#246;ser &#8213; Mensch <milestone rend="3dots" type="symbol"/> dem nun einmal dies Nichtslieben 
+<pb n="113"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: XI 12 - XI 19</date></fw> <fw place="top_right" type="pageNum">113</fw></seg>
+&#8213; dieses Nichtserleben <milestone rend="3dots" type="symbol"/> diese verzweifelte todtenstille 
+Existenz nicht behagt<milestone rend="3dots" type="symbol"/> Es ist als ob man in einem zugenagelten 
+gl&#228;sernen Sarg durchs Dasein getragen w&#252;rde <milestone rend="3dots" type="symbol"/> &#8213; Im freien begraben! <milestone rend="3dots" type="symbol"/></p>
+<p xml:space="preserve" rend="indent">Ich glaube doch &#8213; da&#223; nun in meinem Seelenleben <milestone rend="3dots" type="symbol"/> 
+Sinnlichkeit <milestone rend="3dots" type="symbol"/> oder schminken wir lieber: Liebessehnsucht eine gro&#223;e Rolle 
+spielt &#8213; Ich bin tief darnieder gedr&#252;ckt &#8213; Es schmerzt mich, das im 
+zwanzigsten Jahre meines Lebens &#8213; mit dem heiligsten Ernste, der 
+tiefsten wahrhaftigsten Empfindung niederschreiben zu m&#252;ssen. Jede 
+Stunde Alleinsein findet mich verstimmt &#8213; ja melancholisch &#8213; beim 
+Spiel, &#8213; unter Leuten vergess&#8217; ichs. Aber so kann ich absolut keinen 
+fr&#246;hlichen, keinen stillheitern Gedanken fassen &#8213; ja verzweifeln 
+k&#246;nnt&#8217; ich oft &#8213; und wie das immer so weiter gehn soll &#8213;</p>
+<p xml:space="preserve" rend="indent">Morgen fang ich wieder zu studiren an. <milestone rend="3dots" type="symbol"/> Aber einmal muss es ja 
+besser werden.&#8213;</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01327" ref="#p_21591"><forename>Karl</forename> <surname>Z.</surname></persName> ist &#8213; nun auch gestrichen. Er benahm sich gemein gegen mich.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-11-19">19/11</date> Samstag Abend. Habe nat&#252;rlich diese ganze Woche wieder nichts 
+gelernt. Aber morgen in der That &#8213; und mit Eifer beginn&#8217; ich! <milestone rend="3dots" type="symbol"/>Obwohl 
+mich eigentlich augenblicklich die Medicin wenig freut. 
+<milestone rend="3dots" type="symbol"/>M&#246;chte doch wieder einmal so mit Ruhe &#8213; oder besser: mit 
+Leidenschaft dichterisch schaffen k&#246;nnen.&#8213; Hatte Widerw&#228;rtigkeiten zu 
+Hause. Irgend ein ungenannt sein wollender Schuft besch&#228;ftigt sich 
+damit, meinem <rs type="allusively" xml:id="rst_00022">Vater</rs> zeitweise mitzutheilen, ich h&#228;tte allgemein den 
+Ruf eines liederlichen Studenten; rauche, tr&#228;nke (!!!!!) viel <milestone rend="3dots" type="symbol"/> 
+verbringe viel Zeit im Wirthshaus (!!!) und Kaffeehaus. Mein <rs type="allusively" xml:id="rst_00023">Vater</rs> findet 
+nat&#252;rlich h&#246;chst unbegreiflich, da&#223; man auch nur 1 Mal in 14 Tagen 
+ins Wirthshaus mit ein paar Freunden zu gehen Lust haben kann, 
+wenn man &#8222;alles&#8220; zu Hause hat.&#8213; Ja alles &#8213; alles, nur nicht &#8213; 
+Zerstreuung, Abwechslung.&#8213; Dass selbst die gescheidtesten Menschen 
+immer ihre Portion Beschr&#228;nktheit von der g&#252;tigen Mutter Natur 
+mitkriegen. Aber das kommt, wenn man alles nach derselben Schablone 
+haben will.&#8213; &#8222;Dieser thut das &#8220; <milestone rend="3dots" type="symbol"/> und jener thut jenes &#8213; ich bin nun 
+aber einmal weder dieser, noch jener, sondern ein dritter. <milestone rend="3dots" type="symbol"/> Und bin 
+doch jetzt in der That nichts weniger als liederlich &#8213; Solid &#8213; bis zur 
+Melancholie.&#8213; Finanziell &#8213; scheu&#223;lich.&#8213; Ich sei ein Verschwender.&#8213; 
+Mit 5 Gulden w&#246;chentlich &#8213;! O ihr sogenannten G&#246;tter! &#8213;</p>
+<p xml:space="preserve" rend="indent">Sonntag 13/11 war <persName key="pNt_01328" ref="#p_18888"><forename>Laura</forename> <surname>P.s</surname></persName> Hochzeit mit einem gewissen 
+<persName key="pNt_01329" ref="#p_20279"><surname>Spitzer</surname></persName>. Sprach bei der Gelegenheit <persName key="pNt_01330" ref="#p_17368"><forename>Fanny</forename></persName>. <milestone rend="3dots" type="symbol"/> Zwei gleichgiltige Worte.&#8213;</p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/> Und so geht es halt alleweil fort. Sch&#246;n ist es nicht &#8213; aber es ist 
+<pb n="114"/>
+<seg type="header"><fw place="top_left" type="pageNum">114</fw> <fw place="top_center"><date type="range">1881: XI 19 - XI 25</date></fw></seg>
+nun einmal so.&#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Wenig, sehr wenig las ich im Verlauf des eben vergehenden Herbstes.&#8213; 
+<persName key="pNt_01331" ref="#p_15153"><surname>Franzos</surname></persName>, <bibl>stille Geschichten</bibl>. Neben recht gut empfundnem und 
+wiedergegebenem ganz l&#228;ppisches Zeug, wie z. B. die &#8222;Novelle&#8220; 
+&#252;ber &#8222;Dichteritis&#8220;.</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01332" ref="#p_13301"><surname>Auerbach</surname></persName>, <bibl>Unterwegs</bibl> &#8213; erinnre mich nur undeutlich mehr an diese 
+unbedeutenden Geschichten.</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01333" ref="#p_15169"><surname>Frenzel</surname></persName>, <bibl>die Uhr</bibl>, eine geschickt erz&#228;hlte, alte Geschichte.</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01334" ref="#p_13237"><surname>Anzengruber</surname></persName>, <bibl>Bekannte von der Stra&#223;e</bibl>, abgeschmacktes, langweiliges 
+Geschreibsel.</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01335" ref="#"><surname>Jokai</surname></persName>, <bibl>der Gefangene in den sieben Th&#252;rmen</bibl> &#8213; in der bekannten 
+phantastischen Manier dieses Autors erfunden &amp; vorgetragen.</p>
+<p xml:space="preserve" rend="indent"><persName key="pNt_01336" ref="#"><surname>G&#246;the</surname></persName>, <bibl>Werthers Leiden</bibl> &#8213; doch was ganz eigenes, was ganz andres!</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-11-25">25/11</date> Freitag Abend.&#8213; Eine Choristin vom <milestone rend="3dots" type="symbol"/>theater, <persName key="pNt_01337" ref="#p_15761"><forename>Gusti</forename></persName> hei&#223;t sie. 
+Prototyp einer Wienerin; reizende Gestalt &#8213; geschaffen zum tanzen &#8213; 
+ein M&#252;ndchen, das mich in seinen Bewegungen an das <persName key="pNt_01338" ref="#p_17368"><forename>F&#228;nnchens</forename></persName> 
+erinnert &#8213; geschaffen zum k&#252;ssen; &#8213; ein paar gl&#228;nzende lebhafte 
+Augen.&#8213; <milestone rend="3dots" type="symbol"/>Kleidung von einfachem Geschmack und der gewissen 
+Grisettengrazie <milestone rend="3dots" type="symbol"/> der Gang hin und her wiegend <milestone rend="3dots" type="symbol"/> behend und 
+unbefangen <milestone rend="3dots" type="symbol"/> die Stimme hell <milestone rend="3dots" type="symbol"/> die Sprache in nat&#252;rlichem Dialekt 
+vibrirend &#8213; <milestone rend="3dots" type="symbol"/>was sie spricht &#8213; nun &#8213; so wie sie eben sprechen kann, 
+ja muss &#8213; d.h. lebenslustig <milestone rend="3dots" type="symbol"/> mit einem leisen Anklang von 
+&#220;bereiligkeit<milestone rend="3dots" type="symbol"/> <milestone rend="3dots" type="symbol"/>&#8222;man ist nur einmal jung&#8220; meint sie mit halb 
+gleichgiltigem Achselzucken &#8213; &#8222;da gibts nichts zu vers&#228;umen&#8220; 
+denkt sie sich &#8213; das ist: Vernunft in die lichten Farben des S&#252;dens 
+getaucht.&#8213; <milestone rend="3dots" type="symbol"/> leichtsinnig &#8213; mit einem abwehrenden Anflug von 
+Spr&#246;digkeit <milestone rend="3dots" type="symbol"/> Sie erz&#228;hlt mit Ruhe von ihrem Liebhaber, mit dem 
+sie vor wenig Wochen gebrochen hat, erz&#228;hlt l&#228;chelnd, mit &#252;berm&#252;tigem 
+Tone, wie sie nun so viele die leicht mit ihr anzubinden gedenken &#8213; 
+zum Narren halte <milestone rend="3dots" type="symbol"/> was aber durchaus nichts franz&#246;sisch<milestone rend="3dots" type="symbol"/> 
+leidenschaftliches <milestone rend="3dots" type="symbol"/> d&#228;monisches an sich hat <milestone rend="3dots" type="symbol"/> sondern ganz heimlich 
+und humoristisch ber&#252;hrt (so lang man nicht selber der Narr ist). 
+Dabei dieses merkw&#252;rdige h&#228;usliche &#8213; wie sie z. B.<milestone rend="3dots" type="symbol"/> von ihrem 
+einstigen Liebhaber (<milestone rend="3dots" type="symbol"/> besass er sie <milestone rend="3dots" type="symbol"/>?) tadelnd bemerkt, er h&#228;tte 
+zu viel Karten gespielt &#8213; und man m&#252;sse sparsam sein u. s. w.&#8213; <milestone rend="3dots" type="symbol"/> 
+die gewissen obligaten Geschwister mit den Eltern zu Hause &#8213; die 
+tratschenden Nachbarn in den Nebengassen <milestone rend="3dots" type="symbol"/> jeden Moment der erste 
+Ton und auch eine ganze volkst&#252;mliche Melodie &#8213;</p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/> O welch ein Chaos schreib&#8217; ich da nieder <milestone rend="3dots" type="symbol"/> Ich habe wahrlich 
+<pb n="115"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: XI 25 - XI 27</date></fw> <fw place="top_right" type="pageNum">115</fw></seg>
+nicht &#252;bel Lust &#8213; einmal mit Mu&#223;e &#8213; <milestone rend="3dots" type="symbol"/> geordnet die Skizze zu solch 
+einem M&#228;dchen mir kurz hier zu entwerfen, &#8213; wie &#252;berhaupt eine 
+Reihe von Charakteren, wie ich ihnen als Typen begegnet bin, einer 
+correcten und lebendigen, dabei sich nicht so unverst&#228;ndlich 
+zerfasernden Aufzeichnung wohl werth w&#228;re.</p>
+<p xml:space="preserve" rend="indent">&#8213; Ich d&#252;rfte dieses M&#228;dchen, das dem oben entworfnen Bilde gleicht 
+&#8213; <milestone rend="3dots" type="symbol"/>wie eine wirkliche Person ihrem Abbild in einem Spiegel 
+voller Spr&#252;nge <milestone rend="3dots" type="symbol"/>&#8213; bald wiedersehen <milestone rend="3dots" type="symbol"/> und hoffe dann Gelegenheit 
+zu haben &#8213; und Grund,<milestone rend="3dots" type="symbol"/> noch ungeordneter &#252;ber sie zu sprechen <milestone rend="3dots" type="symbol"/> 
+Hinter mir t&#228;nzelte mit ihrer Freundin <persName key="pNt_01339" ref="#p_18180"><forename>Minna</forename></persName> <persName key="pNt_01340" ref="#p_14597"><forename>Leo</forename> <surname>E.</surname></persName>, ein neu 
+gewonnener liebensw&#252;rdiger Genosse, angehender Schauspieler einher.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-11-27">27/11</date> &#8213; oder 28. &#8213; 1 Uhr Nachts.&#8213;</p>
+<p xml:space="preserve" rend="indent">Ich habe <persName key="pNt_01341" ref="#p_15761"><forename>Gusti</forename></persName> nicht sonderlich richtig charakterisirt. Sie ist sehr 
+wenig Theaterblut &#8213; sie ist der Typus eines vorst&#228;dtischen Wiener 
+M&#228;dchens &#8213; ein reizendes Wesen, ein Schatz. Ich wei&#223; noch nicht, ob 
+meiner. Es kam nemlich ganz sonderbar &#8213; und nach langer Zeit ist es 
+wieder der M&#252;he werth, &#252;ber etwas zu berichten; <milestone rend="3dots" type="symbol"/> denn ganz klar 
+&amp; aufrichtig: Ich bin wieder verliebt.</p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/><persName key="pNt_01342" ref="#p_14597"><forename>Leo</forename> <surname>E.</surname></persName> und ich kamen um f&#252;nf auf den Ort des Rendezvous; und 
+lang liefen wir, ich mit <persName key="pNt_01343" ref="#p_15761"><forename>Gusti</forename></persName>, er mit <persName key="pNt_01344" ref="#p_18180"><forename>Minna</forename></persName>, in G&#228;rten &amp; Stra&#223;en 
+&amp; umher. <persName key="pNt_01345" ref="#p_15761"><forename>Gusti&#8217;s</forename></persName> erster &amp; letzter Liebhaber, der sie wahnsinnig gern 
+gehabt hat, hei&#223;t <persName key="pNt_01346" ref="#p_14205"><forename>Julius</forename> <surname>Chr.</surname></persName> Er kam ins Haus, und es gab allerlei 
+unangenehme Geschichten; Nachbarn schw&#228;tzten, die Eltern redeten 
+bald dies, bald jenes &#8213; und eines sch&#246;nen Tags nahm <persName key="pNt_01347" ref="#p_15761"><forename>Gusti</forename></persName> &#8213; 
+Morphium. Sie war ein paar Tage krank <milestone rend="3dots" type="symbol"/> und wurde eben wieder 
+gesund. Cyankali hatte sie auch zu Hause &#8213; und hat es noch immer. 
+Nun &#8213; so lebens&#252;berdr&#252;ssig, da&#223; sie Cyankali nahm, scheint sie 
+nicht gewesen zu sein; Morphium gen&#252;gte.&#8213; Vor kurzem kam es zwischen 
+ihr &amp; <persName key="pNt_01348" ref="#p_14205"><forename>Julius</forename></persName>, weil er zu viel mit leichten M&#228;dchen sich herumtrieb zum 
+Bruch &#8213; sie liebt ihn nicht mehr. Liebt ihn gar nicht mehr &#8213; ? Er hat 
+es schon erfahren, da&#223; ein andrer (ich) sie Freitag begleitete und 
+&#228;u&#223;erte sich irgend einer zwischen beiden stehenden Person 
+gegen&#252;ber, &#8222;<persName key="pNt_01349" ref="#p_15761"><forename>Gusti</forename></persName> h&#228;tte ja schon wieder Am&#252;sement &#8213; und er sei mit seiner 
+ersten Liebe <milestone rend="3dots" type="symbol"/> <persName key="pNt_01350" ref="#p_20699"><forename>Therese</forename></persName> <milestone rend="3dots" type="symbol"/> wieder recht zufrieden&#8220;.&#8213; <persName key="pNt_01351" ref="#p_14205"><forename>Julius</forename></persName> besass 
+<persName key="pNt_01352" ref="#p_15761"><forename>Gusti</forename></persName> nicht; sie ist rein.&#8213; &#220;ber <persName key="pNt_01353" ref="#p_18180"><forename>Minna&#8217;s</forename></persName> Unschuld wagt sie selbst nicht 
+deutlich zu sprechen <milestone rend="3dots" type="symbol"/> mir mi&#223;f&#228;llt dieses M&#228;dchen sehr &#8213; sie hat 
+etwas ordin&#228;res und passt zu <persName key="pNt_01354" ref="#p_15761"><forename>Gusti</forename></persName> gar nicht.&#8213; In <placeName type="district" xml:id="pl_00261" ref="#place_e08f67e87755f34f857023df12e0fde1">Mariahilf</placeName> oder 
+<placeName type="district" xml:id="pl_00262" ref="#place_82a764fddf35a8309e62c52b2bcc04a1">Neubau</placeName> gingen wir in ein Gasthaus. <persName key="pNt_01355" ref="#p_14597"><forename>Leo</forename></persName> spielte auf eine mich 
+anwidernde Art den Possenrei&#223;er &#8213; ich konnte nicht im entferntesten auch 
+nur l&#228;cheln, die M&#228;dchen am&#252;sirten sich.&#8213; Sonst ist <persName key="pNt_01356" ref="#p_14597"><forename>Leo</forename></persName> ein lieber, 
+<pb n="116"/>
+<seg type="header"><fw place="top_left" type="pageNum">116</fw> <fw place="top_center"><date type="range">1881: XI 27 - XI 29</date></fw></seg>
+wirklich ein sehr lieber und mir in kurzer Zeit wirklich werth 
+gewordner junger Mensch.&#8213; Ich merkte, da&#223; <persName key="pNt_01357" ref="#p_15761"><forename>Gusti</forename></persName> zwischen mir &amp; <persName key="pNt_01358" ref="#p_14597"><forename>Leo</forename></persName> zu 
+schwanken beginne. Als wir das Gasthaus verlie&#223;en, gestalteten sich 
+die Paare abwechselnd <milestone rend="3dots" type="symbol"/> <persName key="pNt_01359" ref="#p_15761"><forename>Gusti</forename></persName>, ich, &#8213; <persName key="pNt_01360" ref="#p_14597"><forename>Leo</forename></persName>, <persName key="pNt_01361" ref="#p_18180"><forename>Minna</forename></persName>, &#8213; <persName key="pNt_01362" ref="#p_15761"><forename>Gusti</forename></persName>, <persName key="pNt_01363" ref="#p_14597"><forename>Leo</forename></persName>, &#8213; 
+<persName key="pNt_01364" ref="#p_18180"><forename>Minna</forename></persName>, ich.&#8213; <persName key="pNt_01365" ref="#p_18180"><forename>Minna</forename></persName> ging mehr &amp; mehr ein &#8213; <persName key="pNt_01366" ref="#p_15761"><forename>Gusti</forename></persName> erhielt von <persName key="pNt_01367" ref="#p_14597"><forename>Leo</forename></persName> und 
+mir <milestone rend="3dots" type="symbol"/> je ein Liebesgest&#228;ndnis. Oder hab ich ihr zehn gemacht? 
+Dinstag Abend sehen wir sie wieder &#8213; bis dahin wird sie sich f&#252;r einen 
+von uns beiden entschieden haben<milestone rend="3dots" type="symbol"/> wird einem von uns beiden sagen, 
+da&#223; sie ihn liebe.&#8213; Ist die Sache komisch? Oder liegt etwas darin? 
+F&#252;r uns, die wir da mit spielen, gewiss &#8213; sehr viel sogar.&#8213; Dieses 
+&#8222;M&#228;del aus der Vorstadt&#8220; hat einen merkw&#252;rdigen, unerkl&#228;rlichen 
+Eindruck auf mich gemacht &#8213; und von <persName key="pNt_01368" ref="#p_16580"><forename>Marie</forename></persName> fand ich gestern 4 
+Rendezvous Briefe auf der Post &#8213; zu sp&#228;t abgeholt, manches vers&#228;umt 
+&#8213; und <persName key="pNt_01369" ref="#p_16580"><forename>Marie</forename></persName> ist &#8213; wahrhaftig sie ist h&#252;bscher <milestone rend="3dots" type="symbol"/> aber bei allen 
+Teufeln! ich bin in <persName key="pNt_01370" ref="#p_15761"><forename>Gusti</forename></persName> verliebt <milestone rend="3dots" type="symbol"/> und habe heut im Dominospiel 
+<milestone rend="3dots" type="symbol"/> Gl&#252;ck gehabt &#8213;</p>
+<p xml:space="preserve" rend="indent">Die Medicin w&#252;nsch&#8217; ich jetzt in die H&#246;lle. Ich h&#228;tte Lust, wieder 
+unerme&#223;lich faul zu werden.&#8213;</p>
+<p xml:space="preserve" rend="indent">Nat&#252;rlich ist es, da&#223; sich in meinem Hirn ganz unbewu&#223;t ein 
+<bibl type="self">Volksst&#252;ck</bibl> aufzubauen begonnen hat <milestone rend="3dots" type="symbol"/> in dessen Mitte ein M&#228;dchen 
+wie <persName key="pNt_01371" ref="#p_15761"><forename>Gusti</forename></persName> steht &#8213; die vorst&#228;dtischen Tanzschulen, die merkw&#252;rdige 
+schlecht und recht zusammengekittete H&#228;uslichkeit, die 
+Vertrauensseligkeit der Eltern, der Ledergalanteriewarenh&#228;ndler, der 
+&#8222;ins Haus kommt &#8220;, die verf&#252;hrte Freundin &#8213; alles kenn ich schon 
+so gut, ich bin an allen Orten so heimisch, mit allen Personen so wohl 
+bekannt<milestone rend="3dots" type="symbol"/></p>
+<p xml:space="preserve" rend="indent">Gestern vers&#246;hnte ich mich mit <persName key="pNt_01372" ref="#"><forename>Pepi</forename></persName>. Kneipten &#252;ber ein Dutzend 
+zusammen. &#8217;s war ganz fidel. <persName key="pNt_01373" ref="#p_17368"><forename>Fanny</forename></persName> sprach ich im Concert <persName key="pNt_01374" ref="#p_18659"><surname>Papier</surname></persName> <milestone rend="3dots" type="symbol"/> 
+<persName key="pNt_01375" ref="#p_17368"><forename>Fanny</forename></persName> <milestone rend="3dots" type="symbol"/> man k&#246;nnte dr&#252;ber tr&#228;umen <milestone rend="3dots" type="symbol"/> <persName key="pNt_01376" ref="#p_17368"><forename>Fanny</forename></persName><milestone rend="3dots" type="symbol"/>?</p>
+<p xml:space="preserve" rend="indent">Es ist doch drollig.&#8213;</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-11-29">29/11</date> Dinstag Abend.&#8213;</p>
+<p xml:space="preserve" rend="indent">Wir &#8213; <persName key="pNt_01377" ref="#p_14597"><forename>Leo</forename></persName> &amp; ich erschienen an der Stelle des Rendezvous. Bald 
+liess sich <persName key="pNt_01378" ref="#p_15761"><forename>Gusti</forename></persName> sehn. Sie war reizend, wunderh&#252;bsch.&#8213; Wir fragten sie 
+um ihre Entscheidung. Sie liess eine gute Weile fragen, und gab echt 
+m&#228;dchenhafte Antwort; <milestone rend="3dots" type="symbol"/>und als ich sie fragte: Lieben Sie &#252;berhaupt 
+einen von uns, erwiderte sie: &#8222;Gwiss, i wei&#223; nur no n&#246;t, wen?&#8213;&#8220;</p>
+<p xml:space="preserve" rend="indent">Eine Minute darauf wu&#223;te sies &#8213; &#8222;Sagen Sie doch, wer es ist&#8220; rief 
+<persName key="pNt_01379" ref="#p_14597"><forename>Leo</forename></persName> aus &#8213; &#8222;weisen Sie wenigstens mit der Hand auf ihn, ists der, der 
+zu Ihrer rechten oder der, der zu Ihrer linken steht &#8213;&#8220;</p>
+<p xml:space="preserve" rend="indent">Sie schwieg ein paar kurze Sekunden &#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; &#8222;Na <milestone rend="3dots" type="symbol"/> der <milestone rend="3dots" type="symbol"/>&#8220; und sah uns beide oder eigentlich keinen mit 
+<pb n="117"/>
+<seg type="header"><fw place="top_center"><date type="range">1881: XI 29 - XI 30</date></fw> <fw place="top_right" type="pageNum">117</fw></seg>
+schelmischem Aug an <milestone rend="3dots" type="symbol"/> und ein bischen versch&#228;mt &#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; &#8222;na meinetwegen <milestone rend="3dots" type="symbol"/> der <milestone rend="3dots" type="symbol"/> rechts<milestone rend="3dots" type="symbol"/>&#8220;</p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/> Ich &#8213; stand links.&#8213;</p>
+<p xml:space="preserve" rend="indent">Oh, oh, oh! &#8213; &#8213;</p>
+<p xml:space="preserve" rend="indent">Wenn ich so gegen 2 Uhr Nachmittag die Facult&#228;t verlasse, so kommt mir 
+jeder gesunde Mensch ganz sonderbar vor &#8213; und ich glaube &#252;berhaupt 
+gar nicht recht an irgend welche Gesundheit. Ach ja, es gibt so viele, 
+viele Krankheiten und nur eine Gesundheit. Die Medicin verstimmt mich 
+jetzt &#8213; ganz ausgesprochen &#8213; sie macht mich ab und zu selbst zum 
+Hypochonder <milestone rend="3dots" type="symbol"/> Und meine enorme Oberfl&#228;chlichkeit &#8213; meine 
+Nachl&#228;ssigkeit &#8213;</p>
+<p xml:space="preserve" rend="indent">Wenn ich an diesen Fehlern nicht leiden w&#252;rde, so h&#228;tt, ich das 
+Zeug (wie Leute meinen, die mich oft geh&#246;rig herunterrei&#223;en &amp; mir 
+gewiss nicht schmeicheln wollen) unter allen meinen Collegen der 
+erste zu sein.&#8213; Es mag was Wahres drin liegen &#8213; Aber meine Sehnsucht 
+nach der Poesie w&#228;chst immer mehr <milestone rend="3dots" type="symbol"/> und immer mehr sollte ich mich 
+in ein ernstes, ja angestrengtes Studium versenken.&#8213; Und abgesehen von 
+diesem Kampf &#8213; die gewisse allgemeine Verstimmung (heute au&#223;erdem noch 
+eine erhebliche Senkung meines Selbstvertrauns) und immer diese 
+Langeweile! Ich langeweile mich entsetzlich; es grenzt schon ans 
+Unertr&#228;gliche.</p>
+<p xml:space="preserve" rend="indent">&#8213; Ich merke, ich brauch, eine energische Cur &#8213; denn mein Seelenzustand 
+schwankt schon bedenklich aus dem Niveau einer gew&#246;hnlichen, rasch 
+verg&#228;nglichen Gelangweiltheit gegen krankhafteres zu heraus.&#8213;</p>
+<p xml:space="preserve" rend="indent">Und vor der Hand wird doch nichts andres geschehn, als da&#223; ich mich 
+ordentlich &#252;ber meine Rigorosengegenst&#228;nde hersetze &amp; studire &#8213;</p>
+<p xml:space="preserve" rend="indent">&#8213; Ist es l&#228;cherlich, sich nach Liebe zu sehnen? Oder lasterhaft, 
+nach einem toll genu&#223;s&#252;chtigen Leben?: Eins von beiden brauch, ich, 
+sonst schlafen alle meine Kr&#228;fte ein, und wer einmal dazu berufen ist, 
+sie wieder aufzuwecken (denn ein solches Wesen wird ja doch endlich 
+&#252;ber meinen Weg schreiten, hoff, ich) wird seine liebe M&#252;h haben.</p>
+<p xml:space="preserve" rend="indent"><milestone rend="3dots" type="symbol"/> So wahr ich lebe: mich ekelt es an, dieses Leben &#8213; ein tiefes 
+Gef&#252;hl des &#252;berdrusses vor <seg rend="italicised">diesem</seg> Leben beseelt mich;&#8213; wenn 
+man hier so sagen d&#252;rfte &#8213; ein heiliges Gef&#252;hl des Ekels!</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-11-30">30/11</date> Mittwoch Abend.&#8213;</p>
+<p xml:space="preserve" rend="indent">Nach <persName key="pNt_01380" ref="#p_17457"><surname>Leopardi</surname></persName> ist la noia &#8222;das edelste aller menschlichen Gef&#252;hle &#8220;; 
+nach <persName key="pNt_01381" ref="#p_14054"><surname>Buffon</surname></persName> l&#8217;ennui der Tyrann aller denkenden Seelen <milestone rend="3dots" type="symbol"/> Das edelste 
+menschliche Gef&#252;hl &#8213; <milestone rend="3dots" type="symbol"/> ach ja! es ist sehr bequem, edel 
+<pb n="118"/>
+<seg type="header"><fw place="top_left" type="pageNum">118</fw> <fw place="top_center"><date>1881: XI 30 </date></fw></seg>
+zu sein, wenn dazu nichts noth thut &#8213; als sich zu langweilen.&#8213; Und 
+doch, es steckt was in dem <persName type="att" key="pNt_01382" ref="#p_17457"><surname>Leopardi&#8217;schen</surname></persName> Satz &#8213; denn wahr 
+empfunden: hei&#223;t edel empfunden, und wenn man nur weiss, da&#223; man von 
+noia gepeinigt wird und es redlich eingesteht, so ist das immerhin 
+besser, als sich einzureden, da&#223; man sich eigentlich doch am&#252;sire <milestone rend="3dots" type="symbol"/> 
+da man ja im &#228;u&#223;ersten Fall noch immer &#8213; sich selber habe. Ja wenn 
+man dessen nur immer gewiss w&#228;re. Aber ich suche mich auch nicht 
+mehr so recht &#8213; denn was ich so von ferne sehe, macht mich an diesem 
+Menschen immer mehr zweifeln &#8213; Zu gar nichts sich ganz zu haben! 
+&#8213; seit Monaten &#8213; vielleicht seit Jahren auf eine zum &#220;berdruss mit 
+Worten ausgemalte Weise sich hinundherschleppen von Wunsch zu 
+Wunsch <milestone rend="3dots" type="symbol"/> aufundabspazieren zwischen lauter Anf&#228;ngen <milestone rend="3dots" type="symbol"/> und 
+trotz der Fl&#252;gel doch nur immer aus erb&#228;rmlicher Faulheit &#252;ber den 
+Staub der Erde hinzuflattern. Es sei denn, da&#223; ich &#8213; ein echtes Kind 
+des Jahrhunderts &#8213; schon mit gestutzten Fl&#252;geln zur Welt gekommen bin.&#8213;</p>
+<p xml:space="preserve" rend="indent">O es ekelt mich, ekelt mich unbeschreiblich, und immer von neuem; und 
+immer &#228;rger, weil ich immer seltner aufgefrischt werde durch <milestone rend="3dots" type="symbol"/> ja 
+durch was es immer sei &#8213; Ich brauchte Freiheit, <milestone rend="3dots" type="symbol"/> und, wie nat&#252;rlich, 
+Geld, um mich zu am&#252;siren <milestone rend="3dots" type="symbol"/> und ganz besonders &#8213; ein andres Ich. 
+Aber es waren ja doch schon Momente wo mir eine Ahnung kam, dass man 
+sich nicht <seg rend="italicised">immer</seg> langweilen muss. Momente die ich an <persName key="pNt_01383" ref="#p_17368"><forename>Fannys</forename></persName> Lippen 
+genoss &#8213; Momente an der Seite mancher andern, wenn auch nicht so 
+theuern M&#228;dchen &#8213; Momente in der Gesellschaft von ein paar lustigen 
+Kameraden oder bei der Flasche Wein, &#8213; Momente, da ich den Worten der 
+Poeten im Theater, den Kl&#228;ngen der Musik in Concerten lauschte, &#8213; 
+Momente, deren Reiz sich im Entwerfen, Durchdenken, Ausf&#252;hren einer 
+Dichtung mir offenbarte <milestone rend="3dots" type="symbol"/>aber warum erleb&#8217; ich all das so selten &#8213; 
+und jetzt gar nicht &#8213;! Und warum st&#246;rt mich das Geringste &#8213; ? warum 
+bedarf es nur eines leisen widerlichen Hauches, eines schrillen Tones, 
+um mich aus einem Traume der Lust aufzuwecken, wo mich tausende D&#252;fte 
+berauschen m&#252;ssten, tausende Kl&#228;nge umwallen, um mich allm&#228;lig darein 
+zu lullen?&#8213; Warum seh ich den Schmerz lebhafter in allem rings um mich 
+weben, als die Freude &#8213; Mich bed&#252;nkt: weil jener in der That viel 
+regsamer durch die Gefilde der Menschheit hastet, als diese, ja man 
+k&#246;nnte sagen, das Genie des Schmerzes sei ein gewaltigres als das der 
+Freude.&#8213;</p>
+<p xml:space="preserve" rend="indent">Und es gibt Eltern, dies bedauern, kinderlos zu sein! Beneidet das 
+Ungeborene! &#8213;</p>
+<pb n="119"/>
+                <seg type="header">
+                    <fw place="top_center">
+                        <date type="range">1881: XI 30 - XII 21</date>
+                    </fw> <fw place="top_right" type="pageNum">119</fw>
+                </seg>
+                <p xml:space="preserve" rend="indent">Aber nun ist man schon einmal da und wollte sich doch <milestone rend="3dots" type="symbol"/> Nun ja 
+am&#252;siren &#8213; Ich bin nun einmal so&#8217;n elender Genussmensch. Bin es, 
+kann aber nichts daf&#252;r. Kam so auf die Welt &#8213; wohlfeile Ausrede 
+allerdings, aber vollkommen unbestreitbar. Denn eigentlich ist am 
+Leichtsinn ebenso wenig was leichtsinniges, als am Edelmut was edles ist.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-12-07">7/12</date> Mittwoch Abend.&#8213;</p>
+<p xml:space="preserve" rend="indent">Am Samstag durchwachte ich die Nacht auf dem K&#252;nstlerabend &amp; in 
+verschiedenen Kaffeeh&#228;usern. Mit <persName key="pNt_01384" ref="#"><forename>Pepi</forename></persName>, dem Pianisten <persName key="pNt_01385" ref="#p_19841"><forename>Benno</forename> <surname>Sch.</surname></persName> und 
+andern. <persName key="pNt_01386" ref="#"><surname>Hobiger</surname></persName>, <persName key="pNt_01387" ref="#"><surname>F&#246;derl</surname></persName>, <persName key="pNt_01388" ref="#"><surname>Jautz</surname></persName>. Gestern &#8222;soupirten&#8220; <persName key="pNt_01389" ref="#"><forename>Pepi</forename></persName>, ich &amp; <persName key="pNt_01390" ref="#p_14590"><name type="unclear">E.</name></persName><milestone rend="2dots" type="symbol"/> 
+miteinander. Es ist doch eine wie die andre. Oder hab ich <milestone rend="3dots" type="symbol"/> die 
+dritte nur noch nicht kennen gelernt? &#8213;</p>
+<p xml:space="preserve" rend="indent">Es ist wieder einmal an der Zeit, zu referiren: ein Bild, wie ich Tag 
+f&#252;r Tag verbringe, m&#246;ge sich in <bibl type="self">diese Bl&#228;tter</bibl> zeichnen.&#8213;</p>
+<p xml:space="preserve" rend="indent">Nach kurzem Vorwurf von h. Seite, da&#223; ich gestern so sp&#228;t nach 
+Hause gekommen, Aufbruch ins physiol. Laboratorium; dort gearbeitet, 
+dann auf einige Zeit auf die chirurgische Klinik, dann zu <persName key="pNt_01391" ref="#p_14192"><surname>Chiari</surname></persName> 
+(pathol. Anatomie). Nun zu Tisch nach Hause; Cigaretten gestopft &amp; 
+Physiologie studirt; um f&#252;nf ins Kaffee, Billard gespielt &amp; verloren; 
+nach Hause gekommen auf dem Klavier phantasirt, ohne Phantasie, 
+nach dem Souper wieder ein bischen studirt.</p>
+</div><div type="diary-day">
+<p xml:space="preserve"><date when="1881-12-21">21/12</date> Mittwoch Abend. Sass heut den ganzen Tag studierend zu Haus, 
+theils aus Fleiss, theils aus Unwohlsein. Ich studir jetzt &#252;berhaupt 
+einiges &amp; m&#246;chte Mitte J&#228;nner phys. pract. &amp; Anfang Mai das 
+theoreticum machen. Einiges unwissenschaftliche w&#228;re &#252;brigens &#252;ber 
+die letzten 14 Tage zu berichten<milestone rend="3dots" type="symbol"/></p>
+<p xml:space="preserve" rend="indent">Ich traf mit der koketten jungen Wittwe <persName key="pNt_01392" ref="#"><roleName>Frau</roleName> <surname>S.</surname></persName> ein paar. Mal 
+zusammen, auf einer Soiree bei <persName key="pNt_01393" ref="#p_18889"><surname>P.</surname></persName>, bei einer entfernten Cousine <persName key="pNt_01394" ref="#p_15791"><roleName>Frau</roleName> 
+<surname>H.</surname></persName>, auf der Stra&#223;e. Es ist nichts bedeutendes an ihr, aber sie k&#246;nnte 
+mich f&#252;r ein paar Wochen interessiren.&#8213; Mit <persName key="pNt_01395" ref="#p_16580"><forename>Marie</forename></persName> verbracht ich 
+einen Nachmittag; sie ist sehr lieb und sehr verliebt. Raffinirte K&#252;sse 
+&amp; &#228;. Auch <persName key="pNt_01396" ref="#p_18320"><forename>Fanny</forename> <surname>M.</surname></persName> sprach ich &#8213; letzten Sonntag wars, bei ihnen 
+oben. Es war ein wenig n&#252;chtern &#8213; sie fand mich in n&#252;chterner 
+Stimmung.&#8213; Einen liebensw&#252;rdigen Freund stud. jur. <persName key="pNt_01397" ref="#p_20419"><forename>Theodor</forename> <surname>St.</surname></persName> 
+gewann ich, der aber schon wieder in seine Heimat <placeName type="city" xml:id="pl_00263" ref="#place_ea6515eca27ae68c06c82e8cc2a6d318">Salzburg</placeName> abreiste.</p>
+<p xml:space="preserve" rend="center">1882</p>
+</div></body>
+    </text>
+</TEI>

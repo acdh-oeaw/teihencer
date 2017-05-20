@@ -43,20 +43,6 @@
       <link rel="stylesheet" type="text/css" href="{% static 'webpage/libraries/tooltipster/dist/css/tooltipster.bundle.min.css' %}" />
       <link rel="stylesheet" type="text/css" href="{% static 'webpage/libraries/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css' %}" />
       <script type="text/javascript" src="{% static 'webpage/apis_highlighter.js' %}"></script>
-      <!-- Piwik -->
-        <script type="text/javascript">
-          var _paq = _paq || [];
-          _paq.push(['trackPageView']);
-          _paq.push(['enableLinkTracking']);
-          (function() {
-            var u="//clarin.oeaw.ac.at/piwik/";
-            _paq.push(['setTrackerUrl', u+'piwik.php']);
-            _paq.push(['setSiteId', 23]);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-          })();
-        </script>
-      <!-- End Piwik Code -->
       {% block scriptHeader %}
       {% endblock %}
   </head>
@@ -78,7 +64,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div>  
+        </div>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -197,7 +183,7 @@
       </div>
     </div>
     {% block scripts %}
-    
+
     <!-- scroll-up-bottom -->
     <script type="text/javascript">
             // Setup plugin with default settings
