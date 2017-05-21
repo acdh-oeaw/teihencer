@@ -33,9 +33,7 @@ class TeiReader():
 
     def get_places_elements(self, ids):
 
-        """ takes a list of elements with a text node and a @ref attribute
-        and returns a tei:placeList
-        """
+        """ takes a list of elements with a text node and a @ref attribute and returns a tei:placeList"""
 
         places = []
         for x in ids:
@@ -60,13 +58,11 @@ class TeiReader():
         """
 
         result = {'tei_element': tei_element}
-        result['hits'] = self.tree.xpath(
-            '//tei:text//tei:{}'.format(tei_element), namespaces=self.ns_tei
-        )
+        result['hits'] = self.tree.xpath('//tei:text//tei:{}'.format(tei_element), namespaces=self.ns_tei)
         result['nr_of_hits'] = len(result['hits'])
         return result
 
-    def add_ids(self, tei_element='placeName', id_prefix='some', export=True, export_file="updated"):
+    def add_ids(self, tei_element='placeName', id_prefix='some', export=False, export_file="updated"):
 
         """ reads an tei-xml document
         * looks for tei_elements,
@@ -90,14 +86,14 @@ class TeiReader():
         if export:
             file = "{}.xml".format(export_file)
             with open(file, 'wb') as f:
-                f.write(ET.tostring(self.tree, pretty_print=True, encoding="UTF-8"))
+                f.write(ET.tostring(self.tree, pretty_print=True,encoding="UTF-8"))
         return ids, self.tree
 
-    def create_place_index(self, tei_element='placeName', id_prefix='place', export=True, export_file='index'):
+    def create_index(self, tei_element='placeName', id_prefix='place'):
 
         """ takes a list of elements and transforms them into an index-file"""
 
-        nodes = self.add_ids(tei_element, id_prefix, export=False)[0]
+        nodes = self.add_ids(tei_element, id_prefix)[0]
         places = self.get_places_elements(nodes)
         list_place = ET.Element("listPlace")
         for x in places:
@@ -105,9 +101,11 @@ class TeiReader():
         new_doc = ET.fromstring(templates.tei_document)
         body = new_doc.xpath('//tei:body', namespaces=self.ns_tei)[0]
         body.append(list_place)
-        if export:
-            file = "{}.xml".format(export_file)
-            with open(file, 'wb') as f:
-                f.write(ET.tostring(new_doc, pretty_print=True, encoding="UTF-8"))
-
         return new_doc
+
+    def export_index(self, tei_element='placeName', id_prefix='place', export_file='index'):
+        new_doc = self.create_index(tei_element, id_prefix)
+        file = "{}.xml".format(export_file)
+        with open(file, 'wb') as f:
+            f.write(ET.tostring(new_doc, pretty_print=True, encoding="UTF-8"))
+        return "file stored as {}".format(file)
