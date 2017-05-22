@@ -11,3 +11,5 @@ __pycache__/
 *.whl
 data
 /tei/*.xml
+tei.egg-info
+build
