@@ -12,6 +12,10 @@ class TeiReader():
         self.ns_xml = {'xml': "http://www.w3.org/XML/1998/namespace"}
         self.file = file
         try:
+            self.original = ET.parse(file)
+        except:
+            None
+        try:
             self.tree = ET.parse(file)
         except:
             None
@@ -33,7 +37,8 @@ class TeiReader():
 
     def get_places_elements(self, ids):
 
-        """ takes a list of elements with a text node and a @ref attribute and returns a tei:placeList"""
+        """ takes a list of elements with a text node and a @ref attribute
+        and returns a tei:placeList"""
 
         places = []
         for x in ids:
@@ -58,7 +63,9 @@ class TeiReader():
         """
 
         result = {'tei_element': tei_element}
-        result['hits'] = self.tree.xpath('//tei:text//tei:{}'.format(tei_element), namespaces=self.ns_tei)
+        result['hits'] = self.tree.xpath(
+            '//tei:text//tei:{}'.format(tei_element), namespaces=self.ns_tei
+        )
         result['nr_of_hits'] = len(result['hits'])
         return result
 
@@ -77,9 +84,10 @@ class TeiReader():
         for x in hits:
             if x.text is None:
                 break
-            if x.attrib['ref'] is not None:
+            try:
+                x.attrib['ref']
                 ids.append({'text': x.text, 'ref': x.attrib['ref'], 'node': x})
-            else:
+            except:
                 ref = hashlib.md5(x.text.encode('utf-8')).hexdigest()
                 x.attrib['ref'] = "#{}_{}".format(id_prefix, ref)
                 ids.append({'text': x.text, 'ref': x.attrib['ref'], 'node': x})
@@ -89,11 +97,10 @@ class TeiReader():
                 f.write(ET.tostring(self.tree, pretty_print=True,encoding="UTF-8"))
         return ids, self.tree
 
-    def create_index(self, tei_element='placeName', id_prefix='place'):
+    def create_index(self, nodes):
 
         """ takes a list of elements and transforms them into an index-file"""
 
-        nodes = self.add_ids(tei_element, id_prefix)[0]
         places = self.get_places_elements(nodes)
         list_place = ET.Element("listPlace")
         for x in places:
@@ -103,9 +110,11 @@ class TeiReader():
         body.append(list_place)
         return new_doc
 
-    def export_index(self, tei_element='placeName', id_prefix='place', export_file='index'):
-        new_doc = self.create_index(tei_element, id_prefix)
-        file = "{}.xml".format(export_file)
+    def export_tei(self, tei_doc, export_file='teihencer_export.xml'):
+
+        """ writes any xml node to a file """
+
+        file = export_file
         with open(file, 'wb') as f:
-            f.write(ET.tostring(new_doc, pretty_print=True, encoding="UTF-8"))
+            f.write(ET.tostring(tei_doc, pretty_print=True, encoding="UTF-8"))
         return "file stored as {}".format(file)
