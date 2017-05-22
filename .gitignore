@@ -10,3 +10,4 @@ __pycache__/
 /docs/_*/*
 *.whl
 data
+/tei/*.xml
