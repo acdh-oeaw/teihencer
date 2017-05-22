@@ -8,8 +8,10 @@ __pycache__/
 # documentation build files
 
 /docs/_*/*
-*.whl
 data
 /tei/*.xml
 tei.egg-info
 build
+/Untitled.ipynb
+/numpy-1.12.1+mkl-cp35-cp35m-win_amd64.whl
+/scipy-0.19.0-cp35-cp35m-win_amd64.whl
