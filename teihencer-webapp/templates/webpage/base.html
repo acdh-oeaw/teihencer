@@ -48,13 +48,6 @@
   </head>
 
   <body>
-    <!-- Piwik -->
-    <noscript>
-      <p>
-        <img src="//clarin.oeaw.ac.at/piwik/piwik.php?idsite=11" style="border:0;" alt="" />
-      </p>
-    </noscript>
-    <!-- End Piwik Code -->
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -75,12 +68,6 @@
                   <ul class="dropdown-menu">
                     <li>
                         <a href="{% url 'webpage:start' %}">Start</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'webpage:apis-project' %}">APIS-Project</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'webpage:paas-project' %}">PAAS-Project</a>
                     </li>
                     <li>
                         <a href="{% url 'docs' index %}index.html">Documentation</a>
@@ -119,9 +106,6 @@
                     </li>
                     <li>
                         <a href="{% url 'entities:generic_network_viz' %}">Network</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'highlighter:agreement' %}">Inter-Annotator Agreement</a>
                     </li>
                   </ul>
                 </li>
