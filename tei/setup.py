@@ -12,7 +12,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='tei',
-    version='0.5.1',
+    version='0.5.3',
     description='A package to process and enhance TEI-Documents',
     long_description=long_description,
     url="https://redmine.acdh.oeaw.ac.at/issues/8711",
