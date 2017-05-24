@@ -96,7 +96,17 @@ sett_RDF_generic = {
                         'name': 'name',
                         'identifiers': (
                             (('objects', 'prefName', gno + 'officialName', ('language', 'de')),),
-                            (('objects', 'prefName', gno + 'alternateName', ('language', 'pl')),)
+                            (('objects', 'prefName', gno + 'officialName', ('language', 'en')),),
+                            (('objects', 'prefName', gno + 'alternateName', ('language', 'de')),),
+                            (('objects', 'prefName', gno + 'alternateName', ('language', 'en')),),
+                            (('objects', 'prefName', gno + 'name', None),)
+                        )
+                    },
+                    {
+                        'name': 'label',
+                        'identifiers': (
+                            (('objects', 'label', gno + 'alternateName', ('language', 'de')),),
+                            (('objects', 'label', gno + 'alternateName', ('language', 'en')),)
                         )
                     },
                     {
@@ -109,6 +119,18 @@ sett_RDF_generic = {
                         'name': 'long',
                         'identifiers': (
                             (('objects','lng', wgs84 + 'long', None),),
+                        )
+                    },
+                    {
+                        'name': 'parentFeature',
+                        'identifiers': (
+                            (('objects', 'parentFeature', gno + 'parentFeature', None),),
+                        )
+                    },
+                    {
+                        'name': 'parentCountry',
+                        'identifiers': (
+                            (('objects', 'parentCountry', gno + 'parentCountry', None),),
                         )
                     }
                 ]
@@ -148,10 +170,12 @@ sett_RDF_generic = {
                     (('prefName', None),),
                 ),
                 'lat': (
-                    (('latlong_geonode', ('Point \( [+-]([0-9\.]+) [+-]([0-9\.]+)', 1)),),
+                    (('lat', None),),
+                    (('latlong_geonode', ('Point \( [+-]([0-9\.]+) [+-]([0-9\.]+)', 1)),)
                 ),
                 'lng': (
-                    (('latlong_geonode', ('Point \( [+-]([0-9\.]+) [+-]([0-9\.]+)', 2)),),
+                    (('lng', None),),
+                    (('latlong_geonode', ('Point \( [+-]([0-9\.]+) [+-]([0-9\.]+)', 2)),)
                 ),
             },
             'labels': {
@@ -160,7 +184,22 @@ sett_RDF_generic = {
                 ),
                 },
             'linked objects':
-            [],
+            [
+            {
+                'type': 'Place',
+                'kind': 'located in',
+                'object': (
+                    ('parentFeature', None),
+            )
+            },
+            {
+                'type': 'Place',
+                'kind': 'located in',
+                'object': (
+                    ('parentCountry', None),
+            )
+            },
+            ]
         }
     },
     'Person': {
