@@ -91,15 +91,18 @@ sett_RDF_generic = {
             {
                 'base_url': 'http://sws.geonames.org/',
                 'url_appendix': 'about.rdf',
+                'kind': (
+                    (gno + 'featureCode', None),
+                    ),
                 'attributes': [
                     {
                         'name': 'name',
                         'identifiers': (
                             (('objects', 'prefName', gno + 'officialName', ('language', 'de')),),
                             (('objects', 'prefName', gno + 'officialName', ('language', 'en')),),
+                            (('objects', 'prefName', gno + 'name', None),),
                             (('objects', 'prefName', gno + 'alternateName', ('language', 'de')),),
-                            (('objects', 'prefName', gno + 'alternateName', ('language', 'en')),),
-                            (('objects', 'prefName', gno + 'name', None),)
+                            (('objects', 'prefName', gno + 'alternateName', ('language', 'en')),)
                         )
                     },
                     {
@@ -132,7 +135,7 @@ sett_RDF_generic = {
                         'identifiers': (
                             (('objects', 'parentCountry', gno + 'parentCountry', None),),
                         )
-                    }
+                    },
                 ]
             },
             {
@@ -199,7 +202,7 @@ sett_RDF_generic = {
                     ('parentCountry', None),
             )
             },
-            ]
+            ],
         }
     },
     'Person': {

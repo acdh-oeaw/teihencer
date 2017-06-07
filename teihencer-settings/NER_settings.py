@@ -2,7 +2,11 @@
 # -*- coding: utf-8 -*-
 
 gn = "http://www.geonames.org/ontology#"
-URL_geonames = "http://enrich.acdh.oeaw.ac.at/entityhub/site/geoNames_%s/query"
+stb_base = 'http://enrich.acdh.oeaw.ac.at/entityhub/site/'
+URL_geonames = stb_base + "geoNames_%s/query"
+wgs84_pos = "http://www.w3.org/2003/01/geo/wgs84_pos#"
+stb_find = stb_base + u'{}/find'
+
 
 autocomp_settings = {
     'score': u'http://stanbol.apache.org/ontology/entityhub/query#score',
@@ -11,25 +15,34 @@ autocomp_settings = {
     'Place': [
         {'source': 'Geonames',
         'type': False,
-        'url': u'http://enrich.acdh.oeaw.ac.at/entityhub/site/geoNames_S_P_A/find',
+        'url': stb_find.format('geoNames_S_P_A'),
         'fields': {
-            'descr': (u'http://www.geonames.org/ontology#featureCode','String'),
-            'name': (u'http://www.geonames.org/ontology#name','String'),
-            'long': (u'http://www.w3.org/2003/01/geo/wgs84_pos#long','String'),
-            'lat': (u'http://www.w3.org/2003/01/geo/wgs84_pos#lat','String')
+            'descr': (gn + 'featureCode','String'),
+            'name': (gn + 'name','String'),
+            'long': (wgs84_pos + 'long','String'),
+            'lat': (wgs84_pos + 'lat','String')
         }},
         {'source': 'GeonamesRGN',
         'type': False,
-        'url': u'http://enrich.acdh.oeaw.ac.at/entityhub/site/geoNames_RGN/find',
+        'url': stb_find.format('geoNames_RGN'),
         'fields': {
-            'descr': (u'http://www.geonames.org/ontology#featureCode','String'),
-            'name': (u'http://www.geonames.org/ontology#name','String'),
-            'long': (u'http://www.w3.org/2003/01/geo/wgs84_pos#long','String'),
-            'lat': (u'http://www.w3.org/2003/01/geo/wgs84_pos#lat','String')
+            'descr': (gn + 'featureCode','String'),
+            'name': (gn + 'name','String'),
+            'long': (wgs84_pos + 'long','String'),
+            'lat': (wgs84_pos + 'lat','String')
+        }},
+        {'source': 'GeonamesVAL',
+        'type': False,
+        'url': stb_find.format('geoNames_VAL'),
+        'fields': {
+            'descr': (gn + 'featureCode','String'),
+            'name': (gn + 'name','String'),
+            'long': (wgs84_pos + 'long','String'),
+            'lat': (wgs84_pos + 'lat','String')
         }},
         {'source': 'GND',
         'type': u'http://d-nb.info/standards/elementset/gnd#TerritorialCorporateBodyOrAdministrativeUnit',
-        'url': u'http://enrich.acdh.oeaw.ac.at/entityhub/site/gndTerritorialCorporateBodyOrAdministrativeUnits/find',
+        'url': stb_find.format('gndTerritorialCorporateBodyOrAdministrativeUnits'),
         'fields': {
             'name': (u'http://d-nb.info/standards/elementset/gnd#preferredNameForThePlaceOrGeographicName','String'),
             'descr': (u'http://d-nb.info/standards/elementset/gnd#definition','String'),}},
@@ -37,21 +50,21 @@ autocomp_settings = {
     'Institution': [{
         'source': 'GND',
         'type': u'http://d-nb.info/standards/elementset/gnd#CorporateBody',
-        'url': u'http://enrich.acdh.oeaw.ac.at/entityhub/site/gndCorporateBodyAndOrganOfCorporateBody/find/',
+        'url': stb_find.format('gndCorporateBodyAndOrganOfCorporateBody'),
         'fields': {
             'descr': (u'http://d-nb.info/standards/elementset/gnd#definition','String'),
             'name': (u'http://d-nb.info/standards/elementset/gnd#preferredNameForTheCorporateBody','String')}},
             {
         'source': 'GND',
         'type': u'http://d-nb.info/standards/elementset/gnd#OrganOfCorporateBody',
-        'url': u'http://stanbol.herkules.arz.oeaw.ac.at/entityhub/site/gndCorporateBodyAndOrganOfCorporateBody/find/',
+        'url': stb_find.format('gndCorporateBodyAndOrganOfCorporateBody'),
         'fields': {
             'descr': (u'http://d-nb.info/standards/elementset/gnd#definition','String'),
             'name': (u'http://d-nb.info/standards/elementset/gnd#preferredNameForTheCorporateBody','String')}}],
     'Person': [{
         'source': 'GND',
         'type': u'http://d-nb.info/standards/elementset/gnd#DifferentiatedPerson',
-        'url': u'http://enrich.acdh.oeaw.ac.at/entityhub/site/gndPersons/find/',
+        'url': stb_find.format('gndPersons'),
         'fields': {
             'descr': (u'http://d-nb.info/standards/elementset/gnd#biographicalOrHistoricalInformation','String'),
             'name': (u'http://d-nb.info/standards/elementset/gnd#preferredNameForThePerson','String'),
@@ -60,7 +73,7 @@ autocomp_settings = {
     'Event': [{
         'source': 'GND',
         'type': u'http://d-nb.info/standards/elementset/gnd#HistoricSingleEventOrEra',
-        'url': u'http://enrich.acdh.oeaw.ac.at/entityhub/site/gndHistoricEvent/find/',
+        'url': stb_find.format('gndHistoricEvent'),
         'fields': {
             'descr': (u'http://d-nb.info/standards/elementset/gnd#definition','String'),
             'name': (u'http://d-nb.info/standards/elementset/gnd#preferredNameForTheSubjectHeading','String')}}],
@@ -157,84 +170,100 @@ geonames_feature_codes = {
     "RGN": ("region", "an area distinguished by one or more observable physical or cultural characteristics")}
 
 
-class query_settings:
+class StbGeoQuerySettings:
 
     def __init__(self, kind='place'):
+        self.kind = kind
+        self.score = u'http://stanbol.apache.org/ontology/entityhub/query#score'
+        self.uri = 'id'
+        self.label = u'http://www.w3.org/2000/01/rdf-schema#label'
+        self.kind = kind
+        self.last_selected = 0
 
-            self.score = u'http://stanbol.apache.org/ontology/entityhub/query#score'
-            self.uri = 'id'
-            self.label = u'http://www.w3.org/2000/01/rdf-schema#label'
-            self.selected = [gn+'name', gn+'parentPCLI',
-                                gn+'parentADM1', gn+'parentADM2', gn+'parentADM3', gn+'population']
-            self.kind = kind
-            self.last_selected = None
-            if kind == 'place':
-                self.features = [{
-                        'feature': gn+'PPLC',
-                        'URL': URL_geonames % 'PPLC'
-                },
-                 {
-                        'feature': gn+'PPLA',
-                        'URL': URL_geonames % 'PPLA'
-                },
-                    {
-                        'feature': gn+'PPLA2',
-                        'URL': URL_geonames % 'PPLA2'
-                },
-                    {
-                        'feature': gn+'PPLA3',
-                        'URL': URL_geonames % 'PPLA3'
-                },
-                    {
-                        'feature': gn+'PPLA4',
-                        'URL': URL_geonames % 'PPLA4'
-                },
-                    {
-                        'feature': gn+'PPL',
-                        'URL': URL_geonames % 'PPL'
-                }]
-            elif kind == 'admin':
-                self.features = [{
-                        'feature': gn+'PCLI',
-                        'URL': URL_geonames % 'PCLI'
-                },
-                    {
-                        'feature': gn+'ADM1',
-                        'URL': URL_geonames % 'ADM1'
-                },
-                    {
-                        'feature': gn+'ADM2',
-                        'URL': URL_geonames % 'ADM2'
-                },
-                    {
-                        'feature': gn+'ADM3',
-                        'URL': URL_geonames % 'ADM3'
-                }
-                ]
+        if kind == 'place':
+            self.selected = [gn+'name', gn+'parentPCLI', gn+'parentCountry',
+                                gn+'parentADM1', gn+'parentADM2', gn+'parentADM3',
+                                gn+'population', gn+'featureCode', wgs84_pos+'lat',
+                                wgs84_pos+'long', gn+'alternateName', gn+'officialName',
+                                gn+'shortName', gn+'countryCode', gn+'parentFeature']
+            self.stored_feature = {
+                    'feature': gn+'PPLC',
+                    'URL': URL_geonames % 'PPLC'
+            }
+            self.features = [{
+                    'feature': gn+'PPLC',
+                    'URL': URL_geonames % 'PPLC'
+            },
+             {
+                    'feature': gn+'PPLA',
+                    'URL': URL_geonames % 'PPLA'
+            },
+                {
+                    'feature': gn+'PPLA2',
+                    'URL': URL_geonames % 'PPLA2'
+            },
+                {
+                    'feature': gn+'PPLA3',
+                    'URL': URL_geonames % 'PPLA3'
+            },
+                {
+                    'feature': gn+'PPLA4',
+                    'URL': URL_geonames % 'PPLA4'
+            },
+                {
+                    'feature': gn+'PPL',
+                    'URL': URL_geonames % 'PPL'
+            }]
+        elif kind == 'admin':
+            self.selected = [gn+'featureCode']
+            self.stored_feature = {
+                    'feature': gn+'PCLI',
+                    'URL': URL_geonames % 'PCLI'
+            }
+            self.features = [{
+                    'feature': gn+'PCLI',
+                    'URL': URL_geonames % 'PCLI'
+            },
+                {
+                    'feature': gn+'ADM1',
+                    'URL': URL_geonames % 'ADM1'
+            },
+                {
+                    'feature': gn+'ADM2',
+                    'URL': URL_geonames % 'ADM2'
+            },
+                {
+                    'feature': gn+'ADM3',
+                    'URL': URL_geonames % 'ADM3'
+            }
+            ]
 
-    def get_next_feature(self, ft=None):
-        if ft:
-            for idnx, x in enumerate(self.features):
-                if x['feature'] == ft:
-                    try:
-                        self.last_selected = self.features[idnx+1]
-                        return self.features[idnx+1]
-                    except:
-                        return None
-        else:
-            self.last_selected = self.features[0]
-            return self.features[0]
+    def get_next_feature(self, ft=False):
+        if self.last_selected > len(self.features)-1:
+            self.stored_feature = False
+            return False
+        if not ft:
+            ft = self.features[self.last_selected]['feature']
+        for idnx, x in enumerate(self.features):
+            if x['feature'] == ft:
+                try:
+                    self.last_selected = idnx+1
+                    self.stored_feature = self.features[idnx+1]
+                    return self.features[idnx+1]
+                except:
+                    return None
+        return self.features[0]
 
-    def get_data(self, query, adm=None):
-        if self.kind == 'admin' and self.last_selected and adm:
+    def get_data(self, query, adm=False):
+        if self.kind == 'place' and adm:
             data = {
                 'limit': 20, 'constraints': [{
                     'type': 'text',
                     'field': 'http://www.w3.org/2000/01/rdf-schema#label',
                     'text': query},
-                        {'type': 'reference', 'field': self.last_selected, 'value': adm}
-                                ],
-                    'selected': self.selected
+                    {'type': 'reference', 'field': adm[1], 'value': adm[0]}
+                                    ],
+                'selected': self.selected
             }
         else:
             data = {
@@ -242,7 +271,7 @@ class query_settings:
                     'type': 'text',
                     'field': 'http://www.w3.org/2000/01/rdf-schema#label',
                     'text': query},
-                                ],
-                    'selected': self.selected}
+                                    ],
+                'selected': self.selected}
 
         return data
