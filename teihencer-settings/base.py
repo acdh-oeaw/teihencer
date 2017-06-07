@@ -38,10 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'autocomplete_light',
-    #'haystack',
+    'teimporter',
+    # 'haystack',
     'gm2m',
     'rest_framework',
-    #'rest_framework_swagger',
+    # 'rest_framework_swagger',
     'django_extensions',
     'django_filters',
     'django_tables2',
@@ -58,8 +59,8 @@ INSTALLED_APPS = [
     'django_spaghetti',
     'rest_framework.authtoken',
     'guardian',
-    #'registration',
-    #'sphinxdoc'
+    # 'registration',
+    # 'sphinxdoc'
 ]
 
 REST_FRAMEWORK = {
