@@ -4,12 +4,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>{% block title %} {% projects_metadata 'title' %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block metaDescription %}
-        <meta name="description" content="{{ metadata.description }}">
+        <meta name="description" content="{% projects_metadata 'description' %}">
+        <meta name="author" content="{% projects_metadata 'author' %}">
     {% endblock %}
-    <meta name="author" content="{{ metadata.author }}">
+    <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'webpage/img/favicon/apple-touch-icon.png' %}"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'webpage/img/favicon/favicon-32x32.png' %}"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'webpage/img/favicon/favicon-16x16.png' %}"/>
+        <link rel="manifest" href="{% static 'webpage/img/favicon/manifest.json' %}"/>
+        <link rel="mask-icon" href="{% static 'webpage/img/favicon/safari-pinned-tab.svg' %}" color="#00aba9"/>
+        <meta name="theme-color" content="#ffffff"/>
+    <!--favicons end -->
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{% static 'webpage/libraries/bootstrap337/css/bootstrap.min.css' %}" />
     <script type="text/javascript" src="{% static 'webpage/libraries/jquery/jquery-3.1.1.min.js' %}"></script>
@@ -87,7 +97,7 @@
     <div class="container" id="procustom-affix">
         <div class="logo-container">
             <a href="{% url 'webpage:start' %}" class="navlink">
-                <img src="{% static 'webpage/img/test.png' %}" id="pro-logo" alt=""/>
+                <!-- <img src="{% static 'webpage/img/test.png' %}" id="pro-logo" alt=""/> -->
             </a>
         </div>
     </div>
@@ -112,6 +122,14 @@
                             <li><a href="{% url 'webpage:about' %}">About</a></li>
                             <li><a href="{% url 'datamodel:plate' %}">Application's data model</a></li>
                             <li><a href="{% url 'webpage:imprint' %}">Impressum / Imprint</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Process TEI
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu procustom-dropdown-menu">
+                            <li><a href="{% url 'teimporter:import_tei' %}">Process single Document</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -175,15 +193,18 @@
 <footer>
     <div class="container">
         <div class="row text-center">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <a href="https://acdh.oeaw.ac.at/acdh/" class="navlink" target="_blank">
                     <img src="{% static 'webpage/img/ACDH_kurz_Weiss.png' %}" id="acdh-logo" alt="ACDH" title="Austrian Centre for Digital Humanities"/>
                 </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <a href="{% projects_metadata 'github' %}" class="navlink" target="_blank">
                     <img src="{% static 'webpage/img/GitHub-Mark-Light-64px.png' %}" id="github-logo" alt="{{ metadata.github }}" title="Github source code"/>
                 </a>
+            </div>
+            <div class="col-sm-4">
+                <a title=" Logo for the Text Encoding Initiative (TEI), a consortium which collectively develops and maintains a standard for the representation of texts in digital form  [CC BY 3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://www.tei-c.org/index.xml"><img width="50" alt="Text Encoding InitiativeTEI Logo" src={% static 'webpage/img/Text_Encoding_InitiativeTEI_Logo.svg' %}/></a>
             </div>
         </div>
     </div>

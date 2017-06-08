@@ -7,12 +7,21 @@
 <div class="container">
 <div class="panel panel-default procustom-panel-create">
     <div class="panel-heading procustom-panel-heading">
-            <h1 style="text-align: center;">Import a singel TEI document</h1>
+            <h1 style="text-align: center;">Process a single TEI document</h1>
         </div>
         <div class="panel-body">
-            <h2 style="text-align: center;">{{ worked }}</h2>
             <br>
             {% crispy form %}
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Tei with added ids</h1>
+                <pre>{{ processd_file }}</pre>
+            </div>
+            <div class="col-md-6">
+                <h1>Generated Place List</h1>
+                <pre>{{ place_list }}</pre>
+            </div>
         </div>
     </div>
 </div>

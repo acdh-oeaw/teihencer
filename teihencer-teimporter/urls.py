@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^import/$', views.import_tei, name='import_tei'),
+    url(r'^import/$', views.ImportTEI.as_view(), name='import_tei'),
 ]
