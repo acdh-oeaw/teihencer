@@ -20,11 +20,15 @@ class GenericFilterFormHelper(FormHelper):
 
 class UploadFileForm(forms.Form):
     xpath = forms.ChoiceField(choices=XPATH_CHOICES, required=True)
+    collection = forms.CharField(required=True)
+    enrich = forms.BooleanField(required=False)
     file = forms.FileField()
 
     def __init__(self, *args, **kwargs):
         super(UploadFileForm, self).__init__(*args, **kwargs)
-        self.fields['xpath'].initial = 'placeName'
+        self.fields['xpath'].initial = "rs[@type='place']"
+        self.fields['enrich'].initial = False
+        self.fields['collection'].initial = 'default Collection'
         self.helper = FormHelper()
         self.helper.form_tag = True
         self.helper.form_class = 'form-horizontal'
