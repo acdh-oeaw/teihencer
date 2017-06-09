@@ -167,7 +167,10 @@ geonames_feature_codes = {
         "a village, town or city destroyed by a natural disaster, or by war"),
     "PPLX": ("section of populated place", ""),
     "STLMT": ("israeli settlement", ""),
-    "RGN": ("region", "an area distinguished by one or more observable physical or cultural characteristics")}
+    "RGN": (
+        "region",
+        "an area distinguished by one or more observable physical or cultural characteristics"),
+    "VAL": ("i have", "no idea")}
 
 
 class StbGeoQuerySettings:
