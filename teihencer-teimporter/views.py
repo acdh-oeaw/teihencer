@@ -8,11 +8,6 @@ from entities.models import *
 from metainfo.models import *
 from helper_functions.RDFparsers import PlaceUri
 
-col, created = Collection.objects.get_or_create(name='hansi4ever')
-src, created = Source.objects.get_or_create(orig_filename="places.xml",
-                                            pubinfo="TEI XML holding the places from DBOE. See https://redmine.acdh.oeaw.ac.at/projects/explore-at/repository/changes/data/places.xml?rev=master",
-                                            author="Jack Bowers/Daniel Schopper")
-
 
 def get_or_create_place(xml_id, place_name, col, src, base_url="https://teihencer.acdh.oeaw.ac.at/origid/"):
     o_name = place_name
