@@ -1,6 +1,9 @@
 import lxml.etree as ET
 import hashlib
 
+import lxml.etree as ET
+import hashlib
+
 tei_document = """
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
@@ -50,9 +53,9 @@ class TeiReader():
         """ creates a tei:place element with an @xml:id
         and a child element tei:placeName"""
 
-        place = ET.Element("place")
+        place = ET.Element("{http://www.tei-c.org/ns/1.0}place")
         place.attrib['{http://www.w3.org/XML/1998/namespace}id'] = xml_id
-        placeName = ET.Element("placeName")
+        placeName = ET.Element("{http://www.tei-c.org/ns/1.0}placeName",)
         placeName.text = text
         place.append(placeName)
         return place
@@ -122,7 +125,7 @@ class TeiReader():
         """ takes a list of elements and transforms them into an place index-file"""
 
         places = self.get_places_elements(nodes)
-        list_place = ET.Element("listPlace")
+        list_place = ET.Element("{http://www.tei-c.org/ns/1.0}listPlace")
         for x in places:
             list_place.append(x)
         new_doc = ET.fromstring(tei_document)
@@ -138,3 +141,67 @@ class TeiReader():
         with open(file, 'wb') as f:
             f.write(ET.tostring(tei_doc, pretty_print=True, encoding="UTF-8"))
         return "file stored as {}".format(file)
+
+
+class TeiPlaceList(TeiReader):
+
+    def parse_placelist(self):
+
+        """ parses an XML/TEI document and returns
+        * a dict with
+        ** a list of all //tei:listPlace//tei:place elements
+        ** and the length of this list
+        """
+        places = self.tree.xpath('//tei:listPlace//tei:place', namespaces=self.ns_tei)
+        return {"amount": len(places), "places": places}
+
+    def parse_placelist_from_lxml_node(self, placelist):
+
+        """ parses an lxml element node
+        * a dict with
+        ** a list of all //tei:listPlace//tei:place elements
+        ** and the length of this list
+        """
+        places = placelist.xpath('//tei:listPlace//tei:place', namespaces=self.ns_tei)
+        return {"amount": len(places), "places": places}
+
+    def place2dict(self, placeelement):
+
+        """parses place element object and returns
+        * a python dict with
+        ** child elements,
+        ** their attributes,
+        ** and the element object
+        """
+
+        place = {'xml:id': placeelement.xpath('./@xml:id', namespaces=self.ns_xml)}
+        place['type'] = placeelement.xpath('./type')
+        place['placeNames'] = []
+        place['idno'] = []
+        for x in placeelement.xpath('.//tei:placeName', namespaces=self.ns_tei):
+            place_name = {}
+            place_name['text'] = " ".join((x.xpath('.//text()')))
+            place_name['type'] = x.xpath('./@type')
+            place_name['key'] = x.xpath('./@key')
+            place_name['lang'] = x.xpath('./@xml:lang', namespaces=self.ns_xml)
+            place['placeNames'].append(place_name)
+        for x in placeelement.xpath('.//tei:idno', namespaces=self.ns_tei):
+            idno = {}
+            idno['text'] = " ".join((x.xpath('.//text()')))
+            idno['type'] = x.xpath('./@type')
+            place['idno'].append(idno)
+        geo = {}
+        try:
+            geo['coordinates'] = placeelement.xpath(
+                './/tei:geo/text()',
+                namespaces=self.ns_tei)[0].split(" ")
+            geo['type'] = placeelement.xpath('.//tei:geo/@decls', namespaces=self.ns_tei)
+        except:
+            geo['coordinates'] = None
+            geo['type'] = None
+        place['geo'] = geo
+        place['node'] = placeelement
+        place['urls'] = []
+        for x in placeelement.xpath('.//tei:ptr', namespaces=self.ns_tei):
+            place['urls'].append(x.xpath('./@target'))
+        return place
