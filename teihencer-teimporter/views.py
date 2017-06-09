@@ -1,4 +1,6 @@
 import lxml.etree as ET
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 from django.shortcuts import render
 from django.views.generic.edit import FormView
 from .tei import TeiReader
@@ -47,6 +49,7 @@ def get_or_create_place(xml_id, place_name, col, src, base_url="https://teihence
         return place
 
 
+@method_decorator(login_required, name="dispatch")
 class ImportTEI(FormView):
     template_name = 'teimporter/import_tei.html'
     form_class = UploadFileForm
