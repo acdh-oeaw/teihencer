@@ -8,6 +8,7 @@ from .stanbol import StbGeoQuerySettings, find_loc, decide_stanbol
 from .forms import UploadFileForm
 from entities.models import *
 from metainfo.models import *
+from vocabularies.models import CollectionType, TextType
 from helper_functions.RDFparsers import PlaceUri
 
 
@@ -56,23 +57,53 @@ class ImportTEI(FormView):
     success_url = '.'
 
     def form_valid(self, form, **kwargs):
+        for x in Place.objects.all():
+            x.delete()
+        for x in Collection.objects.all():
+            x.delete()
+        for x in Text.objects.all():
+            x.delete()
+        for x in Source.objects.all():
+            x.delete()
         context = super(ImportTEI, self).get_context_data(**kwargs)
-        src, created = Source.objects.get_or_create(orig_filename=form.cleaned_data['file'].name)
-        col, created = Collection.objects.get_or_create(name=form.cleaned_data['collection'])
-        xpath = form.cleaned_data['xpath']
-        file = form.cleaned_data['file'].read()
+        cd = form.cleaned_data
+        current_user = self.request.user
+        if cd['collection']:
+            current_collection = "{}".format(cd['collection'])
+        elif cd['new_collection']:
+            current_collection = "{}_{}".format(current_user.username, cd['new_collection'])
+        else:
+            current_collection = "{}".format(current_user.username)
+        print(current_user.username, current_collection)
+        src, _ = Source.objects.get_or_create(orig_filename=cd['file'].name, author=current_user)
+        col, _ = Collection.objects.get_or_create(name=current_collection)
+        xpath = cd['xpath']
+        file = cd['file'].read()
         teifile = TeiReader(file)
         added_ids = teifile.add_ids(xpath)
         place_list = teifile.create_place_index(added_ids[0])
-        for x in added_ids[0]:
-            new_place = get_or_create_place(
-                x['ref'], x['text'], col, src, base_url="https://schnitzler-diary/")
         context['place_list'] = ET.tostring(place_list, pretty_print=True, encoding="UTF-8")
-        context['processd_file'] = ET.tostring(added_ids[1], pretty_print=True, encoding="UTF-8")
-        # context['hansi'] = get_or_create_place('9iu987gjghgf', 'Michigan')
-        context['handi'] = added_ids
-        if form.cleaned_data['enrich']:
-            context['enrich'] = 'Yes'
+        context['processd_file'] = ET.tostring(
+            added_ids[1], pretty_print=True, encoding="UTF-8"
+        )
+        text, _ = Text.objects.get_or_create(text=context['processd_file'], source=src)
+        kind, _ = TextType.objects.get_or_create(name='process TEI DOC')
+        kind.save()
+        text.kind = kind
+        text.save()
+
+        placeindex, _ = Text.objects.get_or_create(text=context['place_list'], source=src)
+        kind, _ = TextType.objects.get_or_create(name='generated place list')
+        kind.save()
+        placeindex.kind = kind
+        placeindex.save()
+        if cd['enrich']:
+            for x in added_ids[0]:
+                new_place = get_or_create_place(
+                    x['ref'], x['text'], col, src, base_url="https://schnitzler-diary/")
+                new_place.text.add(text)
+                new_place.text.add(placeindex)
+                new_place.save()
         else:
-            context['enrich'] = 'No'
+            pass
         return render(self.request, 'teimporter/import_tei.html', context)

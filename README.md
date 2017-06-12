@@ -17,3 +17,27 @@ now your root directory should contain a directory called *apis-core*, and a *.g
 
 
 python manage.py makemigrations entities highlighter labels metainfo relations vocabularies webpage --settings=apis.settings.dev
+
+
+# Workflow
+
+## Registration
+
+A user account is needed for managing the data created/curated/published by users.
+
+* simple form with username, password (to decide if also email)
+* A group {username} is created.
+* The user {username} is linked to group {username}
+* A collection {username} is created. This collection {username} has a parent collection {teihencer-all}
+* The {username}-collection is related to group {user-name} and all CRUD rights for this collection given to user {username}
+
+## Upload/Process
+
+* user needs to be logged in
+* user can upload 1-n TEI-Document(s)
+* upload form requests the name of a {current-upload}-collection
+** this collection can already exist (select from list)
+** or this collection will be created
+* anyway this collection always has a `parent_collection` the {username}-collection.
+* derived entities from the uploaded document(s) will be related to {current-upload}-collection
+* derived entities from the uploaded document(s) will be related to source-objects which will be created on the fly, with names taken from uploaded/processed files
