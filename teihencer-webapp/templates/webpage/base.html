@@ -116,7 +116,7 @@
                         <ul class="dropdown-menu procustom-dropdown-menu">
                             <li><a href="{% url 'webpage:start' %}">{% projects_metadata 'title' %}</a></li>
                             <li><a href="{% url 'webpage:about' %}">About</a></li>
-                            <li><a href="{% url 'datamodel:plate' %}">Application's data model</a></li>
+                            <!-- <li><a href="{% url 'datamodel:plate' %}">Application's data model</a></li> -->
                             <li><a href="{% url 'webpage:imprint' %}">Impressum / Imprint</a></li>
                         </ul>
                     </li>
@@ -139,21 +139,21 @@
                         </a>
                         {% endif %}
                         <ul class="dropdown-menu procustom-dropdown-menu">
-                            <li><a href="{% url 'entities:person_list' %}">Persons</a></li>
+                            <!-- <li><a href="{% url 'entities:person_list' %}">Persons</a></li> -->
                             <li><a href="{% url 'entities:place_list' %}">Places</a></li>
-                            <li><a href="{% url 'entities:institution_list' %}">Institutions</a></li>
+                            <!-- <li><a href="{% url 'entities:institution_list' %}">Institutions</a></li>
                             <li><a href="{% url 'entities:event_list' %}">Events</a></li>
-                            <li><a href="{% url 'entities:work_list' %}">Works</a></li>
+                            <li><a href="{% url 'entities:work_list' %}">Works</a></li> -->
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="{% url 'entities:birth_death_map' %}">Person Place map</a></li>
                             <li><a href="{% url 'entities:generic_network_viz' %}">Network</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -191,7 +191,7 @@
         <div class="row text-center">
             <div class="col-sm-4">
                 <a href="https://acdh.oeaw.ac.at/acdh/" class="navlink" target="_blank">
-                    <img src="{% static 'webpage/img/ACDH_kurz_Weiss.png' %}" id="acdh-logo" alt="ACDH" title="Austrian Centre for Digital Humanities"/>
+                    <img src="{% static 'webpage/img/acdh_logo_02.png' %}" id="acdh-logo" alt="ACDH" title="Austrian Centre for Digital Humanities"/>
                 </a>
             </div>
             <div class="col-sm-4">
