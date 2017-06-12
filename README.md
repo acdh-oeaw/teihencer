@@ -41,3 +41,12 @@ A user account is needed for managing the data created/curated/published by user
 * anyway this collection always has a `parent_collection` the {username}-collection.
 * derived entities from the uploaded document(s) will be related to {current-upload}-collection
 * derived entities from the uploaded document(s) will be related to source-objects which will be created on the fly, with names taken from uploaded/processed files
+
+# Use cases
+
+## place entities tagged but not linked to any index
+
+You have 1:n TEI files which are semantically annotated in a sense that place like entities a tagged like e.g. `<tei:placeName/>` or `<tei:rs[@type='place']`. But those elements are not in any way linked to an index like a `<listPlace>`. If so, you can upload you file and *TEIHencer* will
+* add `@ref` attributes to those entities. The attribute values are md5 hashes derieved from the elements text nodes. This ensures that entities with the same text-nodes share the same `@ref`-value.
+* *TEIHencer* takes the text-nodes and reconciles them against geonames. It tries to find matches and stores those matches in a specific collection, which can then be manually posprocessed/curated in a graphical user interface.
+* After this curation process, the enhanced and curated can be exported as TEI document. 
