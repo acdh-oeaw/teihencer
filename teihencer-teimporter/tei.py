@@ -9,19 +9,18 @@ tei_document = """
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title></title>
+            <title/>
          </titleStmt>
          <publicationStmt>
-            <p></p>
+            <p/>
          </publicationStmt>
          <sourceDesc>
-            <p></p>
+            <p/>
          </sourceDesc>
       </fileDesc>
   </teiHeader>
   <text>
-      <body>
-      </body>
+      <body/>
   </text>
 </TEI>
 """

@@ -87,13 +87,15 @@ class ImportTEI(FormView):
             added_ids[1], pretty_print=True, encoding="UTF-8"
         )
         text, _ = Text.objects.get_or_create(text=context['processd_file'], source=src)
-        kind, _ = TextType.objects.get_or_create(name='process TEI DOC')
+        kind, _ = TextType.objects.get_or_create(name='process TEI DOC', entity='place')
+        kind.collections.add(col)
         kind.save()
         text.kind = kind
         text.save()
 
         placeindex, _ = Text.objects.get_or_create(text=context['place_list'], source=src)
-        kind, _ = TextType.objects.get_or_create(name='generated place list')
+        kind, _ = TextType.objects.get_or_create(name='generated place list', entity='place')
+        kind.collections.add(col)
         kind.save()
         placeindex.kind = kind
         placeindex.save()
@@ -106,4 +108,4 @@ class ImportTEI(FormView):
                 new_place.save()
         else:
             pass
-        return render(self.request, 'teimporter/import_tei.html', context)
+        return render(self.request, self.template_name, context)
