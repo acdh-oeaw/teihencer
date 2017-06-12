@@ -15,9 +15,7 @@ now your root directory should contain a directory called *apis-core*, and a *.g
 3. now you need to create a virtual environment and install needed packages (on windows this can be bit cumerbosome because you might have to download precompiled packages first)
 4. after you env is set up, you have to create migraion files `python manage.py makemigrations entities highlighter labels metainfo relations vocabularies webpage --settings=apis.settings.dev` make sure to do this for all apps in your project
 
-
 python manage.py makemigrations entities highlighter labels metainfo relations vocabularies webpage --settings=apis.settings.dev
-
 
 # Workflow
 
