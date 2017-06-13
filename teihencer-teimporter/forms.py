@@ -1,4 +1,5 @@
 from django import forms
+from django.contrib.auth.models import Group
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 from metainfo.models import Collection
@@ -21,21 +22,24 @@ class GenericFilterFormHelper(FormHelper):
 
 class UploadFileForm(forms.Form):
     xpath = forms.ChoiceField(choices=XPATH_CHOICES, required=True)
-    collection = forms.CharField(required=False)
-    new_collection = forms.CharField(required=False)
+    collection = forms.ChoiceField(required=False)
+    new_sub_collection = forms.CharField(required=False)
     enrich = forms.BooleanField(required=False)
     file = forms.FileField()
 
     def __init__(self, *args, **kwargs):
+        collections = [Collection.objects.all()]
+        self.user = kwargs.pop('user', None)
+        CHOICES = [
+            (self.user.username, self.user.username),
+        ]
+        groups = self.user.groups.exclude(name='superuser')
+        collections = Collection.objects.filter(groups_allowed__in=groups)
+        for x in collections:
+            CHOICES.append((x.name, x.name))
+        print(collections)
         super(UploadFileForm, self).__init__(*args, **kwargs)
-
-        def get_choices():
-            collection = [('', '')]
-            collection = collection + [(x.name, x.name) for x in Collection.objects.all()]
-            return collection
-
-        self.fields['collection'] = forms.ChoiceField(choices=get_choices(), required=False)
-        self.fields['collection'].initial = ''
+        self.fields['collection'].choices = set(CHOICES)
         self.fields['xpath'].initial = "rs[@type='place']"
         self.fields['enrich'].initial = False
         self.helper = FormHelper()

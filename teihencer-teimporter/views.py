@@ -1,4 +1,6 @@
 import lxml.etree as ET
+from django.contrib.auth.models import Group, Permission
+from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.shortcuts import render
@@ -56,27 +58,52 @@ class ImportTEI(FormView):
     form_class = UploadFileForm
     success_url = '.'
 
+    def get_form_kwargs(self):
+        # YEAR_IN_SCHOOL_CHOICES = (
+        #     ('FR', 'Freshman'),
+        #     ('SO', 'Sophomore'),
+        #     ('JR', 'Junior'),
+        #     ('SR', 'Senior'),
+        # )
+        kwargs = super(ImportTEI, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
+
     def form_valid(self, form, **kwargs):
-        for x in Place.objects.all():
-            x.delete()
-        for x in Collection.objects.all():
-            x.delete()
-        for x in Text.objects.all():
-            x.delete()
-        for x in Source.objects.all():
-            x.delete()
-        context = super(ImportTEI, self).get_context_data(**kwargs)
-        cd = form.cleaned_data
         current_user = self.request.user
-        if cd['collection']:
-            current_collection = "{}".format(cd['collection'])
-        elif cd['new_collection']:
-            current_collection = "{}_{}".format(current_user.username, cd['new_collection'])
+        # for x in Place.objects.all():
+        #     x.delete()
+        # for x in Collection.objects.all():
+        #     x.delete()
+        # for x in Text.objects.all():
+        #     x.delete()
+        # for x in Source.objects.all():
+        #     x.delete()
+        context = super(ImportTEI, self).get_context_data(**kwargs)
+        super_collection, _ = Collection.objects.get_or_create(name='teihencer-all')
+        current_group, _ = Group.objects.get_or_create(name=current_user.username)
+        current_group.user_set.add(current_user)
+        cd = form.cleaned_data
+
+        if cd['new_sub_collection'] is None:
+            col, _ = Collection.objects.get_or_create(
+                name=cd['collection'],
+                parent_class=super_collection
+            )
         else:
-            current_collection = "{}".format(current_user.username)
-        print(current_user.username, current_collection)
+            parent_collection, _= Collection.objects.get_or_create(
+                name=cd['collection'],
+                parent_class=super_collection,
+            )
+            parent_collection.groups_allowed.add(current_group)
+            parent_collection.save()
+            col, _ = Collection.objects.get_or_create(
+                name=cd['new_sub_collection'],
+                parent_class=parent_collection,
+            )
         src, _ = Source.objects.get_or_create(orig_filename=cd['file'].name, author=current_user)
-        col, _ = Collection.objects.get_or_create(name=current_collection)
+        col.groups_allowed.add(current_group)
+        col.save()
         xpath = cd['xpath']
         file = cd['file'].read()
         teifile = TeiReader(file)
