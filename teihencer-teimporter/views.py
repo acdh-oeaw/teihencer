@@ -59,26 +59,20 @@ class ImportTEI(FormView):
     success_url = '.'
 
     def get_form_kwargs(self):
-        # YEAR_IN_SCHOOL_CHOICES = (
-        #     ('FR', 'Freshman'),
-        #     ('SO', 'Sophomore'),
-        #     ('JR', 'Junior'),
-        #     ('SR', 'Senior'),
-        # )
         kwargs = super(ImportTEI, self).get_form_kwargs()
         kwargs['user'] = self.request.user
         return kwargs
 
     def form_valid(self, form, **kwargs):
         current_user = self.request.user
-        # for x in Place.objects.all():
-        #     x.delete()
-        # for x in Collection.objects.all():
-        #     x.delete()
-        # for x in Text.objects.all():
-        #     x.delete()
-        # for x in Source.objects.all():
-        #     x.delete()
+        for x in Place.objects.all():
+            x.delete()
+        for x in Collection.objects.all():
+            x.delete()
+        for x in Text.objects.all():
+            x.delete()
+        for x in Source.objects.all():
+            x.delete()
         context = super(ImportTEI, self).get_context_data(**kwargs)
         super_collection, _ = Collection.objects.get_or_create(name='teihencer-all')
         current_group, _ = Group.objects.get_or_create(name=current_user.username)
@@ -88,8 +82,11 @@ class ImportTEI(FormView):
         if cd['new_sub_collection'] is None:
             col, _ = Collection.objects.get_or_create(
                 name=cd['collection'],
-                parent_class=super_collection
             )
+            if col.parent_class:
+                pass
+            else:
+                col.parent_class.add(super_collection)
         else:
             parent_collection, _= Collection.objects.get_or_create(
                 name=cd['collection'],
