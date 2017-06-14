@@ -65,30 +65,32 @@ class ImportTEI(FormView):
 
     def form_valid(self, form, **kwargs):
         current_user = self.request.user
-        for x in Place.objects.all():
-            x.delete()
-        for x in Collection.objects.all():
-            x.delete()
-        for x in Text.objects.all():
-            x.delete()
-        for x in Source.objects.all():
-            x.delete()
+        # for x in Place.objects.all():
+        #     x.delete()
+        # for x in Collection.objects.all():
+        #     x.delete()
+        # for x in Text.objects.all():
+        #     x.delete()
+        # for x in Source.objects.all():
+        #     x.delete()
         context = super(ImportTEI, self).get_context_data(**kwargs)
         super_collection, _ = Collection.objects.get_or_create(name='teihencer-all')
         current_group, _ = Group.objects.get_or_create(name=current_user.username)
         current_group.user_set.add(current_user)
         cd = form.cleaned_data
 
-        if cd['new_sub_collection'] is None:
+        if cd['new_sub_collection'] == "":
             col, _ = Collection.objects.get_or_create(
-                name=cd['collection'],
+                name=cd['collection']
             )
-            if col.parent_class:
-                pass
+            if col.parent_class is None:
+                print(col.parent_class)
+                col.parent_class = super_collection
+                col.save()
             else:
-                col.parent_class.add(super_collection)
+                pass
         else:
-            parent_collection, _= Collection.objects.get_or_create(
+            parent_collection, _ = Collection.objects.get_or_create(
                 name=cd['collection'],
                 parent_class=super_collection,
             )
