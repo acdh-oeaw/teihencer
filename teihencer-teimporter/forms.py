@@ -48,3 +48,29 @@ class UploadFileForm(forms.Form):
         self.helper.label_class = 'col-md-3'
         self.helper.field_class = 'col-md-9'
         self.helper.add_input(Submit('submit', 'import'),)
+
+
+class UploadPlaceListForm(forms.Form):
+    collection = forms.ChoiceField(required=False)
+    new_sub_collection = forms.CharField(required=False)
+    file = forms.FileField()
+
+    def __init__(self, *args, **kwargs):
+        collections = [Collection.objects.all()]
+        self.user = kwargs.pop('user', None)
+        CHOICES = [
+            (self.user.username, self.user.username),
+        ]
+        groups = self.user.groups.exclude(name='superuser')
+        collections = Collection.objects.filter(groups_allowed__in=groups)
+        for x in collections:
+            CHOICES.append((x.name, x.name))
+        print(collections)
+        super(UploadPlaceListForm, self).__init__(*args, **kwargs)
+        self.fields['collection'].choices = set(CHOICES)
+        self.helper = FormHelper()
+        self.helper.form_tag = True
+        self.helper.form_class = 'form-horizontal'
+        self.helper.label_class = 'col-md-3'
+        self.helper.field_class = 'col-md-9'
+        self.helper.add_input(Submit('submit', 'import'),)

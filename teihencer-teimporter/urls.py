@@ -3,5 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^import/$', views.ImportTEI.as_view(), name='import_tei'),
+    url(r'^import-single-doc/$', views.ImportTEI.as_view(), name='import_tei'),
+    url(r'^import-placelist/$', views.ImportPlaceListTEI.as_view(), name='import_placelist'),
 ]

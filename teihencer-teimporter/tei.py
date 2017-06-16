@@ -182,6 +182,7 @@ class TeiPlaceList(TeiReader):
             place_name['text'] = " ".join((x.xpath('.//text()')))
             place_name['type'] = x.xpath('./@type')
             place_name['key'] = x.xpath('./@key')
+            place_name['ref'] = x.xpath('./@ref')
             place_name['lang'] = x.xpath('./@xml:lang', namespaces=self.ns_xml)
             place['placeNames'].append(place_name)
         for x in placeelement.xpath('.//tei:idno', namespaces=self.ns_tei):
