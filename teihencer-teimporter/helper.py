@@ -42,7 +42,6 @@ def create_metatdata(user, some_form):
     return {'col': col, 'src': src, 'text': text, 'file': file}
 
 
-
 def get_or_create_place(xml_id, place_name, base_url="https://teihencer.acdh.oeaw.ac.at/origid/"):
     o_name = unicodedata.normalize('NFC', place_name)
     url = '{}{}'.format(base_url, xml_id)

@@ -164,6 +164,8 @@ class TeiPlaceList(TeiReader):
         places = placelist.xpath('//tei:listPlace//tei:place', namespaces=self.ns_tei)
         return {"amount": len(places), "places": places}
 
+    # def placeAndID(self, placeelement, xpath)
+
     def place2dict(self, placeelement):
 
         """parses place element object and returns
@@ -205,3 +207,40 @@ class TeiPlaceList(TeiReader):
         for x in placeelement.xpath('.//tei:ptr', namespaces=self.ns_tei):
             place['urls'].append(x.xpath('./@target'))
         return place
+
+    def fetch_ID(self, element, xpath2ID, ndtype=None):
+
+        """takes a place node, a xpath pointing to a norm data ID/LINK,
+        and optional a normdata type and returns
+        * a dict with
+        ** the passed in params,
+        ** the fetched normdata ID (as URL!),
+        ** and a "status" bool indicating if the xpath hit something (True) or not (False)
+        """
+        namespaces = {
+            'tei': "http://www.tei-c.org/ns/1.0",
+            'xml': "http://www.w3.org/XML/1998/namespace",
+            'geonames': 'http://www.geonames.org/',
+            'gnd': 'http://d-nb.info/gnd/'
+        }
+        result = {
+            'xpath': xpath2ID,
+            'fetched_id': None,
+            'element': element,
+        }
+        try:
+            fetched_id = element.xpath(xpath2ID, namespaces=namespaces)[0]
+        except:
+            result['status'] = False
+            return result
+        if ndtype:
+            if fetched_id.startswith(namespaces[ndtype]):
+                pass
+            else:
+                fetched_id = namespaces[ndtype]+fetched_id+'/'
+                fetched_id
+        else:
+            pass
+        result['fetched_id'] = fetched_id
+        result['status'] = True
+        return result

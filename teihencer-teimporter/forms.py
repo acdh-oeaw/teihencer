@@ -51,6 +51,17 @@ class UploadFileForm(forms.Form):
 
 
 class UploadPlaceListForm(forms.Form):
+    XPATH2ID_CHOICES = (
+        ('', ''),
+        ('.//tei:idno/text()', './/tei:idno/text()'),
+        ('.//tei:placeName/@ref', './/tei:placeName/@ref'),
+        ('.//tei:placeName/@key', './/tei:placeName/@key'),
+        ('./@xml:id', './@xml:id'),
+    )
+    xpath = forms.ChoiceField(
+        choices=XPATH2ID_CHOICES, required=False,
+        help_text="XPath to reference ID (like geonames.org). Keep it blank if there is none."
+    )
     collection = forms.ChoiceField(required=False)
     new_sub_collection = forms.CharField(required=False)
     file = forms.FileField()
@@ -67,6 +78,7 @@ class UploadPlaceListForm(forms.Form):
             CHOICES.append((x.name, x.name))
         print(collections)
         super(UploadPlaceListForm, self).__init__(*args, **kwargs)
+        self.fields['xpath'].initial = ''
         self.fields['collection'].choices = set(CHOICES)
         self.helper = FormHelper()
         self.helper.form_tag = True

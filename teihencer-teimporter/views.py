@@ -9,6 +9,7 @@ from .forms import UploadFileForm, UploadPlaceListForm
 from .helper import get_or_create_place, create_metatdata
 from entities.models import *
 from metainfo.models import *
+from helper_functions.RDFparsers import PlaceUri
 from vocabularies.models import TextType
 
 
@@ -31,18 +32,33 @@ class ImportPlaceListTEI(FormView):
         places = teifile.parse_placelist()
         before = len(Place.objects.all())
         fails = []
+        cd = form.cleaned_data
         print(places['amount'])
-        for x in places['places']:
-            place = teifile.place2dict(x)
-            new_place = get_or_create_place(
-                place['xml:id'][0],
-                place['placeNames'][0]['text'],
-                base_url=metadata['col'].name
-            )
-            new_place.collection.add(metadata['col'])
-            new_place.source = metadata['src']
-            new_place.text.add(metadata['text'])
-            new_place.save()
+        if cd['xpath'] == "":
+            for x in places['places']:
+                place = teifile.place2dict(x)
+                new_place = get_or_create_place(
+                    place['xml:id'][0],
+                    place['placeNames'][0]['text'],
+                    base_url=metadata['col'].name
+                )
+                new_place.collection.add(metadata['col'])
+                new_place.source = metadata['src']
+                new_place.text.add(metadata['text'])
+                new_place.save()
+        else:
+            for x in places['places']:
+                place_uri = teifile.fetch_ID(x, cd['xpath'], 'geonames')
+                print(place_uri)
+                if place_uri['status']:
+                    try:
+                        new_place = PlaceUri(place_uri['fetched_id']).place
+                    except:
+                        pass
+                    new_place.collection.add(metadata['col'])
+                    new_place.source = metadata['src']
+                    new_place.text.add(metadata['text'])
+                    new_place.save()
         after = len(Place.objects.all())
         context['counter'] = [before, after]
         return render(self.request, self.template_name, context)
