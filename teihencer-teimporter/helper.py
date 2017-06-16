@@ -6,8 +6,44 @@ from helper_functions.RDFparsers import PlaceUri
 # https://stackoverflow.com/questions/32205220/cant-execute-queries-until-end-of-atomic-block-in-my-data-migration-on-django-1
 
 
-def get_or_create_place(
-        xml_id, place_name, col, src, base_url="https://teihencer.acdh.oeaw.ac.at/origid/"):
+def create_metatdata(user, some_form):
+    current_user = user
+    cd = some_form.cleaned_data
+    super_collection, _ = Collection.objects.get_or_create(name='teihencer-all')
+    current_group, _ = Group.objects.get_or_create(name=current_user.username)
+    current_group.user_set.add(current_user)
+    file = cd['file'].read()
+    src, _ = Source.objects.get_or_create(orig_filename=cd['file'].name, author=current_user)
+    text, _ = Text.objects.get_or_create(text=file, source=src)
+    kind, _ = TextType.objects.get_or_create(name='process tei:listPlace', entity='place')
+    if cd['new_sub_collection'] == "":
+        col, _ = Collection.objects.get_or_create(
+            name=cd['collection']
+        )
+        if col.parent_class is None:
+            print(col.parent_class)
+            col.parent_class = super_collection
+            col.save()
+        else:
+            pass
+    else:
+        parent_collection, _ = Collection.objects.get_or_create(
+            name=cd['collection'],
+            parent_class=super_collection,
+        )
+        parent_collection.groups_allowed.add(current_group)
+        parent_collection.save()
+        col, _ = Collection.objects.get_or_create(
+            name=cd['new_sub_collection'],
+            parent_class=parent_collection,
+        )
+    col.groups_allowed.add(current_group)
+    col.save()
+    return {'col': col, 'src': src, 'text': text, 'file': file}
+
+
+
+def get_or_create_place(xml_id, place_name, base_url="https://teihencer.acdh.oeaw.ac.at/origid/"):
     o_name = unicodedata.normalize('NFC', place_name)
     url = '{}{}'.format(base_url, xml_id)
     place = Place.get_or_create_uri(url)
@@ -39,7 +75,6 @@ def get_or_create_place(
             uri = Uri.objects.create(uri=url, entity=place)
         except:
             print('error double entry: {}'.format(url))
-        place.source = src
         place.save()
 
         return place
