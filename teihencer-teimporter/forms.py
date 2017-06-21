@@ -8,6 +8,7 @@ XPATH_CHOICES = (
     ('placeName', 'placeName'),
     ('country', 'country'),
     ("rs[@type='place']", "rs[@type='place']"),
+    ("name[@type='place']", "name[@type='place']"),
 )
 
 
