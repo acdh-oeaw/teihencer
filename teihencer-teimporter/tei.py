@@ -47,7 +47,7 @@ class TeiReader():
         except:
             self.parsed_file = "parsing didn't work"
 
-    def create_place(self, xml_id="something", text="someplace"):
+    def create_place(self, xml_id="something", text="someplace", lat=None, lng=None, ref_id=None):
 
         """ creates a tei:place element with an @xml:id
         and a child element tei:placeName"""
@@ -57,6 +57,16 @@ class TeiReader():
         placeName = ET.Element("{http://www.tei-c.org/ns/1.0}placeName",)
         placeName.text = text
         place.append(placeName)
+        location = ET.Element("{http://www.tei-c.org/ns/1.0}location")
+        geo = ET.Element("{http://www.tei-c.org/ns/1.0}geo")
+        geo.attrib['decls'] = '#LatLng'
+        geo.text = "{} {}".format(lat, lng)
+        location.append(geo)
+        place.append(location)
+        idno = ET.Element("{http://www.tei-c.org/ns/1.0}idno")
+        idno.text = ref_id
+        place.append(idno)
+
         return place
 
     def get_places_elements(self, ids):
@@ -124,6 +134,19 @@ class TeiReader():
         """ takes a list of elements and transforms them into an place index-file"""
 
         places = self.get_places_elements(nodes)
+        list_place = ET.Element("{http://www.tei-c.org/ns/1.0}listPlace")
+        for x in places:
+            list_place.append(x)
+        new_doc = ET.fromstring(tei_document)
+        body = new_doc.xpath('//tei:body', namespaces=self.ns_tei)[0]
+        body.append(list_place)
+        return new_doc
+
+    def create_place_index_from_place_elements(self, nodes):
+
+        """ takes a list of elements and transforms them into an place index-file"""
+
+        places = nodes
         list_place = ET.Element("{http://www.tei-c.org/ns/1.0}listPlace")
         for x in places:
             list_place.append(x)
