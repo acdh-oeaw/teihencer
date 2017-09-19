@@ -4,7 +4,6 @@ an [APIS](https://apis.acdh.oeaw.ac.at) based application to enhance TEI documen
 
 We are currently updating the code base. 
 
-
 ## installation
 
 1. clone the repo `git clone https://github.com/acdh-oeaw/teihencer.git`
@@ -12,7 +11,6 @@ We are currently updating the code base.
 3. create symbolic links from `teihencer-teimporter`, `teihencer-webapp` to `apis-core/teimporter`  and `apis-core/teimporter` (on windows use  `mklink /d webpage ..\teihencer-webapp`)
 4. create symbolic link from `teihencer-settings` to `apis-core/apis/settings`
 5. Make migrations `python manage.py makemigrations entities highlighter labels metainfo relations vocabularies webpage --settings=apis.settings.dev`
-
 
 ## set up (merely for internal development)
 
@@ -31,7 +29,7 @@ python manage.py makemigrations entities highlighter labels metainfo relations v
 
 # Workflow
 
-## Registration
+## Registration (not yet implemented) 
 
 A user account is needed for managing the data created/curated/published by users.
 
@@ -60,11 +58,11 @@ You have 1:n TEI files which are semantically annotated in a sense that place li
 
 * add `@ref` attributes to those entities. The attribute values are md5 hashes derieved from the elements text nodes. This ensures that entities with the same text-nodes share the same `@ref`-value.
 * *TEIHencer* takes the text-nodes and reconciles them against [geonames.org](http://www.geonames.org/). It tries to find matches and stores those matches in a specific collection, which can then be manually post processed/curated in a graphical user interface.
-* After this curation process, the enhanced and curated can be exported as TEI document.
+* After this curation process, the enhanced and curated place objects can be exported as TEI document.
 
 ## enrich an existing place index (`<tei:listPlace/>`)
 
-You have already one place index the entries are not linked to geonames (or [GND](https://portal.dnb.de)) but you want to enhance your index with information (IDs, coordinates, ...) findable on [geonames.org](http://www.geonames.org/).
+You have already one place index but the entries are not linked to geonames (or [GND](https://portal.dnb.de)) but you want to enhance your index with information (IDs, coordinates, ...) findable on [geonames.org](http://www.geonames.org/).
 To do so you can
 
 * Upload your TEI document containing the place index.
