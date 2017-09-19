@@ -1,8 +1,6 @@
 import lxml.etree as ET
 import hashlib
 
-import lxml.etree as ET
-import hashlib
 
 tei_document = """
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -258,6 +256,8 @@ class TeiPlaceList(TeiReader):
             return result
         if ndtype:
             if fetched_id.startswith(namespaces[ndtype]):
+                pass
+            if fetched_id.startswith('http'):
                 pass
             else:
                 fetched_id = namespaces[ndtype]+fetched_id+'/'

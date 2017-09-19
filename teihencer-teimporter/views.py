@@ -53,12 +53,15 @@ class ImportPlaceListTEI(FormView):
                 if place_uri['status']:
                     try:
                         new_place = PlaceUri(place_uri['fetched_id']).place
+                        #GenericRDFParser(URI, 'Place')
+                        #new_place = GenericRDFParser.get_or_create
+                        new_place.collection.add(metadata['col'])
+                        new_place.source = metadata['src']
+                        new_place.text.add(metadata['text'])
+                        new_place.save()
                     except:
                         pass
-                    new_place.collection.add(metadata['col'])
-                    new_place.source = metadata['src']
-                    new_place.text.add(metadata['text'])
-                    new_place.save()
+
         after = len(Place.objects.all())
         context['counter'] = [before, after]
         return render(self.request, self.template_name, context)
