@@ -2,11 +2,23 @@
 
 an [APIS](https://apis.acdh.oeaw.ac.at) based application to enhance TEI documents (therefore this hilarious project name)
 
-## set up
+We are currently updating the code base. 
+
+
+## installation
+
+1. clone the repo `git clone https://github.com/acdh-oeaw/teihencer.git`
+2. add apis-core sumbodule `git submodule add https://github.com/acdh-oeaw/apis-core.git`
+3. create symbolic links from `teihencer-teimporter`, `teihencer-webapp` to `apis-core/teimporter`  and `apis-core/teimporter` (on windows use  `mklink /d webpage ..\teihencer-webapp`)
+4. create symbolic link from `teihencer-settings` to `apis-core/apis/settings`
+5. Make migrations `python manage.py makemigrations entities highlighter labels metainfo relations vocabularies webpage --settings=apis.settings.dev`
+
+
+## set up (merely for internal development)
 
 1. create a git repo e.g. 'teihencer'
 2. `cd teihencer`
-3. `git submodule add https://redmine.acdh.oeaw.ac.at/apis-core.git`
+3. `git submodule add https://github.com/acdh-oeaw/apis-core.git`
 
 now your root directory should contain a directory called *apis-core*, and a *.gitmodules* file.
 
