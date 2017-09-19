@@ -1,0 +1,3 @@
+[submodule "apis-core"]
+	path = apis-core
+	url = https://github.com/acdh-oeaw/apis-core.git
