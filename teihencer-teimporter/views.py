@@ -10,6 +10,8 @@ from .helper import create_metatdata
 from entities.models import *
 from metainfo.models import *
 from vocabularies.models import TextType
+from helper_functions.RDFparsers import GenericRDFParser
+from helper_functions.stanbolQueries import find_loc
 
 
 @method_decorator(login_required, name="dispatch")
@@ -39,10 +41,10 @@ class ImportPlaceListTEI(FormView):
             pass
             for x in places['places']:
                 place = teifile.place2dict(x)
-                try:
-                    print(place)
-                except UnicodeEncodeError:
-                    pass
+                # try:
+                #     print(place)
+                # except UnicodeEncodeError:
+                #     pass
         #         new_place = get_or_create_place(
         #             place['xml:id'][0],
         #             place['placeNames'][0]['text'],
@@ -53,22 +55,34 @@ class ImportPlaceListTEI(FormView):
         #         new_place.text.add(metadata['text'])
         #         new_place.save()
         else:
-            for x in places['places']:
-                place_uri = teifile.fetch_ID(x, cd['xpath'], '')
-                print(place_uri)
-                # if place_uri['status']:
-                #     try:
-                #         # new_place = PlaceUri(place_uri['fetched_id']).place
-                #         GenericRDFParser(place_uri, 'Place')
-                #         # new_place = GenericRDFParser.get_or_create
-                #         new_place.collection.add(metadata['col'])
-                #         new_place.source = metadata['src']
-                #         new_place.text.add(metadata['text'])
-                #         new_place.save()
-                #     except:
-                #         pass
-        after = len(Place.objects.all())
-        context['counter'] = [before, after]
+            for y in places['places']:
+                place = teifile.place2dict(y)
+                xmlid = place['xml:id'][0]
+                placename = place['placeNames'][0]['text']
+                res = find_loc([placename], geonames_chains=False, dec_diff=25)
+                if res:
+                    if res[0]:
+                        try:
+                            try:
+                                plc_fin = GenericRDFParser(res[1]['id'], 'Place').get_or_create()
+                            except:
+                                try:
+                                    print('error in: {}'.format(xmlid))
+                                except UnicodeEncodeError:
+                                    pass
+                                plc_fin = GenericRDFParser(res[1][0]['id'], 'Place').get_or_create()
+                        except:
+                            print('error in: {}'.format(xmlid))
+                            plc_fin = Place.objects.create(name=placename, status='no match')
+                    else:
+                        if res[1]:
+                            plc_fin = Place.objects.create(name=placename, status='ambigue')
+                            for x in res[1]:
+                                UriCandidate.objects.create(uri=x['id'], entity=plc_fin)
+                        else:
+                            plc_fin = Place.objects.create(name=placename, status='no match')
+
+        # context['counter'] = [before, after]
         return render(self.request, self.template_name, context)
 
 
