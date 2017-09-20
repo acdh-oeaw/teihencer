@@ -2,13 +2,13 @@
 
 an [APIS](https://apis.acdh.oeaw.ac.at) based application to enhance TEI documents (therefore this hilarious project name)
 
-We are currently updating the code base. 
+We are currently updating the code base.
 
 ## installation
 
 1. clone the repo `git clone https://github.com/acdh-oeaw/teihencer.git`
 2. add apis-core sumbodule `git submodule add https://github.com/acdh-oeaw/apis-core.git`
-3. create symbolic links from `teihencer-teimporter`, `teihencer-webapp` to `apis-core/teimporter`  and `apis-core/teimporter` (on windows use  `mklink /d webpage ..\teihencer-webapp`)
+3. create symbolic links from `teihencer-teimporter`, `teihencer-webapp`, and `teihencer-urls` to `apis-core/teimporter`, `apis-core/webpage` and `apis-core/custom_urls` (on windows use  `mklink /d webpage ..\teihencer-webapp`)
 4. create symbolic link from `teihencer-settings` to `apis-core/apis/settings`
 5. Make migrations `python manage.py makemigrations entities highlighter labels metainfo relations vocabularies webpage --settings=apis.settings.dev`
 
@@ -29,7 +29,7 @@ python manage.py makemigrations entities highlighter labels metainfo relations v
 
 # Workflow
 
-## Registration (not yet implemented) 
+## Registration (not yet implemented)
 
 A user account is needed for managing the data created/curated/published by users.
 
