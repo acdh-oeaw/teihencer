@@ -4,87 +4,6 @@ gndo = 'http://d-nb.info/standards/elementset/gnd#'
 owl = "http://www.w3.org/2002/07/owl#"
 geo = "http://www.opengis.net/ont/geosparql#"
 
-sett_RDF_generic_depricated = {
-    'Place': {
-        'data': [
-            {
-                'base_url': 'http://sws.geonames.org/',
-                'url_appendix': 'about.rdf',
-                'attributes': [
-                    {
-                        'name': 'name',
-                        'identifiers': (
-                            (('objects', 'prefName', gno + 'officialName', ('language', 'de')),),
-                            (('objects', 'prefName', gno + 'alternateName', ('language', 'pl')),)
-                        )
-                    },
-                    {
-                        'name': 'lat',
-                        'identifiers': (
-                            (('objects', 'lat', wgs84 + 'lat', None),),
-                        )
-                    },
-                    {
-                        'name': 'long',
-                        'identifiers': (
-                            (('objects','lng', wgs84 + 'long', None),),
-                        )
-                    }
-                ]
-            }
-        ],
-        'matching': {
-            'name': ['string', (('prefName', None), ),], #tuple of attribute names and strings (used for joins)
-            'lng': ['integer', (('lng', None), ),],
-            'lat': ['integer', (('lat', None), ),]
-
-        }
-    },
-    'Person': {
-        'data': [
-            {
-                'base_url': 'http://d-nb.info/gnd/',
-                'url_appendix': 'about/rdf',
-                'attributes': [
-                    {
-                        'name': 'name',
-                        'identifiers': (
-                            (
-                             ('objects', 'prefNameNode', gndo + 'preferredNameEntityForThePerson', None),'>',
-                             ('objects', 'forename', gndo + 'forename', None), '=',
-                             ('objects', 'surname', gndo + 'surname', None)
-                        ),
-                            (
-                              ('objects', 'prefNameNode', gndo + 'variantNameEntityForThePerson', None), '>',
-                                ('objects', 'descriptionNode', gndo + 'Description', None), '>',
-                                ('objects', 'personalName', gndo + 'personalName', None), '=',
-                                ('objects', 'personalNameAddition', gndo + 'nameAddition', None), '=',
-                                ('objects', 'personalNameCounting', gndo + 'counting', None)
-                            ),
-
-                        )
-                    },
-                    {
-                        'name': 'label',
-                        'identifiers': (
-                            (
-                             ('objects', 'prefNameNode', gndo + 'variantNameEntityForThePerson', None),'>',
-                             ('objects', 'forename', gndo + 'forename', None), '=',
-                             ('objects', 'surname', gndo + 'surname', None)
-                        ),
-                        )
-                    }
-                ]
-            }
-        ],
-        'matching': {
-            'first_name': ['string', (('forename', None),),],
-            'name': ['string', (('surname', None),), (('personalName', None), '-', ('personalNameAddition', None), ' ', ('personalNameCounting', None)), (('name', None),)],
-            'label': ['label', (('label', None),),],
-        }
-    }
-}
-
 sett_RDF_generic = {
     'Place': {
         'data': [
@@ -174,11 +93,11 @@ sett_RDF_generic = {
                 ),
                 'lat': (
                     (('lat', None),),
-                    (('latlong_geonode', ('Point \( [+-]([0-9\.]+) [+-]([0-9\.]+)', 1)),)
+                    (('latlong_geonode', ('Point \( [+-]([0-9\.]+) [+-]([0-9\.]+)', 2)),)
                 ),
                 'lng': (
                     (('lng', None),),
-                    (('latlong_geonode', ('Point \( [+-]([0-9\.]+) [+-]([0-9\.]+)', 2)),)
+                    (('latlong_geonode', ('Point \( [+-]([0-9\.]+) [+-]([0-9\.]+)', 1)),)
                 ),
             },
             'labels': {
@@ -378,6 +297,100 @@ sett_RDF_generic = {
             )
             },
             ],
+        }
+    },
+    'Institution': {
+        'data': [
+            {
+                'base_url': 'http://d-nb.info/gnd/',
+                'url_appendix': 'about/rdf',
+                'attributes': [
+                    {
+                        'name': 'name',
+                        'identifiers': (
+                            (('objects', 'name', gndo + 'preferredNameForTheCorporateBody', None),),
+                            (('objects', 'name', gndo + 'variantNameForTheCorporateBody', None),),
+                        )
+                    },
+                    {
+                        'name': 'alternativeName',
+                        'identifiers': (
+                            (('objects', 'alternativeName', gndo + 'variantNameForTheCorporateBody', None),),
+                        )
+                    },
+                    {
+                        'name': 'start',
+                        'identifiers': (
+                            (('objects', 'start', gndo + 'dateOfEstablishment', None),),
+                        )
+                    },
+                    {
+                        'name': 'end',
+                        'identifiers': (
+                            (('objects', 'end', gndo + 'dateOfTermination', None),),
+                        )
+                    },
+                    {
+                        'name': 'placeOfBusiness',
+                        'identifiers': (
+                            (('objects', 'placeOfBusiness', gndo + 'placeOfBusiness', None),),
+                        )
+                    },
+                    {
+                        'name': 'succeeding',
+                        'identifiers': (
+                            (('objects', 'succeeding', gndo + 'succeedingCorporateBody', None),),
+                        )
+                    },
+                    {
+                        'name': 'preceding',
+                        'identifiers': (
+                            (('objects', 'preceding', gndo + 'precedingCorporateBody', None),),
+                        )
+                    }
+                ]
+            }
+        ],
+        'matching': {
+            'attributes': {
+                'name': (
+                    (('name', None),),
+                ),
+                'start_date_written': (
+                    (('start', None),),
+                ),
+                'end_date_written': (
+                    (('end', None),),
+                )
+            },
+            'labels': {
+                'alternative name': (
+                    ('alternativeName', None),
+                )
+            },
+            'linked objects': [
+            {
+                'type': 'Place',
+                'kind': 'located in',
+                'object': (
+                    ('placeOfBusiness', None),
+            )
+            },
+            {
+                'type': 'Institution',
+                'kind': 'preceding',
+                'object': (
+                    ('preceding', None),
+            )
+            },
+            {
+                'type': 'Institution',
+                'kind': 'succeeding',
+                'object': (
+                    ('succeeding', None),
+            )
+            },
+            ]
         }
     }
 }

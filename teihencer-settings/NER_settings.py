@@ -5,6 +5,7 @@ gn = "http://www.geonames.org/ontology#"
 stb_base = 'http://enrich.acdh.oeaw.ac.at/entityhub/site/'
 URL_geonames = stb_base + "geoNames_%s/query"
 wgs84_pos = "http://www.w3.org/2003/01/geo/wgs84_pos#"
+gnd_geo = "http://www.opengis.net/ont/geosparql#"
 stb_find = stb_base + u'{}/find'
 
 
@@ -17,10 +18,10 @@ autocomp_settings = {
         'type': False,
         'url': stb_find.format('geoNames_S_P_A'),
         'fields': {
-            'descr': (gn + 'featureCode','String'),
+            'descr': (gn + 'featureCode', 'String'),
             'name': (gn + 'name','String'),
-            'long': (wgs84_pos + 'long','String'),
-            'lat': (wgs84_pos + 'lat','String')
+            'long': (wgs84_pos + 'long', 'String'),
+            'lat': (wgs84_pos + 'lat', 'String')
         }},
         {'source': 'GeonamesRGN',
         'type': False,
@@ -45,7 +46,10 @@ autocomp_settings = {
         'url': stb_find.format('gndTerritorialCorporateBodyOrAdministrativeUnits'),
         'fields': {
             'name': (u'http://d-nb.info/standards/elementset/gnd#preferredNameForThePlaceOrGeographicName','String'),
-            'descr': (u'http://d-nb.info/standards/elementset/gnd#definition','String'),}},
+            'descr': (u'http://d-nb.info/standards/elementset/gnd#definition','String'),
+            'long': (gnd_geo + 'asWKT', 'gndLong'),
+            'lat': (wgs84_pos + 'lat','String')
+        }},
         ],
     'Institution': [{
         'source': 'GND',
@@ -167,10 +171,7 @@ geonames_feature_codes = {
         "a village, town or city destroyed by a natural disaster, or by war"),
     "PPLX": ("section of populated place", ""),
     "STLMT": ("israeli settlement", ""),
-    "RGN": (
-        "region",
-        "an area distinguished by one or more observable physical or cultural characteristics"),
-    "VAL": ("i have", "no idea")}
+    "RGN": ("region", "an area distinguished by one or more observable physical or cultural characteristics")}
 
 
 class StbGeoQuerySettings:
