@@ -9,7 +9,7 @@ from .forms import UploadFileForm, UploadPlaceListForm
 from .helper import get_or_create_place, create_metatdata
 from entities.models import *
 from metainfo.models import *
-from helper_functions.RDFparsers import PlaceUri
+from helper_functions.RDFparsers import GenericRDFParser
 from vocabularies.models import TextType
 
 
@@ -52,9 +52,9 @@ class ImportPlaceListTEI(FormView):
                 print(place_uri)
                 if place_uri['status']:
                     try:
-                        new_place = PlaceUri(place_uri['fetched_id']).place
-                        #GenericRDFParser(URI, 'Place')
-                        #new_place = GenericRDFParser.get_or_create
+                        # new_place = PlaceUri(place_uri['fetched_id']).place
+                        GenericRDFParser(place_uri, 'Place')
+                        # new_place = GenericRDFParser.get_or_create
                         new_place.collection.add(metadata['col'])
                         new_place.source = metadata['src']
                         new_place.text.add(metadata['text'])

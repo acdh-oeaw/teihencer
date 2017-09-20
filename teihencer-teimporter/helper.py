@@ -2,7 +2,7 @@ from entities.models import *
 from metainfo.models import *
 from django.db import transaction
 from .stanbol import StbGeoQuerySettings, find_loc, decide_stanbol
-from helper_functions.RDFparsers import PlaceUri
+# from helper_functions.RDFparsers import PlaceUri
 # https://stackoverflow.com/questions/32205220/cant-execute-queries-until-end-of-atomic-block-in-my-data-migration-on-django-1
 
 
