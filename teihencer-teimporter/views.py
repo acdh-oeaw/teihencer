@@ -28,42 +28,44 @@ class ImportPlaceListTEI(FormView):
         context = super(ImportPlaceListTEI, self).get_context_data(**kwargs)
         current_user = self.request.user
         metadata = create_metatdata(current_user, form)
-        teifile = TeiPlaceList(metadata['file'])
-        places = teifile.parse_placelist()
-        before = len(Place.objects.all())
-        fails = []
-        cd = form.cleaned_data
-        print(places['amount'])
-        if cd['xpath'] == "":
-            for x in places['places']:
-                place = teifile.place2dict(x)
-                new_place = get_or_create_place(
-                    place['xml:id'][0],
-                    place['placeNames'][0]['text'],
-                    base_url=metadata['col'].name
-                )
-                new_place.collection.add(metadata['col'])
-                new_place.source = metadata['src']
-                new_place.text.add(metadata['text'])
-                new_place.save()
-        else:
-            for x in places['places']:
-                place_uri = teifile.fetch_ID(x, cd['xpath'], 'geonames')
-                print(place_uri)
-                if place_uri['status']:
-                    try:
-                        # new_place = PlaceUri(place_uri['fetched_id']).place
-                        GenericRDFParser(place_uri, 'Place')
-                        # new_place = GenericRDFParser.get_or_create
-                        new_place.collection.add(metadata['col'])
-                        new_place.source = metadata['src']
-                        new_place.text.add(metadata['text'])
-                        new_place.save()
-                    except:
-                        pass
-
-        after = len(Place.objects.all())
-        context['counter'] = [before, after]
+        context['metadata'] = metadata
+        print(metadata)
+        # teifile = TeiPlaceList(metadata['file'])
+        # places = teifile.parse_placelist()
+        # before = len(Place.objects.all())
+        # fails = []
+        # cd = form.cleaned_data
+        # print(places['amount'])
+        # if cd['xpath'] == "":
+        #     for x in places['places']:
+        #         place = teifile.place2dict(x)
+        #         new_place = get_or_create_place(
+        #             place['xml:id'][0],
+        #             place['placeNames'][0]['text'],
+        #             base_url=metadata['col'].name
+        #         )
+        #         new_place.collection.add(metadata['col'])
+        #         new_place.source = metadata['src']
+        #         new_place.text.add(metadata['text'])
+        #         new_place.save()
+        # else:
+        #     for x in places['places']:
+        #         place_uri = teifile.fetch_ID(x, cd['xpath'], 'geonames')
+        #         print(place_uri)
+        #         if place_uri['status']:
+        #             try:
+        #                 # new_place = PlaceUri(place_uri['fetched_id']).place
+        #                 GenericRDFParser(place_uri, 'Place')
+        #                 # new_place = GenericRDFParser.get_or_create
+        #                 new_place.collection.add(metadata['col'])
+        #                 new_place.source = metadata['src']
+        #                 new_place.text.add(metadata['text'])
+        #                 new_place.save()
+        #             except:
+        #                 pass
+        #
+        # after = len(Place.objects.all())
+        # context['counter'] = [before, after]
         return render(self.request, self.template_name, context)
 
 

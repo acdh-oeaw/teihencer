@@ -13,15 +13,15 @@ def create_metatdata(user, some_form):
     current_group, _ = Group.objects.get_or_create(name=current_user.username)
     current_group.user_set.add(current_user)
     file = cd['file'].read()
+    print(file)
     src, _ = Source.objects.get_or_create(orig_filename=cd['file'].name, author=current_user)
-    text, _ = Text.objects.get_or_create(text=file, source=src)
     kind, _ = TextType.objects.get_or_create(name='process tei:listPlace', entity='place')
+    text, _ = Text.objects.get_or_create(text=file, source=src, kind=kind)
     if cd['new_sub_collection'] == "":
         col, _ = Collection.objects.get_or_create(
             name=cd['collection']
         )
         if col.parent_class is None:
-            print(col.parent_class)
             col.parent_class = super_collection
             col.save()
         else:
@@ -29,7 +29,7 @@ def create_metatdata(user, some_form):
     else:
         parent_collection, _ = Collection.objects.get_or_create(
             name=cd['collection'],
-            parent_class=super_collection,
+            parent_class=super_collection
         )
         parent_collection.groups_allowed.add(current_group)
         parent_collection.save()
