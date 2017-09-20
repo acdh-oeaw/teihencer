@@ -6,10 +6,9 @@ from django.shortcuts import render
 from django.views.generic.edit import FormView
 from .tei import TeiReader, TeiPlaceList
 from .forms import UploadFileForm, UploadPlaceListForm
-from .helper import get_or_create_place, create_metatdata
+from .helper import create_metatdata
 from entities.models import *
 from metainfo.models import *
-from helper_functions.RDFparsers import GenericRDFParser
 from vocabularies.models import TextType
 
 
@@ -30,15 +29,20 @@ class ImportPlaceListTEI(FormView):
         metadata = create_metatdata(current_user, form)
         context['metadata'] = metadata
         print(metadata)
-        # teifile = TeiPlaceList(metadata['file'])
-        # places = teifile.parse_placelist()
-        # before = len(Place.objects.all())
-        # fails = []
-        # cd = form.cleaned_data
-        # print(places['amount'])
-        # if cd['xpath'] == "":
-        #     for x in places['places']:
-        #         place = teifile.place2dict(x)
+        teifile = TeiPlaceList(metadata['file'])
+        places = teifile.parse_placelist()
+        before = len(Place.objects.all())
+        fails = []
+        cd = form.cleaned_data
+        print(places['amount'])
+        if cd['xpath'] == "":
+            pass
+            for x in places['places']:
+                place = teifile.place2dict(x)
+                try:
+                    print(place)
+                except UnicodeEncodeError:
+                    pass
         #         new_place = get_or_create_place(
         #             place['xml:id'][0],
         #             place['placeNames'][0]['text'],
@@ -48,24 +52,23 @@ class ImportPlaceListTEI(FormView):
         #         new_place.source = metadata['src']
         #         new_place.text.add(metadata['text'])
         #         new_place.save()
-        # else:
-        #     for x in places['places']:
-        #         place_uri = teifile.fetch_ID(x, cd['xpath'], 'geonames')
-        #         print(place_uri)
-        #         if place_uri['status']:
-        #             try:
-        #                 # new_place = PlaceUri(place_uri['fetched_id']).place
-        #                 GenericRDFParser(place_uri, 'Place')
-        #                 # new_place = GenericRDFParser.get_or_create
-        #                 new_place.collection.add(metadata['col'])
-        #                 new_place.source = metadata['src']
-        #                 new_place.text.add(metadata['text'])
-        #                 new_place.save()
-        #             except:
-        #                 pass
-        #
-        # after = len(Place.objects.all())
-        # context['counter'] = [before, after]
+        else:
+            for x in places['places']:
+                place_uri = teifile.fetch_ID(x, cd['xpath'], '')
+                print(place_uri)
+                # if place_uri['status']:
+                #     try:
+                #         # new_place = PlaceUri(place_uri['fetched_id']).place
+                #         GenericRDFParser(place_uri, 'Place')
+                #         # new_place = GenericRDFParser.get_or_create
+                #         new_place.collection.add(metadata['col'])
+                #         new_place.source = metadata['src']
+                #         new_place.text.add(metadata['text'])
+                #         new_place.save()
+                #     except:
+                #         pass
+        after = len(Place.objects.all())
+        context['counter'] = [before, after]
         return render(self.request, self.template_name, context)
 
 

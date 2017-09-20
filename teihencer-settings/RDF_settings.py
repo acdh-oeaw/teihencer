@@ -43,12 +43,12 @@ sett_RDF_generic = {
                             (('objects','lng', wgs84 + 'long', None),),
                         )
                     },
-                    {
-                        'name': 'parentFeature',
-                        'identifiers': (
-                            (('objects', 'parentFeature', gno + 'parentFeature', None),),
-                        )
-                    },
+                    # {
+                    #     'name': 'parentFeature',
+                    #     'identifiers': (
+                    #         (('objects', 'parentFeature', gno + 'parentFeature', None),),
+                    #     )
+                    # },
                     {
                         'name': 'parentCountry',
                         'identifiers': (
@@ -107,13 +107,13 @@ sett_RDF_generic = {
                 },
             'linked objects':
             [
-            {
-                'type': 'Place',
-                'kind': 'located in',
-                'object': (
-                    ('parentFeature', None),
-            )
-            },
+            # {
+            #     'type': 'Place',
+            #     'kind': 'located in',
+            #     'object': (
+            #         ('parentFeature', None),
+            # )
+            # },
             {
                 'type': 'Place',
                 'kind': 'located in',
