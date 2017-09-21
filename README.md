@@ -7,7 +7,7 @@ We are currently updating the code base.
 ## installation
 
 1. clone the repo `git clone https://github.com/acdh-oeaw/teihencer.git`
-2. add apis-core sumbodule `git submodule add https://github.com/acdh-oeaw/apis-core.git`
+2. init apis-submodule `git submodule update --init`
 3. create symbolic links from `teihencer-teimporter`, `teihencer-webapp`, and `teihencer-urls` to `apis-core/teimporter`, `apis-core/webpage` and `apis-core/custom_urls` (on windows use  `mklink /d webpage ..\teihencer-webapp`)
 4. create symbolic link from `teihencer-settings` to `apis-core/apis/settings`
 5. Make migrations `python manage.py makemigrations entities highlighter labels metainfo relations vocabularies webpage --settings=apis.settings.dev`
