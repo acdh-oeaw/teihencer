@@ -82,6 +82,7 @@ class ImportPlaceListTEI(FormView):
                         GenericRDFParser(url, 'Place').get_or_create()
                     except:
                         print('ERROR with ID: {}'.format(url))
+                        fails.append(url)
 
         after = len(Place.objects.all())
         context['counter'] = [before, after]
