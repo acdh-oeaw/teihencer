@@ -69,3 +69,7 @@ To do so you can
 * *TEIHencer* will parse this document and store as much information as possible (e.g. alternative placenames, place types) in it's database.
 * *TEIHencer* will reconcile all parsed entities against [geonames.org](http://www.geonames.org/). It tries to find matches and stores those matches in a specific collection, which can then be manually post processed/curated in a graphical user interface.
 * After this curation process, the enhanced and curated can be exported as TEI document.
+
+# Limitations:
+
+Geonames-API allows 2000 requests per IP per hour.
