@@ -251,6 +251,7 @@ class TeiPlaceList(TeiReader):
         }
         try:
             fetched_id = element.xpath(xpath2ID, namespaces=namespaces)[0]
+            fetched_id = fetched_id.strip()
         except:
             result['status'] = False
             return result

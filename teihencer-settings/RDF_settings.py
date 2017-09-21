@@ -40,7 +40,7 @@ sett_RDF_generic = {
                     {
                         'name': 'long',
                         'identifiers': (
-                            (('objects','lng', wgs84 + 'long', None),),
+                            (('objects', 'lng', wgs84 + 'long', None),),
                         )
                     },
                     # {
@@ -64,14 +64,16 @@ sett_RDF_generic = {
                     {
                         'name': 'name',
                         'identifiers': (
-                            (('objects', 'prefName', gndo + 'preferredNameForThePlaceOrGeographicName', None),),
+                            (('objects', 'prefName',
+                                gndo + 'preferredNameForThePlaceOrGeographicName', None),),
                         )
                     },
                     {
                         'name': 'label',
                         'identifiers': (
                             (
-                                ('objects', 'label', gndo + 'variantNameForThePlaceOrGeographicName', None),
+                                ('objects', 'label',
+                                    gndo + 'variantNameForThePlaceOrGeographicName', None),
                             ),
                         ),
                     },

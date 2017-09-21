@@ -1,3 +1,4 @@
+import time
 import lxml.etree as ET
 from django.contrib.auth.models import Group
 from django.contrib.auth.decorators import login_required
@@ -30,7 +31,6 @@ class ImportPlaceListTEI(FormView):
         current_user = self.request.user
         metadata = create_metatdata(current_user, form)
         context['metadata'] = metadata
-        print(metadata)
         teifile = TeiPlaceList(metadata['file'])
         places = teifile.parse_placelist()
         before = len(Place.objects.all())
@@ -38,23 +38,7 @@ class ImportPlaceListTEI(FormView):
         cd = form.cleaned_data
         print(places['amount'])
         if cd['xpath'] == "":
-            pass
-            for x in places['places']:
-                place = teifile.place2dict(x)
-                # try:
-                #     print(place)
-                # except UnicodeEncodeError:
-                #     pass
-        #         new_place = get_or_create_place(
-        #             place['xml:id'][0],
-        #             place['placeNames'][0]['text'],
-        #             base_url=metadata['col'].name
-        #         )
-        #         new_place.collection.add(metadata['col'])
-        #         new_place.source = metadata['src']
-        #         new_place.text.add(metadata['text'])
-        #         new_place.save()
-        else:
+            print('start looking for IDs')
             for y in places['places']:
                 place = teifile.place2dict(y)
                 xmlid = place['xml:id'][0]
@@ -81,8 +65,26 @@ class ImportPlaceListTEI(FormView):
                                 UriCandidate.objects.create(uri=x['id'], entity=plc_fin)
                         else:
                             plc_fin = Place.objects.create(name=placename, status='no match')
+                # link new created place object to text-object
+                if plc_fin:
+                    plc_fin.text.set([metadata['text']], clear=True)
+                    plc_fin.collection.set([metadata['col']], clear=True)
+                    plc_fin.source = metadata['src']
+                    plc_fin.save()
+        else:
+            xpath = cd['xpath']
+            for y in places['places']:
+                url = teifile.fetch_ID(y, xpath, 'geonames')['fetched_id']
+                if url:
+                    url = url.strip()
+                    print('Normdata uris provided, start fetching data for {}'.format(url))
+                    try:
+                        GenericRDFParser(url, 'Place').get_or_create()
+                    except:
+                        print('ERROR with ID: {}'.format(url))
 
-        # context['counter'] = [before, after]
+        after = len(Place.objects.all())
+        context['counter'] = [before, after]
         return render(self.request, self.template_name, context)
 
 
