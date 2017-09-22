@@ -65,6 +65,13 @@ class ImportPlaceListTEI(FormView):
                     plc_fin.text.set([metadata['text']], clear=True)
                     plc_fin.collection.set([metadata['col']], clear=True)
                     plc_fin.source = metadata['src']
+                    try:
+                        resolver_uri = "{}{}".format(metadata['col'].name, legacy_id)
+                        legacy_uri, _ = Uri.objects.get_or_create(
+                            uri=resolver_uri, domain=metadata['col'].name, entity=plc_fin
+                        )
+                    except:
+                        pass
                     plc_fin.save()
                     try:
                         print('saved: {}'.format(plc_fin))
@@ -90,6 +97,13 @@ class ImportPlaceListTEI(FormView):
                     plc_fin.text.set([metadata['text']], clear=True)
                     plc_fin.collection.set([metadata['col']], clear=True)
                     plc_fin.source = metadata['src']
+                    try:
+                        resolver_uri = "{}{}".format(metadata['col'].name, legacy_id)
+                        legacy_uri, _ = Uri.objects.get_or_create(
+                            uri=resolver_uri, domain=metadata['col'].name, entity=plc_fin
+                        )
+                    except:
+                        pass
                     plc_fin.save()
 
         after = len(Place.objects.all())
@@ -163,8 +177,9 @@ class ImportTEI(FormView):
                     plc_fin.collection.set([metadata['col']], clear=True)
                     plc_fin.source = metadata['src']
                     try:
+                        resolver_uri = "{}{}".format(metadata['col'].name, legacy_id)
                         legacy_uri, _ = Uri.objects.get_or_create(
-                        uri=legacy_id, domain=metadata['col'], entity=plc_fin
+                            uri=resolver_uri, domain=metadata['col'].name, entity=plc_fin
                         )
                     except:
                         pass
