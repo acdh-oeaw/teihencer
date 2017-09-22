@@ -50,13 +50,8 @@ class ImportPlaceListTEI(FormView):
                             try:
                                 plc_fin = GenericRDFParser(res[1]['id'], 'Place').get_or_create()
                             except:
-                                try:
-                                    print('error in: {}'.format(xmlid))
-                                except UnicodeEncodeError:
-                                    pass
                                 plc_fin = GenericRDFParser(res[1][0]['id'], 'Place').get_or_create()
                         except:
-                            print('error in: {}'.format(xmlid))
                             plc_fin = Place.objects.create(name=placename, status='no match')
                     else:
                         if res[1]:
@@ -71,6 +66,10 @@ class ImportPlaceListTEI(FormView):
                     plc_fin.collection.set([metadata['col']], clear=True)
                     plc_fin.source = metadata['src']
                     plc_fin.save()
+                    try:
+                        print('saved: {}'.format(plc_fin))
+                    except UnicodeEncodeError:
+                        print('saved a place with difficult chars')
         else:
             xpath = cd['xpath']
             for y in places['places']:
@@ -79,13 +78,23 @@ class ImportPlaceListTEI(FormView):
                     url = url.strip()
                     print('Normdata uris provided, start fetching data for {}'.format(url))
                     try:
-                        GenericRDFParser(url, 'Place').get_or_create()
+                        plc_fin = GenericRDFParser(url, 'Place').get_or_create()
+                        plc_fin = plc_fin
                     except:
                         print('ERROR with ID: {}'.format(url))
                         fails.append(url)
+                        plc_fine = None
+                else:
+                    plc_fine = None
+                if plc_fin:
+                    plc_fin.text.set([metadata['text']], clear=True)
+                    plc_fin.collection.set([metadata['col']], clear=True)
+                    plc_fin.source = metadata['src']
+                    plc_fin.save()
 
         after = len(Place.objects.all())
         context['counter'] = [before, after]
+        context['fails'] = fails
         return render(self.request, self.template_name, context)
 
 
