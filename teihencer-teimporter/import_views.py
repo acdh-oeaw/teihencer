@@ -129,7 +129,9 @@ class ImportTEI(FormView):
         text.kind = kind
         text.save()
 
-        placeindex, _ = Text.objects.get_or_create(text=context['place_list'], source=metadata['src'])
+        placeindex, _ = Text.objects.get_or_create(
+            text=context['place_list'], source=metadata['src']
+        )
         kind, _ = TextType.objects.get_or_create(name='generated place list', entity='place')
         kind.collections.add(metadata['col'])
         kind.save()
@@ -137,12 +139,41 @@ class ImportTEI(FormView):
         placeindex.save()
         if cd['enrich']:
             for x in added_ids[0]:
-                new_place = get_or_create_place(
-                    x['ref'], x['text'], base_url=metadata['col'].name
-                )
-                new_place.text.add(text)
-                new_place.text.add(placeindex)
-                new_place.save()
+                placename = x['text']
+                legacy_id = x['ref']
+                res = find_loc([placename], geonames_chains=False, dec_diff=25)
+                if res:
+                    if res[0]:
+                        try:
+                            try:
+                                plc_fin = GenericRDFParser(res[1]['id'], 'Place').get_or_create()
+                            except:
+                                plc_fin = GenericRDFParser(res[1][0]['id'], 'Place').get_or_create()
+                        except:
+                            plc_fin = Place.objects.create(name=placename, status='no match')
+                    else:
+                        if res[1]:
+                            plc_fin = Place.objects.create(name=placename, status='ambigue')
+                            for x in res[1]:
+                                UriCandidate.objects.create(uri=x['id'], entity=plc_fin)
+                        else:
+                            plc_fin = Place.objects.create(name=placename, status='no match')
+                if plc_fin:
+                    plc_fin.text.set([metadata['text']], clear=True)
+                    plc_fin.collection.set([metadata['col']], clear=True)
+                    plc_fin.source = metadata['src']
+                    try:
+                        legacy_uri, _ = Uri.objects.get_or_create(
+                        uri=legacy_id, domain=metadata['col'], entity=plc_fin
+                        )
+                    except:
+                        pass
+                    plc_fin.save()
+                    try:
+                        print('saved: {}'.format(legacy_id))
+                    except UnicodeEncodeError:
+                        print('saved a place with difficult chars')
+
         else:
             pass
         return render(self.request, self.template_name, context)
