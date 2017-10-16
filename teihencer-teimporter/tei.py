@@ -61,10 +61,15 @@ class TeiReader():
         geo.text = "{} {}".format(lat, lng)
         location.append(geo)
         place.append(location)
-        idno = ET.Element("{http://www.tei-c.org/ns/1.0}idno")
-        idno.text = ref_id
-        place.append(idno)
-
+        if isinstance(ref_id, str):
+            idno = ET.Element("{http://www.tei-c.org/ns/1.0}idno")
+            idno.text = ref_id
+            place.append(idno)
+        elif isinstance(ref_id, list):
+            for x in ref_id:
+                idno = ET.Element("{http://www.tei-c.org/ns/1.0}idno")
+                idno.text = x
+                place.append(idno)
         return place
 
     def get_places_elements(self, ids):

@@ -26,12 +26,19 @@ class ExportTeiListPlace(GenericListView):
         places = []
         for x in queryset:
             uris = Uri.objects.filter(entity=x.id)
-            if len(uris) > 1:
-                xmlid = uris[1].uri
-                idno = uris[0].uri
-            else:
+            legacy_uris = []
+            normdata_uris = []
+            for temp_uri in uris:
+                if temp_uri.uri.startswith('https'):
+                    legacy_uris.append(temp_uri)
+                else:
+                    normdata_uris.append(temp_uri)
+            legacy_uris = [x.uri for x in uris if x.uri.startswith('https')]
+            try:
+                xmlid = legacy_uris[0]
+            except IndexError:
                 xmlid = uris[0].uri
-                idno = uris[0].uri
+            idno = [x.uri for x in uris]
             places.append(teiprocessor.create_place(
                 xmlid, x.name, x.lat, x.lng, idno)
             )

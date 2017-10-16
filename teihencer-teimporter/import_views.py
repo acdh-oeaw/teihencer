@@ -42,7 +42,14 @@ class ImportPlaceListTEI(FormView):
             for y in places['places']:
                 place = teifile.place2dict(y)
                 xmlid = place['xml:id'][0]
-                placename = place['placeNames'][0]['text']
+                try:
+                    print(place['placeNames'][0]['text'])
+                except:
+                    print('somethign')
+                try:
+                    placename = place['placeNames'][0]['text']
+                except:
+                    placename = place['placeNames']['text']
                 res = find_loc([placename], geonames_chains=False, dec_diff=25)
                 if res:
                     if res[0]:
