@@ -1,5 +1,5 @@
 import os
-from .base import *
+from apis_settings.base import *
 
 SECRET_KEY = 'd3j@zo1psh*&-u35#ayi'
 

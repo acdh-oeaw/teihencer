@@ -116,7 +116,6 @@
                         <ul class="dropdown-menu procustom-dropdown-menu">
                             <li><a href="{% url 'webpage:start' %}">{% projects_metadata 'title' %}</a></li>
                             <li><a href="{% url 'webpage:about' %}">About</a></li>
-                            <!-- <li><a href="{% url 'datamodel:plate' %}">Application's data model</a></li> -->
                             <li><a href="{% url 'webpage:imprint' %}">Impressum / Imprint</a></li>
                         </ul>
                     </li>
@@ -139,22 +138,20 @@
                             Browse the Data <span class="caret"></span>
                         </a>
                         {% endif %}
-                        <ul class="dropdown-menu procustom-dropdown-menu">
-                            <!-- <li><a href="{% url 'entities:person_list' %}">Persons</a></li> -->
-                            <li><a href="{% url 'teimporter:place_list_tei' %}">Places</a></li>
-                            <!-- <li><a href="{% url 'entities:institution_list' %}">Institutions</a></li>
-                            <li><a href="{% url 'entities:event_list' %}">Events</a></li>
-                            <li><a href="{% url 'entities:work_list' %}">Works</a></li> -->
-                        </ul>
-                    </li>
-                    <!-- <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations<span class="caret"></span>
-                        </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{% url 'entities:birth_death_map' %}">Person Place map</a></li>
-                            <li><a href="{% url 'entities:generic_network_viz' %}">Network</a></li>
-                        </ul>
-                    </li> -->
+                            {% for ent in entities_list %}
+                                {% if ent != 'place' %}
+                                    <li>
+                                        <a href="{% url 'entities:generic_entities_list' ent %}">{{ent|title}}</a>
+                                    </li>
+                                {% else %}
+                                    <li>
+                                        <a href="{% url 'teimporter:place_list_tei' %}">{{ent|title}}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                      </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -230,90 +227,118 @@
     });
 </script>
 <script type="text/javascript">
-  function unbind_ajax_forms(){
-  $(".form.ajax_form").submit(function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        var formData = $(this).serialize();
-        //var button_text = $(this).find(':button').text();
-      $.ajax({
-      type: 'POST',
-      url: $(this).attr('action'),
-      data: formData,
-      //data:formData,
-        })
-      .done(function(response) {
-          window[response.call_function](response)}
-  )})}
-</script>
-    <script type="text/javascript">
-//script that converts the multi select element of the annotation project menu
-$(document).ready(function() {
-    $('select.selectmultiple').multiselect({
-        includeSelectAllOption: true,
-        enableFiltering: true
-    });
-    initiate_compare_tooltip();
-})
-</script>
-    <script type="application/javascript">
-    function initiate_compare_tooltip() {
-      //TODO: correctly detach the tooltips before reinitializing them
-    $('.compare_tooltip').tooltipster({
-content: 'Loading...',
-        contentAsHTML: true,
-interactive: true,
-theme: 'tooltipster-light',
-        updateAnimation: null,
-functionBefore: function(instance, helper) {
-    var $origin = $(helper.origin);
-    dataOptions = $origin.attr('data-tooltip');
-    if(dataOptions) {
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
 
-        dataOptions = JSON.parse(dataOptions);
-        console.log(dataOptions);
-    } else {
-        console.log('didnt read out')
-    }
-    if (typeof $.ApisRev == 'undefined') {
-        $.ApisRev = {}; }
-    $.ApisRev.url = '/compare/'+dataOptions['app']+'/'+dataOptions['kind']+'/'+dataOptions['pk']
-    if ($origin.data('loaded') !== true) {
-        $.get($.ApisRev.url, function(data) {
-            instance.content(data);
-            unbind_compare_forms();
-            $origin.data('loaded', true);
-        });
-    }
-},
-functionReady: function (instance, helper) {
-    $.ApisRev.instance = instance;
-    unbind_compare_forms();
-}
-});};
     </script>
     <script type="text/javascript">
-  function unbind_compare_forms(){
-  $("#change-history").parents('form').submit(function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        var formData = $(this).serialize();
-      if ($.ApisRev.url == 'undefined'){
-          var url = '/'
-      } else {
-          var url = $.ApisRev.url
-      };
-      $.ajax({
-      type: 'GET',
-      url: url,
-      data: formData,
-      //data:formData,
-        })
-      .done(function(response) {
-          $.ApisRev.instance.content(response);
-          unbind_compare_forms();
-      }
-  )})}
+      function unbind_ajax_forms(){
+      $(".form.ajax_form").submit(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var formData = $(this).serialize();
+            //var button_text = $(this).find(':button').text();
+
+          $.ajax({
+          type: 'POST',
+          url: $(this).attr('action'),
+          data: formData,
+              beforeSend: function(request) {
+              var csrftoken = getCookie('csrftoken');
+    request.setRequestHeader("X-CSRFToken", csrftoken);
+  },
+          //data:formData,
+            })
+          .done(function(response) {
+              window[response.call_function](response)}
+      )})}
+</script>
+        <script type="text/javascript">
+    //script that converts the multi select element of the annotation project menu
+    $(document).ready(function() {
+        $('select.selectmultiple').multiselect({
+            includeSelectAllOption: true,
+            enableFiltering: true
+        });
+        initiate_compare_tooltip();
+    })
+    </script>
+        <script type="application/javascript">
+        function initiate_compare_tooltip() {
+          //TODO: correctly detach the tooltips before reinitializing them
+        $('.compare_tooltip').tooltipster({
+    content: 'Loading...',
+            contentAsHTML: true,
+    interactive: true,
+    theme: 'tooltipster-light',
+            updateAnimation: null,
+            zIndex: 999,
+    functionBefore: function(instance, helper) {
+        var $origin = $(helper.origin);
+        dataOptions = $origin.attr('data-tooltip');
+        if(dataOptions) {
+
+            dataOptions = JSON.parse(dataOptions);
+            console.log(dataOptions);
+        } else {
+            console.log('didnt read out')
+        }
+        if (typeof $.ApisRev == 'undefined') {
+            $.ApisRev = {}; }
+        $.ApisRev.url = '/compare/'+dataOptions['app']+'/'+dataOptions['kind']+'/'+dataOptions['pk']
+        if ($origin.data('loaded') !== true) {
+            $.get($.ApisRev.url, function(data) {
+                instance.content(data);
+                unbind_compare_forms();
+                $origin.data('loaded', true);
+            });
+        }
+    },
+    functionReady: function (instance, helper) {
+        $.ApisRev.instance = instance;
+        unbind_compare_forms();
+    }
+});};
+        </script>
+        <script type="text/javascript">
+      function unbind_compare_forms(){
+      $("#change-history").parents('form').submit(function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var formData = $(this).serialize();
+          if ($.ApisRev.url == 'undefined'){
+              var url = '/'
+          } else {
+              var url = $.ApisRev.url
+          };
+          $.ajax({
+          type: 'GET',
+          url: url,
+          data: formData,
+          //data:formData,
+            })
+          .done(function(response) {
+              $.ApisRev.instance.content(response);
+              unbind_compare_forms();
+          }
+      )})}
 </script>
 {% endblock %}
 {% block scripts2 %}

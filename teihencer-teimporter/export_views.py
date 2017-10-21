@@ -29,11 +29,13 @@ class ExportTeiListPlace(GenericListView):
             legacy_uris = []
             normdata_uris = []
             for temp_uri in uris:
-                if temp_uri.uri.startswith('https'):
+                if not temp_uri.uri.startswith('http://sws.geonames.org') or temp_uri.uri.startswith('http://d-nb'):
                     legacy_uris.append(temp_uri)
                 else:
                     normdata_uris.append(temp_uri)
-            legacy_uris = [x.uri for x in uris if x.uri.startswith('https')]
+            legacy_uris = [
+                x.uri for x in uris if not x.uri.startswith('http://sws.geonames.org')
+                or x.uri.startswith('http://d-nb')]
             try:
                 xmlid = legacy_uris[0]
             except IndexError:
